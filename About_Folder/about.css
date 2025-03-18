@@ -1,0 +1,132 @@
+body {
+    background-color: white;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: rgba(0, 0, 0, 0.938);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.title h1 {
+    color: white;
+    font-size: 35px;
+}
+
+.title h3 {
+    color: #2e9e33;
+    font-size: 15px;
+}
+
+
+.sidebar {
+    padding: 30px   ;
+}
+
+.sidebar h1 {
+    text-align: center;
+    color: black;
+}
+
+.sidebar h3 {
+    text-align: center;
+}
+
+
+img {
+    width: 180px;
+    height: 150px;
+}
+
+h1 {
+    color: white;
+}
+
+.nav-buttons {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding-left: 50px;
+}
+
+button {
+    cursor: pointer;
+    font-size: 18px;
+    background-color: transparent;
+    color: white;
+    border: 0px solid rgba(0, 0, 0, 0.938);
+    padding: 10px 15px;
+}
+
+section {
+    padding: 50px;
+    margin: 50px 0;
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.938);
+    text-align: center;
+    padding: 1px;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+
+.footer {
+    font-size: 14px;
+    color: white;
+}
+
+.footer a {
+    color: gold;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.socials{
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+    padding-right: 10px;
+}
+
+
+
+#content {
+    padding: 20px;
+    text-align: center;
+}
+
+#content h1 {
+    color: green;
+    font-size: 28px;
+}
+
+#content h2 {
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+}
