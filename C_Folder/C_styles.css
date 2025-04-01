@@ -126,6 +126,16 @@ button {
     padding: 10px 15px;
 }
 
+button[onclick="maincontent('c_lang')"]{
+    border-radius: 5px;
+    background-color: red;
+}
+
+button:hover{
+    border-radius: 5px;
+    border-bottom: 2px solid red;
+}
+
 section {
     padding: 50px;
     margin: 50px 0;
@@ -160,13 +170,45 @@ footer {
     padding-right: 10px;
 }
 
-.page-content{
-    text-align: center;
+.c_topic{
+    padding-left: 270px;
 }
 
-#content {
+.c_intro {
+    width: 1275px;
+    background-color: #2db134;
     padding: 20px;
+    height: 900px;
+}
+
+.c_intro h1{
     text-align: center;
+    padding-bottom: 20px;
+}
+
+.c_intro h2{
+    color: white;
+    font-size: 35px;
+}
+
+.c_title{
+    padding-bottom: 10px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.why_learn_C{
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+}
+
+.Difference_c_and_cplus{
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+}
+
+.c_intro p{
+    font-size: 20px;
 }
 
 #content h1 {
