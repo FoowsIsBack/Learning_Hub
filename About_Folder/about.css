@@ -79,6 +79,16 @@ button {
     padding: 10px 15px;
 }
 
+button[onclick="maincontent('about')"]{
+    border-radius: 5px;
+    background-color: red;
+}
+
+button:hover{
+    border-radius: 5px;
+    border-bottom: 2px solid red;
+}
+
 section {
     padding: 50px;
     margin: 50px 0;
@@ -112,8 +122,6 @@ footer {
     border-radius: 3px;
     padding-right: 10px;
 }
-
-
 
 #content {
     padding: 20px;
