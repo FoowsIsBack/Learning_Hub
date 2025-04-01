@@ -79,6 +79,11 @@ button {
     padding: 10px 15px;
 }
 
+button:hover{
+    background-color: red;
+    border-radius: 5px;
+}
+
 section {
     padding: 50px;
     margin: 50px 0;
@@ -112,8 +117,6 @@ footer {
     border-radius: 3px;
     padding-right: 10px;
 }
-
-
 
 #content {
     padding: 20px;
