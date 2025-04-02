@@ -1,0 +1,195 @@
+body {
+    background-color: white;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: rgba(0, 0, 0, 0.938);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo img {
+    width: 150px;
+    height: 150px;
+}
+
+.logo h1 {
+    color: white;
+    font-size: 35px;
+}
+
+.sidebar {
+    width: 230px;
+    background-color: #2db134;
+    padding: 20px;
+    height: 627px;
+    overflow-y: auto;
+}
+
+.sidebar button {
+    display: block;
+    width: 100%;
+    background-color: rgb(50, 92, 231);
+    margin-top: 10px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.sidebar button:hover {
+    background-color: rgb(234, 22, 22);
+}
+
+.sidebar h1 {
+    text-align: center;
+}
+
+.sidebar{
+    scrollbar-color: smooth;
+}
+
+img {
+    width: 180px;
+    height: 150px;
+}
+
+h1 {
+    color: white;
+}
+
+.nav-buttons {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding-left: 50px;
+}
+
+.activity_sidebar {
+    width: 230px;
+    background-color: #2db134;
+    padding: 20px;
+    height: 627px;
+    overflow-y: auto;
+    position: absolute;
+    margin-top: 190px;
+    right: 0;
+    top: 0;
+}
+
+.activity_sidebar button {
+    display: block;
+    width: 100%;
+    background-color: rgb(50, 92, 231);
+    margin-top: 10px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.activity_sidebar button:hover {
+    background-color: rgb(234, 22, 22);
+}
+
+.activity_sidebar h1 {
+    text-align: center;
+}
+
+
+.activity_sidebar {
+    scrollbar-color: auto;
+}
+
+button {
+    text-align: left;
+    cursor: pointer;
+    font-size: 18px;
+    background-color: transparent;
+    color: white;
+    border: 0px solid rgba(0, 0, 0, 0.938);
+    padding: 10px 15px;
+}
+
+button[onclick="maincontent('php')"]{
+    border-radius: 5px;
+    background-color: red;
+}
+
+button[onclick="php_introduction('php_arrays')"]{
+    background-color: red;
+}
+
+button:hover{
+    border-radius: 5px;
+    border-bottom: 2px solid red;
+}
+
+section {
+    padding: 50px;
+    margin: 50px 0;
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.938);
+    text-align: center;
+    padding: 1px;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+
+.footer {
+    font-size: 14px;
+    color: white;
+}
+
+.footer a {
+    color: gold;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.socials{
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+    padding-right: 10px;
+}
+
+.page-content{
+    text-align: center;
+}
+
+#content {
+    padding: 20px;
+    text-align: center;
+}
+
+#content h1 {
+    color: green;
+    font-size: 28px;
+}
+
+#content h2 {
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+}
