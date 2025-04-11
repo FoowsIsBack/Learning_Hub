@@ -1,83 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Introduction</title>
-    <link rel="stylesheet" href="html_introduction.css">
-    <link rel="icon" href="../TechStack_icon/Html_icon.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HTML Introduction</title>
+  <link rel="stylesheet" href="html_css/html_introduction.css " />
+  <link rel="icon" href="../TechStack_icon/Html_icon.png"/>
 </head>
 <body>
 
-    <header>
-        <div class="container">
-            <div class="logo">
-                <img src="../TechStack_icon/Html_icon.png" alt="JPCS Logo" onclick="window.location.href='../page_content.html'" >
-                <h1>Learning Hub</h1>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="../TechStack_icon/Html_icon.png" alt="C Logo" onclick="window.location.href='../page_content.html'" />
+        <h1>Learning Hub</h1>
+      </div>
+      <nav>
+        <div class="nav-buttons">
+          <button onclick="maincontent('home')">HOME</button>
+          <button onclick="maincontent('c_lang')">C Language</button>
+          <button onclick="maincontent('python')">Python</button>
+          <button onclick="maincontent('html')">HTML</button>
+          <button onclick="maincontent('js')">JavaScript</button>
+          <button onclick="maincontent('php')">PHP</button>
+          <button onclick="maincontent('about')">ABOUT</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div class="main_container">
+    <aside class="sidebar">
+        <h1>HTML</h1>
+        <button onclick="html_introduction('html_introduction')">HTML Introduction</button>
+        <button onclick="html_introduction('html_basic')">HTML Basic</button>
+        <button onclick="html_introduction('html_elements')">HTML Elements</button>
+        <button onclick="html_introduction('html_attributes')">HTML Attributes</button>
+        <button onclick="html_introduction('html_headings')">HTML Headings</button>
+        <button onclick="html_introduction('html_footers')">HTML Footers</button>
+        <button onclick="html_introduction('html_image')">HTML Image</button>
+        <button onclick="html_introduction('html_tables')">HTML Tables</button>
+        <button onclick="html_introduction('html_list')">HTML List</button>
+        <button onclick="html_introduction('html_favicon')">HTML Favicon</button>
+        <button onclick="html_introduction('html_div')">HTML Div</button>
+        <button onclick="html_introduction('html_id')">HTML Id</button>
+      </aside>
+
+    <div class="html_intro">
+      <h1>HTML Introduction</h1>
+      <div class="html_title">
+        <h2>What is HTML?</h2>
+        <ul>
+            <li><b>HTML</b> stands for Hyper Text Markup Language</li>
+            <li><b>HTML</b> is the standard markup language for creating Web pages</li>
+            <li><b>HTML</b> describes the structure of a Web page</li>
+            <li><b>HTML</b> consists of a series of elements</li>
+            <li><b>HTML</b> elements tell the browser how to display the content</li>
+            <li><b>HTML</b> elements label pieces of content such as <mark><b>"this is a heading",</b></mark> <mark><b>"this is a paragraph",</b></mark> <mark><b>"this is a link",</b></mark> etc.</li>
+        </ul>
+      </div>
+
+      <div class="Ex_each_chapter">
+        <h2>A Simple HTML Document</h2>
+        <h3>Example</h3>
+        <div class="code_container">
+            <pre>
+<span class="html_code1">&lt;!DOCTYPE html&gt;</span>
+&lt;<span class="html_code">html</span>&gt;
+&lt;<span class="html_code">head</span>&gt;
+&lt;<span class="html_code">title</span>&gt;Page Title&lt;<span class="html_code">/title</span>&gt;
+&lt;<span class="html_code">/head</span>&gt;
+&lt;<span class="html_code">body</span>&gt;
+
+  &lt;<span class="html_code">h1</span>&gt;This is a Heading&lt;<span class="html_code">/h1</span>&gt;
+  &lt;<span class="html_code">p</span>&gt;This is Paragraph.&lt;<span class="html_code">/p</span>&gt;
+
+&lt;<span class="html_code">/body</span>&gt;
+&lt;<span class="html_code">/html</span>&gt;</pre>
+          </div>
+        <div class="compiler">
+
+        <a href="https://www.programiz.com/html/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
             </div>
-            <nav>
-                <div class="nav-buttons">
-                    <button onclick="maincontent('home')">HOME</button>
-                    <button onclick="maincontent('c_lang')">C Language</button>
-                    <button onclick="maincontent('python')">Python</button>
-                    <button onclick="maincontent('html')">HTML</button>
-                    <button onclick="maincontent('js')">JavaScript</button>
-                    <button onclick="maincontent('php')">PHP</button>
-                    <button onclick="maincontent('about')">ABOUT</button>
+          </a>
+      </div>
+      <h3>Example Explained</h3>
+      <ul>
+        <li>The <span class="ex">&lt;!DOCTYPE html&gt;</span> declaration defines that this document is an HTML5 document</li>
+        <li>The <span class="ex">&lt;html&gt;</span> element is the root element of an HTML page</li>
+        <li>The <span class="ex">&lt;head&gt;</span> element contains meta information about the HTML page</li>
+        <li>The <span class="ex">&lt;title&gt;</span> element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)</li>
+        <li>The <span class="ex">&lt;body&gt;</span> element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.</li>
+        <li>The <span class="ex">&lt;h1&gt;</span> element defines a large heading</li>
+        <li>The <span class="ex">&lt;p&gt;</span> element defines a paragraph</li>
+      </ul>
+      <div class="Ex_each_chapter"></div>
+      <h2>What is an HTML Element?</h2>
+      <p>An HTML element is defined by a start tag, some content, and an end tag:</p>
+      <h3><span class="ex">&lt;tagname&gt;</span> Content goes here... <span class="ex">&lt;/tagname&gt;</span></h3>
+      <p>The HTML <b><mark>element</b></mark> is everything from the start tag to the end tag:/p>
+        <h3><span class="ex">&lt;h1&gt;</span> My First Heading <span class="ex">&lt;/h1&gt;</span></h3>
+        <h3><span class="ex">&lt;p&gt;</span> My first paragraph. <span class="ex">&lt;/p&gt;</span></h3>
+            <div class="explain_list">
+                <table>
+                    <tr>
+                        <th>Start tag</th>
+                        <th>Element content</th>
+                        <th>End tag</th>
+                    </tr>
+
+                    <tr>
+                        <td class="tab">&lt;h1&gt;</td>
+                        <td class="tab">My First Heading</td>
+                        <td class="tab">&lt;/h1&gt;</td>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;p&gt;</td>
+                        <td>My first paragraph</td>
+                        <td>&lt;/p&gt;</td>
+                    </tr>
+
+                    <tr>
+                        <td class="tab">&lt;br</td>
+                        <td class="tab">none</td>
+                        <td class="tab">&lt;/br&gt;</td>
+                    </tr>
+                </table>
+            </div> 
+            <div class="Ex_each_chapter"></div>
+            <h2>Web Browsers</h2>
+            <p>The purpose of a web browser <b><mark>(Chrome,</mark> <mark>Edge, <mark>Firefox,</mark> <mark>Safari</mark>)</b> is to read HTML documents and display them correctly.</p>
+            <p>A browser does not display the HTML tags, but uses them to determine how to display the document:</p>
+            <img src="image/exmaple.png" alt="website">
+            <div class="Ex_each_chapter"></div>
+            <div class="html_history">
+                <h2>HTML History</h2>
+                <p>Since the early days of the World Wide Web, there have been many versions of HTML:</p>
+                <div class="explain_list">
+                    <table>
+                        <tr>
+                            <th>Year</th>
+                            <th>Version</th>
+                        </tr>
+    
+                        <tr>
+                            <td class="tab">1989</td>
+                            <td class="tab">Tim Berners-Lee invented www</td>
+                        </tr>
+                        
+
+                        <tr>
+                            <td>1991</td>
+                            <td>Tim Berners-Lee invented HTML</td>
+                        </tr>
+    
+                        <tr>
+                            <td class="tab">1993</td>
+                            <td class="tab">Dave Raggett drafted HTML+</td>
+                        </tr>
+
+                        <tr>
+                            <td>1995</td>
+                            <td>HTML Working Group defined HTML 2.0</td>
+                        </tr>
+
+                        <tr>
+                            <td class="tab">1997</td>
+                            <td class="tab">W3C Recommendation: HTML 3.2 </td>
+                        </tr>
+
+                        <tr>
+                            <td>1999</td>
+                            <td>W3C Recommendation: HTML 4.01</td>
+                        </tr>
+
+                        <tr>
+                            <td class="tab">2000</td>
+                            <td class="tab">W3C Recommendation: XHTML 1.0</td>
+                        </tr>
+
+                        <tr>
+                            <td>2008</td>
+                            <td>WHATWG HTML5 First Public Draft</td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="tab">2012</td>
+                            <td class="tab">WHATWG HTML5 Living Standard</td>
+                        </tr>
+
+                        <tr>
+                            <td>2014</td>
+                            <td>W3C Recommendation: HTML5</td>
+                        </tr>
+
+                        <tr>
+                            <td class="tab">2016</td>
+                            <td class="tab">W3C Candidate Recommendation: HTML 5.1</td>
+                        </tr>
+
+                        <tr>
+                            <td>2017</td>
+                            <td>W3C Recommendation: HTML5.1 2nd Edition</td>
+                        </tr>
+
+                        <tr>
+                            <td class="tab">2017</td>
+                            <td class="tab">W3C Recommendation: HTML5.2</td>
+                        </tr>
+                    </table>
                 </div>
-            </nav>
-        </div>
-    </header>
-
-    <div class="page_content">
-        <aside class="sidebar">
-            <h1>HTML</h1>
-            <button onclick="html_introduction('html_introduction')">HTML Introduction</button>
-            <button onclick="html_introduction('html_basic')">HTML Basic</button>
-            <button onclick="html_introduction('html_elements')">HTML Elements</button>
-            <button onclick="html_introduction('html_attributes')">HTML Attributes</button>
-            <button onclick="html_introduction('html_headings')">HTML Headings</button>
-            <button onclick="html_introduction('html_footers')">HTML Footers</button>
-            <button onclick="html_introduction('html_image')">HTML Image</button>
-            <button onclick="html_introduction('html_tables')">HTML Tables</button>
-            <button onclick="html_introduction('html_list')">HTML List</button>
-            <button onclick="html_introduction('html_favicon')">HTML Favicon</button>
-            <button onclick="html_introduction('html_div')">HTML Div</button>
-            <button onclick="html_introduction('html_id')">HTML Id</button>
-        </aside>
-    </div>
-
-    <div class="activity_content">
-        <aside class="activity_sidebar">
-            <h1>Activity API</h1>
-            <button onclick="dog()">Dog API Generator</button>
-            <button onclick="cat()">Cat API Generator</button>
-            <button onclick="quotes()">Quotes API Generator</button>
-        </aside>
-    </div>
-
-    <footer>
-        <div class="footer">
-            <p>Learning Hub 2025</p>
-            <p>GMAIL: <a href="mailto:jhinbangcoyo@gmail.com">jhinbangcoyo@gmail.com</a></p>
-            <div class="social-links">
-                <a href="https://www.facebook.com/jhinbangcoyo" target="_blank">
-                    <img class="socials" src="../socials/fb.jpg" alt="Facebook">
-                </a>
-                <a href="https://twitter.com/" target="_blank">
-                    <img class="socials" src="../socials/twitter.jpg" alt="Twitter">
-                </a>
-                <a href="https://www.instagram.com/user.d4veee" target="_blank">
-                    <img class="socials" src="../socials/insta.jpg" alt="Instagram">
-                </a>
-                <a href="https://www.youtube.com/" target="_blank">
-                    <img class="socials" src="../socials/yt.png" alt="YouTube">
-                </a>
+                <div class="Ex_each_chapter"></div>
+                <div class="html_video">
+                    <h1>Video: HTML Introduction</h1>
+                    <video controls autoplay>
+                        <source src="video/what _is_html.mp4" type="video/mp4">
+                      </video>
+                </div>
+                <div class="next_page">
+                    <div class="next">
+                        <button class="click_to_switch" onclick="maincontent('html')">Back</button>
+                        <button class="click_to_switch" onclick="html_introduction('html_basic')">Next</button>
+                    </div>
+                </div>
             </div>
-        </div>
-    </footer>
+    </div>
 
-    <script src="control.js"></script>
+    <aside class="activity_sidebar">
+      <h1>Activity API</h1>
+      <button onclick="dog()">Dog API Generator</button>
+      <button onclick="cat()">Cat API Generator</button>
+      <button onclick="quotes()">Quotes API Generator</button>
+    </aside>
+  </div>
+
+  <footer>
+    <div class="footer">
+      <p>Learning Hub 2025</p>
+      <p>GMAIL: <a href="mailto:jhinbangcoyo@gmail.com">jhinbangcoyo@gmail.com</a></p>
+      <div class="social-links">
+        <a href="https://www.facebook.com/jhinbangcoyo" target="_blank">
+          <img class="socials" src="../socials/fb.jpg" alt="Facebook" />
+        </a>
+        <a href="https://twitter.com/" target="_blank">
+          <img class="socials" src="../socials/twitter.jpg" alt="Twitter" />
+        </a>
+        <a href="https://www.instagram.com/user.d4veee" target="_blank">
+          <img class="socials" src="../socials/insta.jpg" alt="Instagram" />
+        </a>
+        <a href="https://www.youtube.com/" target="_blank">
+          <img class="socials" src="../socials/yt.png" alt="YouTube" />
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="control.js"></script>
 
 </body>
 </html>

@@ -1,81 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript Introduction</title>
-    <link rel="stylesheet" href="js_introduction.css">
-    <link rel="icon" href="../TechStack_icon/Js_icon.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JavaScript Introduction</title>
+  <link rel="stylesheet" href="js_css/js_introduction.css" />
+  <link rel="icon" href="../TechStack_icon/Js_icon.png"/>
 </head>
 <body>
 
-    <header>
-        <div class="container">
-            <div class="logo">
-                <img src="../TechStack_icon/Js_icon.png" alt="JPCS Logo" onclick="window.location.href='../page_content.html'" >
-                <h1>Learning Hub</h1>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="../TechStack_icon/Js_icon.png" alt="C Logo" onclick="window.location.href='../page_content.html'" />
+        <h1>Learning Hub</h1>
+      </div>
+      <nav>
+        <div class="nav-buttons">
+          <button onclick="maincontent('home')">HOME</button>
+          <button onclick="maincontent('c_lang')">C Language</button>
+          <button onclick="maincontent('python')">Python</button>
+          <button onclick="maincontent('html')">HTML</button>
+          <button onclick="maincontent('js')">JavaScript</button>
+          <button onclick="maincontent('php')">PHP</button>
+          <button onclick="maincontent('about')">ABOUT</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div class="main_container">
+    <aside class="sidebar">
+        <h1>JavaScript</h1>
+        <button onclick="js_introduction('js_introduction')">JavaScript Introduction</button>
+        <button onclick="js_introduction('js_syntax')">JavaScript Syntax</button>
+        <button onclick="js_introduction('js_statements')">JavaScript Statements</button>
+        <button onclick="js_introduction('js_variables')">JavaScript Variables</button>
+        <button onclick="js_introduction('js_let')">JavaScript Let</button>
+        <button onclick="js_introduction('js_const')">JavaScript Const</button>
+        <button onclick="js_introduction('js_operators')">JavaScript Operators</button>
+        <button onclick="js_introduction('js_arithmetic')">JavaScript Arithmetic</button>
+        <button onclick="js_introduction('js_data-types')">JavaScript Data Types</button>
+        <button onclick="js_introduction('js_functions')">JavaScript Functions</button>
+      </aside>
+
+    <div class="js_intro">
+      <h1>JavaScript Introduction</h1>
+      <div class="js_title">
+        <h2>What is JavaScript</h2>
+        <p><b>JavaScript</b> is the programming language of the web.</p>
+        <p>It can update and change both <b>HTML</b> and <b>CSS.</b></p>
+        <p>It can calculate, manipulate and validate data.</p>
+      </div>
+
+      <div class="Ex_each_chapter">
+        <h2>JavaScript Can Change HTML Content</h2>
+        <p>One of many JavaScript HTML methods is <span class="html_code">getElementById()</span>.</p>
+        <p>The example below "finds" an HTML element (with id="demo"), and changes the element content (innerHTML) to "Hello JavaScript":</p>
+        <h3>Example</h3>
+        <div class="code_container">
+            <pre>
+document.getElementById(<span class="text_code">"demo"</span>).innerHTML = <span class="text_code">"Hello JavaScript"</span>;</pre>
+        </div>
+        <div class="compiler">
+        <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_inner_html" target="_blank">
+            <button class="try">Try it yourself bro..</button>
             </div>
-            <nav>
-                <div class="nav-buttons">
-                    <button onclick="maincontent('home')">HOME</button>
-                    <button onclick="maincontent('c_lang')">C Language</button>
-                    <button onclick="maincontent('python')">Python</button>
-                    <button onclick="maincontent('html')">HTML</button>
-                    <button onclick="maincontent('js')">JavaScript</button>
-                    <button onclick="maincontent('php')">PHP</button>
-                    <button onclick="maincontent('about')">ABOUT</button>
+          </a>
+          <p><mark><b>JavaScript accepts both double and single quotes:</b></mark></p>
+          <div class="code_container">
+            <pre>
+document.getElementById(<span class="text_code">'demo'</span>).innerHTML = <span class="text_code">'Hello JavaScript'</span>;</pre>
+        </div>
+        <div class="compiler">
+            <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_inner_html" target="_blank">
+                <button class="try">Try it yourself bro..</button>
                 </div>
-            </nav>
+              </a>
+      </div>
+      <h2>JavaScript Can Change HTML Attribute Values</h2>
+      <p>In this example JavaScript changes the value of the src <span class="html_code">source</span> attribute of an <span class="html_code">&lt;img&gt;</span> tag:</p>
+      <h3>Example</h3>
+      <div class="ex_text">
+        <button class="bal" onclick="document.getElementById('myImage').src='example/pic_bulbon.gif'">Turn on</button>
+
+        <img id="myImage" src="example/pic_bulboff.gif">
+        
+        <button class="bal" onclick="document.getElementById('myImage').src='example/pic_bulboff.gif'">Turn off</button>
+      </div>
+<div class="compiler">
+    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_lightbulb" target="_blank">
+        <button class="try">JavaScript Online Compiler</button>
         </div>
-    </header>
-
-    <div class="page_content">
-        <aside class="sidebar">
-            <h1>JavaScript</h1>
-            <button onclick="js_introduction('js_introduction')">JavaScript Introduction</button>
-            <button onclick="js_introduction('js_syntax')">JavaScript Syntax</button>
-            <button onclick="js_introduction('js_statements')">JavaScript Statements</button>
-            <button onclick="js_introduction('js_variables')">JavaScript Variables</button>
-            <button onclick="js_introduction('js_let')">JavaScript Let</button>
-            <button onclick="js_introduction('js_const')">JavaScript Const</button>
-            <button onclick="js_introduction('js_operators')">JavaScript Operators</button>
-            <button onclick="js_introduction('js_arithmetic')">JavaScript Arithmetic</button>
-            <button onclick="js_introduction('js_data-types')">JavaScript Data Types</button>
-            <button onclick="js_introduction('js_functions')">JavaScript Functions</button>
-        </aside>
+      </a>
+      <div class="Ex_each_chapter"></div>
+      <h2>JavaScript Can Change HTML Styles (CSS)</h2>
+      <p>Changing the style of an HTML element, is a variant of changing an HTML attribute:</p>
+      <h3>Example</h3>
+      <div class="code_container">
+        <pre>
+document.getElementById(<span class="text_code">"demo"</span>).style.display = <span class="text_code">"35px"</span>;</pre>
     </div>
-
-    <div class="activity_content">
-        <aside class="activity_sidebar">
-            <h1>Activity API</h1>
-            <button onclick="dog()">Dog API Generator</button>
-            <button onclick="cat()">Cat API Generator</button>
-            <button onclick="quotes()">Quotes API Generator</button>
-        </aside>
-    </div>
-
-    <footer>
-        <div class="footer">
-            <p>Learning Hub 2025</p>
-            <p>GMAIL: <a href="mailto:jhinbangcoyo@gmail.com">jhinbangcoyo@gmail.com</a></p>
-            <div class="social-links">
-                <a href="https://www.facebook.com/jhinbangcoyo" target="_blank">
-                    <img class="socials" src="../socials/fb.jpg" alt="Facebook">
-                </a>
-                <a href="https://twitter.com/" target="_blank">
-                    <img class="socials" src="../socials/twitter.jpg" alt="Twitter">
-                </a>
-                <a href="https://www.instagram.com/user.d4veee" target="_blank">
-                    <img class="socials" src="../socials/insta.jpg" alt="Instagram">
-                </a>
-                <a href="https://www.youtube.com/" target="_blank">
-                    <img class="socials" src="../socials/yt.png" alt="YouTube">
-                </a>
+    <div class="compiler">
+        <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_style" target="_blank">
+            <button class="try">Try it yourself bro..</button>
             </div>
+          </a>
+          <div class="Ex_each_chapter"></div>
+          <h2>JavaScript Can Hide HTML Elements</h2>
+          <p>Hiding HTML elements can be done by changing the <span class="html_code">display</span> style:</p>
+          <h3>Example</h3>
+          <div class="code_container">
+            <pre>
+document.getElementById(<span class="text_code">"demo"</span>).style.display = <span class="text_code">"none"</span>;</pre>
         </div>
-    </footer>
+        <div class="compiler">
+            <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_hide" target="_blank">
+                <button class="try">Try it yourself bro..</button>
+                </div>
+              </a>
+              <div class="Ex_each_chapter"></div>
+              <h2>JavaScript Can Show HTML Elements</h2>
+              <p>Showing hidden HTML elements can also be done by changing the <span class="html_code">display</span> style:</p>
+              <h3>Example</h3>
+              <div class="code_container">
+                <pre>
+document.getElementById(<span class="text_code">"demo"</span>).style.display = <span class="text_code">"block"</span>;</pre>
+            </div>
+            <div class="compiler">
+              <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_show" target="_blank">
+                  <button class="try">Try it yourself bro..</button>
+                  </div>
+                </a>
+                <div class="js_video">
+                  <h1>Video: JavaScript Introduction</h1>
+                  <video controls autoplay>
+                      <source src="video/js_introvideo.mp4" type="video/mp4">
+                    </video>
+              </div>
+              <div class="next_page">
+                  <div class="next">
+                      <button class="click_to_switch" onclick="maincontent('html')">Back</button>
+                      <button class="click_to_switch" onclick="html_introduction('html_basic')">Next</button>
+                  </div>
+              </div>
+    </div>
 
-    <script src="control.js"></script>
+    <aside class="activity_sidebar">
+      <h1>Activity API</h1>
+      <button onclick="dog()">Dog API Generator</button>
+      <button onclick="cat()">Cat API Generator</button>
+      <button onclick="quotes()">Quotes API Generator</button>
+    </aside>
+  </div>
+
+  <footer>
+    <div class="footer">
+      <p>Learning Hub 2025</p>
+      <p>GMAIL: <a href="mailto:jhinbangcoyo@gmail.com">jhinbangcoyo@gmail.com</a></p>
+      <div class="social-links">
+        <a href="https://www.facebook.com/jhinbangcoyo" target="_blank">
+          <img class="socials" src="../socials/fb.jpg" alt="Facebook" />
+        </a>
+        <a href="https://twitter.com/" target="_blank">
+          <img class="socials" src="../socials/twitter.jpg" alt="Twitter" />
+        </a>
+        <a href="https://www.instagram.com/user.d4veee" target="_blank">
+          <img class="socials" src="../socials/insta.jpg" alt="Instagram" />
+        </a>
+        <a href="https://www.youtube.com/" target="_blank">
+          <img class="socials" src="../socials/yt.png" alt="YouTube" />
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="control.js"></script>
 
 </body>
 </html>

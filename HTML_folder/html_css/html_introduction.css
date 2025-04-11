@@ -116,6 +116,90 @@ h3{
     text-align: center;
 }
 
+.ex{
+    background-color: #0f1a26;
+    color: rgb(204, 91, 91);
+}
+
+.explain_list{
+    background-color: #0f1a26;
+    color: #cbd5e1;
+    padding: 20px;
+    width: 80%;
+    padding-left: 140px;
+    border-radius: 10px;
+    font-size: large;
+}
+
+table{
+    width: 90%;
+    border-collapse: collapse;
+}
+
+table{
+    width: 90%;
+    border-collapse: collapse;
+}
+
+.tab{
+    background-color: rgba(128, 128, 128, 0.205);
+}
+
+th{
+    padding: 10px;
+    border: 1px solid gray;
+    font-size: larger;
+}
+
+td{
+    padding: 10px;
+    border: 1px solid gray;
+    font-size: larger;
+}
+
+tr:hover{
+    background-color: rgb(178, 155, 25);
+}
+
+li{
+    font-size: larger;
+    padding: 2px;
+}
+
+img{
+    width: 700px;
+    height: 400px;
+}
+
+video{
+    width: 1000px;
+    height: 700px;
+}
+
+.html_video{
+    text-align: center;
+}
+
+.next{
+    width: 500px;
+    display: flex;
+    gap: 920px;
+}
+
+.next_page{
+    padding-left: 150px;
+    padding-top: 20px;
+}
+
+.click_to_switch{
+    background-color: red;
+    border-radius: 5px;
+}
+
+.click_to_switch:hover{
+    background-color: #2db134;
+    border-bottom: #2db134;
+}
 
 .activity_sidebar {
     scrollbar-color: auto;
@@ -131,13 +215,20 @@ button {
     padding: 10px 15px;
 }
 
-button[onclick="maincontent('c_lang')"]{
+button[onclick="maincontent('html')"]{
     border-radius: 5px;
     background-color: red;
 }
 
-button[onclick="c_introduction('c_syntax')"]{
+button[onclick="html_introduction('html_introduction')"]{
+    border-radius: 5px;
     background-color: red;
+}
+
+button[class="Clearn"]{
+    background-color: red;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 button[class="Clearn"]:hover{
@@ -177,7 +268,7 @@ footer {
     padding-right: 10px;
 }
 
-.c_intro {
+.html_intro {
     width: 95%;
     background-color: rgba(51, 67, 43, 0.751);
     padding: 20px 0px 20px 20px;
@@ -190,17 +281,17 @@ footer {
     margin: 0px;
 }
 
-.c_intro h1{
+.html_intro h1{
     text-align: center;
     padding-bottom: 20px;
 }
 
-.c_intro h2{
+.html_intro h2{
     color: white;
     font-size: 35px;
 }
 
-.c_title{
+.html_title{
     padding-bottom: 10px;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
@@ -218,10 +309,23 @@ footer {
     padding: 20px;
     border-radius: 8px;
     font-size: 15px;
+    width: 90%;
 }
 
 .text_code{
     color: #2db134;
+}
+
+.html_code{
+    color: rgb(204, 91, 91);
+}
+
+pre{
+    font-size: larger;
+}
+
+.html_code1{
+    color: gray
 }
 
 .try{
@@ -238,7 +342,7 @@ button[class="try"]:hover{
     border-bottom: #2db134;
 }
 
-.c_intro p{
+.html_intro p{
     font-size: 20px;
 }
 

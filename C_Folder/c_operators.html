@@ -1,83 +1,350 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>C Operators</title>
-    <link rel="stylesheet" href="c_operators.css">
-    <link rel="icon" href="../TechStack_icon/C_icon.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>C Operators</title>
+  <link rel="stylesheet" href="C_css/c_operators.css" />
+  <link rel="icon" href="../TechStack_icon/C_icon.png"/>
 </head>
 <body>
 
-    <header>
-        <div class="container">
-            <div class="logo">
-                <img src="../TechStack_icon/C_icon.png" alt="JPCS Logo" onclick="window.location.href='../page_content.html'" >
-                <h1>Learning Hub</h1>
-            </div>
-            <nav>
-                <div class="nav-buttons">
-                    <button onclick="maincontent('home')">HOME</button>
-                    <button onclick="maincontent('c_lang')">C Language</button>
-                    <button onclick="maincontent('python')">Python</button>
-                    <button onclick="maincontent('html')">HTML</button>
-                    <button onclick="maincontent('js')">JavaScript</button>
-                    <button onclick="maincontent('php')">PHP</button>
-                    <button onclick="maincontent('about')">ABOUT</button>
-                </div>
-            </nav>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="../TechStack_icon/C_icon.png" alt="C Logo" onclick="window.location.href='../page_content.html'" />
+        <h1>Learning Hub</h1>
+      </div>
+      <nav>
+        <div class="nav-buttons">
+          <button onclick="maincontent('home')">HOME</button>
+          <button onclick="maincontent('c_lang')">C Language</button>
+          <button onclick="maincontent('python')">Python</button>
+          <button onclick="maincontent('html')">HTML</button>
+          <button onclick="maincontent('js')">JavaScript</button>
+          <button onclick="maincontent('php')">PHP</button>
+          <button onclick="maincontent('about')">ABOUT</button>
         </div>
-    </header>
+      </nav>
+    </div>
+  </header>
 
-    <div class="page_content">
-        <aside class="sidebar">
-            <h1>C Language</h1>
-            <button onclick="c_introduction('c_introduction')">C Introduction</button>
-            <button onclick="c_introduction('c_syntax')">C Syntax</button>
-            <button onclick="c_introduction('c_operators')">C Operators</button>
-            <button onclick="c_introduction('c_booleans')">C Booleans</button>
-            <button onclick="c_introduction('c_if-else')">C If Else</button>
-            <button onclick="c_introduction('c_switch')">C Switch</button>
-            <button onclick="c_introduction('c_while-loop')">C While Loop</button>
-            <button onclick="c_introduction('c_do-while-loop')">C Do / While Loop</button>
-            <button onclick="c_introduction('c_for-loop')">C For Loop</button>
-            <button onclick="c_introduction('c_nested-loop')">C Nested Loop</button>
-            <button onclick="c_introduction('c_user-input')">C User Input</button>
-            <button onclick="c_introduction('c_functions')">C Functions</button>
-        </aside>
+  <div class="main_container">
+    <aside class="sidebar">
+      <h1>C Language</h1>
+      <button onclick="c_introduction('c_introduction')">C Introduction</button>
+      <button onclick="c_introduction('c_syntax')">C Syntax</button>
+      <button onclick="c_introduction('c_operators')">C Operators</button>
+      <button onclick="c_introduction('c_booleans')">C Booleans</button>
+      <button onclick="c_introduction('c_if-else')">C If Else</button>
+      <button onclick="c_introduction('c_switch')">C Switch</button>
+      <button onclick="c_introduction('c_while-loop')">C While Loop</button>
+      <button onclick="c_introduction('c_do-while-loop')">C Do / While Loop</button>
+      <button onclick="c_introduction('c_for-loop')">C For Loop</button>
+      <button onclick="c_introduction('c_nested-loop')">C Nested Loop</button>
+      <button onclick="c_introduction('c_user-input')">C User Input</button>
+      <button onclick="c_introduction('c_functions')">C Functions</button>
+    </aside>
+
+    <div class="c_intro">
+      <h1>C Operators</h1>
+      <div class="c_title">
+        <h2>Operators</h2>
+        <p>Operators are used to perform operations on variables and values.</p>
+        <p>In the example below, we use the <span class="plus">+</span> operator to add together two values:</p>
+      </div>
+
+      <div class="Ex_each_chapter">
+
+        <h3>Example</h3>
+        <div class="code_container">
+            <pre>
+<span class="text_code">int</span> myNum = <span class="text_code">100</span> + <span class="text_code">100</span>;</pre>
+        </div>
+        
+        <div class="compiler">
+        <a href="https://www.programiz.com/c-programming/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+            </div>
+          </a>
+          <p>Although the <span class="plus">+</span> operator is often used to add together two values, like in the example above,</p>
+          <p>it can also be used to add together a variable and a value, or a variable and another variable:</p>
+          <h3>Example</h3>
+          <div class="code_container">
+            <pre>
+<span class="text_code">int</span> num1 = <span class="text_code">100</span> + <span class="text_code">100</span>;              // 200 (100 + 100)
+<span class="text_code">int</span> num2 = num1 + <span class="text_code">200</span>;             // 400 (200 + 200)
+<span class="text_code">int</span> num3 = num2 + num2;            // 800 (400 + 400)
+<span class="text_code">printf</span>("<span class="text_code">%d</span>", num3);                // Result is: 800</pre>
+        </div>
+        <div class="compiler">
+          <a href="https://www.programiz.com/c-programming/online-compiler/" target="_blank">
+              <button class="try">Try it yourself bro..</button>
+              </div>
+            </a>
+      </div>
+
+      <div class="operators_groups">
+        <h3>C divides the operators into the following groups:</h3>
+        <ul>
+          <li>Arithmetic operators</li>
+          <li>Assignment operator</li>
+          <li>Comparison operator</li>
+          <li>Logical operator</li>
+          <li>Bitwise operator</li>
+        </ul>
+      </div>
+
+      <div class="Ex_each_chapter"></div>
+
+      <div class="assignment_Operator">
+        <h2>Assignment Operators</h2>
+        <p>Assignment operators are used to assign values to variables.</p>
+        <p>In the example below, we use the <mark><b>assignment</b></mark> operator (<span class="plus">=</span>) to assign the value 10 to a variable called x:</p>
+      </div>
+      <h3>Example</h3>
+        <div class="code_container">
+          <pre>
+<span class="text_code">int</span> x = <span class="text_code">10</span>;</pre>
+      </div>
+      <div class="compiler">
+        <a href="https://www.programiz.com/c-programming/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+            </div>
+          </a>
+
+          <div class="Ex_each_chapter"></div>
+
+          <p>The <mark><b>addition assignment</b></mark> operator (<span class="plus">+=</span>) adds a value to a variable:</p>
+          <h3>Example</h3>
+          <div class="code_container">
+            <pre>
+<span class="text_code">int</span> x = <span class="text_code">10</span>;
+x += <span class="text_code">5</span>;</pre>
+        </div>
+        <div class="compiler">
+          <a href="https://www.programiz.com/c-programming/online-compiler/" target="_blank">
+              <button class="try">Try it yourself bro..</button>
+              </div>
+            </a>
+            <div class="Ex_each_chapter"></div>
+              <h3 class="title_op">A list of all assignment operators:</h3>
+              <div class="cover">
+              <div class="list_operator">
+              <table>
+                <tr>
+                  <th>OPERATOR</th>
+                  <th>EXAMPLE</th>
+                  <th>SAME AS</th>
+
+                  <tr>
+                    <td>=</td>
+                    <td>x = 5</td>
+                    <td>x = 5</td>
+                  </tr>
+
+                  <tr>
+                    <td class="tab">+=</td>
+                    <td class="tab">x += 3</td>
+                    <td class="tab">x = x+ 3</td>
+                  </tr>
+
+                  <tr>
+                    <td>*=</td>
+                    <td>x *= 3</td>
+                    <td>x = x *3</td>
+                  </tr>
+
+                  <tr>
+                    <td class="tab">/=</td>
+                    <td class="tab">x /=3</td>
+                    <td class="tab">x = x / 3</td>
+                  </tr>
+
+                  <tr>
+                    <td>%=</td>
+                    <td>x %= 3</td>
+                    <td>x = x % 3</td>
+                  </tr>
+
+                  <tr>
+                    <td class="tab">&=</td>
+                    <td class="tab">x &= 3</td>
+                    <td class="tab">x = x & 3</td>
+                  </tr>
+
+                  <tr>
+                    <td>|=</td>
+                    <td>x |= 3</td>
+                    <td>x = x | 3</td>
+                  </tr>
+
+                  <tr>
+                    <td class="tab">^=</td>
+                    <td class="tab">x ^= 3</td>
+                    <td class="tab">x = x ^ 3</td>
+                  </tr>
+
+                  <tr>
+                    <td>>>=</td>
+                    <td>x >>= 3</td>
+                    <td>x = x >> 3</td>
+                  </tr>
+
+                  <tr>
+                    <td class="tab"><<=</td>
+                    <td class="tab">x <<= 3</td>
+                    <td class="tab">x = x << 3</td>
+                  </tr>
+
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="Ex_each_chapter"></div>
+          
+          <div class="comparison_Operators">
+            <h2>Comparison Operators</h2>
+            <p>Comparison operators are used to compare two values (or variables). This is important in programming, because it helps us to find answers and make decisions.</p>
+            <p>The return value of a comparison is either <span class="plus">1</span> or <span class="plus">0</span>, which means true (<span class="plus">1</span>) or false (<span class="plus">0</span>).</p>
+            <p>These values are known as Boolean values, and you will learn more about them in the <mark><b>Booleans</b></mark> and <mark><b>If..Else</b></mark> chapter.</p>
+            <p>In the following example, we use the greater than operator (<span class="plus">></span>) to find out if 5 is greater than 3:</p>
+          </div>
+          <h3>Example</h3>
+          <div class="code_container">
+            <pre>
+<span class="text_code">int</span> x = <span class="text_code">5</span>;
+<span class="text_code">int</span> y = <span class="text_code">3</span>;
+<span class="text_code">printf</span>("<span class="text_code">%d</span>", x > y);    // returns 1 (true) because 5 is greater than 3</pre>
+        </div>
+        <div class="compiler">
+          <a href="https://www.programiz.com/c-programming/online-compiler/" target="_blank">
+              <button class="try">Try it yourself bro..</button>
+            </div>
+          </a>
+          <div class="Ex_each_chapter"></div> 
+          <h3 class="title_op">A list of all comparison operators:</h3>
+          <div class="list_operator">
+            <table>
+              <tr>
+                <th>OPERATOR</th>
+                <th>NAME</th>
+                <th>EXAMPLE</th>
+                <th>DESCRIPTION</th>
+
+                <tr>
+                  <td>==</td>
+                  <td>Equal to</td>
+                  <td>x == y</td>
+                  <td>Returns 1 if the values are equal</td>
+                </tr>
+
+                <tr>
+                  <td class="tab">!=</td>
+                  <td class="tab">Not equal</td>
+                  <td class="tab">x != y</td>
+                  <td class="tab">Returns 1 if the values are not equal</td>
+                </tr>
+
+                <tr>
+                  <td>></td>
+                  <td>Greater than</td>
+                  <td>x > y</td>
+                  <td>Returns 1 if the first value is greater than the second value</td>
+                </tr>
+
+                <tr>
+                  <td class="tab"><</td>
+                  <td class="tab">Less than</td>
+                  <td class="tab">x < y</td>
+                  <td class="tab">Returns 1 if the first value is less than the second value</td>
+                </tr>
+
+                <tr>
+                  <td>>=</td>
+                  <td>Greater than or equal to</td>
+                  <td>x >= y</td>
+                  <td>Returns 1 if the first value is greater than, or equal to, the second value</td>
+                </tr>
+
+                <tr>
+                  <td class="tab"><=</td>
+                  <td class="tab">Less than or equal to</td>
+                  <td class="tab">x <= y></td>
+                  <td class="tab">Returns 1 if the first value is less than, or equal to, the second value</td>
+                </tr>
+              </tr>
+            </table>
+          </div>
+          <div class="Ex_each_chapter"></div>
+          <div class="logical_Operator">
+            <h2>Logical Operators</h2>
+            <p>You can also test for <mark><b>true</b></mark> or <mark><b>false</b></mark> values with logical operators.</p>
+            <p>Logical operators are used to determine the logic between variables or values, by combining multiple conditions:</p>
+          </div>
+          <div class="list_operator">
+            <table>
+              <tr>
+                <th>OPERATOR</th>
+                <th>NAME</th>
+                <th>EXAMPLE</th>
+                <th>DESCRIPTION</th>
+
+                <tr>
+                  <td class="tab">&&</td>
+                  <td class="tab">AND</td>
+                  <td class="tab">x < 5 &&  x < 10</td>
+                  <td class="tab">Returns 1 if both statements are true</td>
+                </tr>
+
+                <tr>
+                  <td>||</td>
+                  <td>OR</td>
+                  <td>x < 5 || x < 4</td>
+                  <td>Returns 1 if one of the statements is true</td>
+                </tr>
+
+                <tr>
+                  <td class="tab">!</td>
+                  <td class="tab">NOT</td>
+                  <td class="tab">!(x < 5 && x < 10)</td>
+                  <td class="tab">Reverse the result, returns 0 if the result is 1</td>
+                </tr>
+              </tr>
+            </table>
+          </div>
     </div>
 
-    <div class="activity_content">
-        <aside class="activity_sidebar">
-            <h1>Activity API</h1>
-            <button onclick="dog()">Dog API Generator</button>
-            <button onclick="cat()">Cat API Generator</button>
-            <button onclick="quotes()">Quotes API Generator</button>
-        </aside>
+    <aside class="activity_sidebar">
+      <h1>Activity API</h1>
+      <button onclick="dog()">Dog API Generator</button>
+      <button onclick="cat()">Cat API Generator</button>
+      <button onclick="quotes()">Quotes API Generator</button>
+    </aside>
+  </div>
+
+  <footer>
+    <div class="footer">
+      <p>Learning Hub 2025</p>
+      <p>GMAIL: <a href="mailto:jhinbangcoyo@gmail.com">jhinbangcoyo@gmail.com</a></p>
+      <div class="social-links">
+        <a href="https://www.facebook.com/jhinbangcoyo" target="_blank">
+          <img class="socials" src="../socials/fb.jpg" alt="Facebook" />
+        </a>
+        <a href="https://twitter.com/" target="_blank">
+          <img class="socials" src="../socials/twitter.jpg" alt="Twitter" />
+        </a>
+        <a href="https://www.instagram.com/user.d4veee" target="_blank">
+          <img class="socials" src="../socials/insta.jpg" alt="Instagram" />
+        </a>
+        <a href="https://www.youtube.com/" target="_blank">
+          <img class="socials" src="../socials/yt.png" alt="YouTube" />
+        </a>
+      </div>
     </div>
+  </footer>
 
-    <footer>
-        <div class="footer">
-            <p>Learning Hub 2025</p>
-            <p>GMAIL: <a href="mailto:jhinbangcoyo@gmail.com">jhinbangcoyo@gmail.com</a></p>
-            <div class="social-links">
-                <a href="https://www.facebook.com/jhinbangcoyo" target="_blank">
-                    <img class="socials" src="../socials/fb.jpg" alt="Facebook">
-                </a>
-                <a href="https://twitter.com/" target="_blank">
-                    <img class="socials" src="../socials/twitter.jpg" alt="Twitter">
-                </a>
-                <a href="https://www.instagram.com/user.d4veee" target="_blank">
-                    <img class="socials" src="../socials/insta.jpg" alt="Instagram">
-                </a>
-                <a href="https://www.youtube.com/" target="_blank">
-                    <img class="socials" src="../socials/yt.png" alt="YouTube">
-                </a>
-            </div>
-        </div>
-    </footer>
-
-    <script src="control.js"></script>
+  <script src="control.js"></script>
 
 </body>
 </html>
