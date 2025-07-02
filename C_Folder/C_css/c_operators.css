@@ -17,6 +17,10 @@ html{
     background-color: rgba(0, 0, 0, 0.938);
 }
 
+pre{
+    color: white;
+}
+
 .plus{
     color: #2db134;
     background-color: #0f1a26;
@@ -282,6 +286,10 @@ footer {
 
 .compiler{
     padding-top: 10px;
+}
+
+.comment{
+    color: grey;
 }
 
 button[class="try"]:hover{

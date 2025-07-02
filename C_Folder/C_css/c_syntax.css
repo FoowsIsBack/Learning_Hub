@@ -17,6 +17,10 @@ html{
     background-color: rgba(0, 0, 0, 0.938);
 }
 
+pre{
+    color: white;
+}
+
 .main_container{
     display: flex;
 }
