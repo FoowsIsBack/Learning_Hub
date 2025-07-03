@@ -17,6 +17,10 @@ html{
     background-color: rgba(0, 0, 0, 0.938);
 }
 
+.main_container{
+    display: flex;
+}
+
 .logo {
     display: flex;
     align-items: center;
@@ -37,7 +41,7 @@ html{
     width: 230px;
     background-color: #2db134;
     padding: 20px;
-    height: 627px;
+    height: 639px;
     overflow-y: auto;
 }
 
@@ -73,6 +77,10 @@ h1 {
     color: white;
 }
 
+h3{
+    color: white;
+}
+
 .nav-buttons {
     list-style: none;
     display: flex;
@@ -81,15 +89,10 @@ h1 {
 }
 
 .activity_sidebar {
-    width: 230px;
+    width: 15%;
     background-color: #2db134;
     padding: 20px;
-    height: 627px;
-    overflow-y: auto;
-    position: absolute;
-    margin-top: 190px;
-    right: 0;
-    top: 0;
+    height: 700px;
 }
 
 .activity_sidebar button {
@@ -126,6 +129,33 @@ button {
     padding: 10px 15px;
 }
 
+.c_intro {
+    width: 95%;
+    background-color: rgba(51, 67, 43, 0.751);
+    padding: 20px 0px 20px 20px;
+    height: 627px;
+    margin: 0px;
+    overflow-y: auto;
+}
+
+.ex_h{
+    background-color: #0f1a26;
+    color: #cbd5e1;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 15px;
+    width: 90%;
+}
+
+.ex_h1{
+    background-color: #0f1a26;
+    color: #cbd5e1;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 15px;
+    width: 90%;
+}
+
 button[onclick="maincontent('c_lang')"]{
     border-radius: 5px;
     background-color: red;
@@ -135,20 +165,18 @@ button[onclick="c_introduction('c_if-else')"]{
     background-color: red;
 }
 
+button[class="Clearn"]:hover{
+    background-color: #2db134;
+    border-bottom: #2db134;
+}
+
 button:hover{
     border-radius: 5px;
     border-bottom: 2px solid red;
 }
 
-section {
-    padding: 50px;
-    margin: 50px 0;
-    text-align: center;
-    border-bottom: 1px solid white;
-}
-
 footer {
-    background-color: rgba(0, 0, 0, 0.938);
+    background-color: black;
     text-align: center;
     padding: 1px;
     position: fixed;
@@ -174,15 +202,17 @@ footer {
     padding-right: 10px;
 }
 
-.c_topic{
-    padding-left: 270px;
+.c_intro {
+    width: 95%;
+    background-color: rgba(51, 67, 43, 0.751);
+    padding: 20px 0px 20px 20px;
+    height: 627px;
+    margin: 0px;
+    overflow-y: auto;
 }
 
-.c_intro {
-    width: 1275px;
-    background-color: #2db134;
-    padding: 20px;
-    height: 900px;
+.activity_content{
+    margin: 0px;
 }
 
 .c_intro h1{
@@ -201,14 +231,49 @@ footer {
     border-bottom: 2px solid black;
 }
 
-.why_learn_C{
+.Ex_each_chapter{
     padding-bottom: 10px;
     border-bottom: 2px solid black;
+    padding: 10px;
 }
 
-.Difference_c_and_cplus{
-    padding-bottom: 10px;
-    border-bottom: 2px solid black;
+.text_code{
+    color: #2db134;
+}
+
+.comment{
+    color: grey;
+}
+
+.compiler{
+    padding-top: 10px;
+}
+
+.try{
+    background-color: red;
+    border-radius: 5px;
+}
+
+pre{
+    color: white;
+}
+
+button[class="try"]:hover{
+    background-color: #2db134;
+    border-bottom: #2db134;
+}
+
+li{
+    padding-top: 20px;
+    font-size: large;
+}
+
+a{
+    color: black;
+}
+
+a:hover{
+    color: red;
 }
 
 .c_intro p{
@@ -224,4 +289,11 @@ footer {
     color: white;
     font-size: 20px;
     margin-top: 10px;
+}
+
+.bool{
+    color: #2db134;
+    background-color: #0f1a26;
+    padding: 5px;
+    border-radius: 5px;
 }

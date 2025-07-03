@@ -1,83 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>C If Else</title>
-    <link rel="stylesheet" href="c_if-else.css">
-    <link rel="icon" href="../TechStack_icon/C_icon.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>C If Else</title>
+  <link rel="stylesheet" href="C_css/c_if-else.css"/>
+  <link rel="icon" href="../TechStack_icon/C_icon.png"/>
 </head>
 <body>
 
-    <header>
-        <div class="container">
-            <div class="logo">
-                <img src="../TechStack_icon/C_icon.png" alt="JPCS Logo" onclick="window.location.href='../page_content.html'" >
-                <h1>Learning Hub</h1>
-            </div>
-            <nav>
-                <div class="nav-buttons">
-                    <button onclick="maincontent('home')">HOME</button>
-                    <button onclick="maincontent('c_lang')">C Language</button>
-                    <button onclick="maincontent('python')">Python</button>
-                    <button onclick="maincontent('html')">HTML</button>
-                    <button onclick="maincontent('js')">JavaScript</button>
-                    <button onclick="maincontent('php')">PHP</button>
-                    <button onclick="maincontent('about')">ABOUT</button>
-                </div>
-            </nav>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="../TechStack_icon/C_icon.png" alt="C Logo" onclick="window.location.href='../page_content.html'" />
+        <h1>Learning Hub</h1>
+      </div>
+      <nav>
+        <div class="nav-buttons">
+          <button onclick="maincontent('home')">HOME</button>
+          <button onclick="maincontent('c_lang')">C Language</button>
+          <button onclick="maincontent('python')">Python</button>
+          <button onclick="maincontent('html')">HTML</button>
+          <button onclick="maincontent('js')">JavaScript</button>
+          <button onclick="maincontent('php')">PHP</button>
+          <button onclick="maincontent('about')">ABOUT</button>
         </div>
-    </header>
-
-    <div class="page_content">
-        <aside class="sidebar">
-            <h1>C Language</h1>
-            <button onclick="c_introduction('c_introduction')">C Introduction</button>
-            <button onclick="c_introduction('c_syntax')">C Syntax</button>
-            <button onclick="c_introduction('c_operators')">C Operators</button>
-            <button onclick="c_introduction('c_booleans')">C Booleans</button>
-            <button onclick="c_introduction('c_if-else')">C If Else</button>
-            <button onclick="c_introduction('c_switch')">C Switch</button>
-            <button onclick="c_introduction('c_while-loop')">C While Loop</button>
-            <button onclick="c_introduction('c_do-while-loop')">C Do / While Loop</button>
-            <button onclick="c_introduction('c_for-loop')">C For Loop</button>
-            <button onclick="c_introduction('c_nested-loop')">C Nested Loop</button>
-            <button onclick="c_introduction('c_user-input')">C User Input</button>
-            <button onclick="c_introduction('c_functions')">C Functions</button>
-        </aside>
+      </nav>
     </div>
+  </header>
 
-    <div class="activity_content">
-        <aside class="activity_sidebar">
-            <h1>Activity API</h1>
-            <button onclick="dog()">Dog API Generator</button>
-            <button onclick="cat()">Cat API Generator</button>
-            <button onclick="quotes()">Quotes API Generator</button>
-        </aside>
-    </div>
+  <div class="main_container">
+    <aside class="sidebar">
+      <h1>C Language</h1>
+      <button onclick="c_introduction('c_introduction')">C Introduction</button>
+      <button onclick="c_introduction('c_syntax')">C Syntax</button>
+      <button onclick="c_introduction('c_operators')">C Operators</button>
+      <button onclick="c_introduction('c_booleans')">C Booleans</button>
+      <button onclick="c_introduction('c_if-else')">C If Else</button>
+      <button onclick="c_introduction('c_switch')">C Switch</button>
+      <button onclick="c_introduction('c_while-loop')">C While Loop</button>
+      <button onclick="c_introduction('c_do-while-loop')">C Do / While Loop</button>
+      <button onclick="c_introduction('c_for-loop')">C For Loop</button>
+      <button onclick="c_introduction('c_nested-loop')">C Nested Loop</button>
+      <button onclick="c_introduction('c_user-input')">C User Input</button>
+      <button onclick="c_introduction('c_functions')">C Functions</button>
+    </aside>
 
-    <footer>
-        <div class="footer">
-            <p>Learning Hub 2025</p>
-            <p>GMAIL: <a href="mailto:jhinbangcoyo@gmail.com">jhinbangcoyo@gmail.com</a></p>
-            <div class="social-links">
-                <a href="https://www.facebook.com/jhinbangcoyo" target="_blank">
-                    <img class="socials" src="../socials/fb.jpg" alt="Facebook">
-                </a>
-                <a href="https://twitter.com/" target="_blank">
-                    <img class="socials" src="../socials/twitter.jpg" alt="Twitter">
-                </a>
-                <a href="https://www.instagram.com/user.d4veee" target="_blank">
-                    <img class="socials" src="../socials/insta.jpg" alt="Instagram">
-                </a>
-                <a href="https://www.youtube.com/" target="_blank">
-                    <img class="socials" src="../socials/yt.png" alt="YouTube">
-                </a>
+    <div class="c_intro">
+      <h1>C If Else</h1>
+      <div class="c_title">
+        <h2>Conditions and If Statements</h2>
+        <p>You have already learned that C supports the usual logical <mark><b>conditions</b></mark> from mathematics:</p>
+        <ul>
+            <li>Less than: <span class="bool">a < b</span></li>
+            <li>Less than or equal to: <span class="bool">a <= b</span></li>
+            <li>Greater than: <span class="bool">a > b</span></li>
+            <li>Greater than or equal to: <span class="bool">a >= b</span></li>
+            <li>Equal to <span class="bool">a == b</span></li>
+            <li>Not Equal to: <span class="bool">a != b</span></li>
+        </ul>
+        <div class="t_b">
+          <p>You can use these conditions to perform different actions for different decisions.</p>
+        </div>
+        <div class="t_d">
+          <p>C has the following conditional statements:</p>
+          <ul>
+            <li>Use <span class="bool">if</span> to specify a block of code to be executed, if a specified condition is <span class="bool">true</span></li>
+            <li>Use <span class="bool">else</span> to specify a block of code to be executed, if the same condition is <span class="bool">false</span></li>
+            <li>Use <span class="bool">else if</span> to specify a new condition to test, if the first condition is <span class="bool">false</span></li>
+            <li>Use <span class="bool">switch</span> to specify many alternative blocks of code to be executed</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="Ex_each_chapter">
+        <h2>The if Statement</h2>
+        <p>Use the <span class="bool">if</span> statement to specify a block of code to be executed if a condition is <span class="bool">true</span>.</p>
+        <h3>Syntax</h3>
+        <div class="ex_h">
+            <div class="code_container">
+                <pre><span class="bool">if</span> (condition) {
+  <span class="comment">// block of code to be executed if the condition is true</span>
+}</pre>
             </div>
         </div>
-    </footer>
+        <p>In the example below, we test two values to find out if 20 is greater than 18. If the condition is <span class="bool">true</span>, print some text:</p>
+        <h3>Example</h3>
+        <div class="ex_h1">
+          <pre><span class="text_code">if</span> (<span class="text_code">20</span> > <span class="bool">18</span>) {
+  printf(<span class="text_code">"20 is greater than 18"</span>);
+}</pre>
+        </div>
+          <div class="compiler">
+            <a href="https://www.programiz.com/c-programming/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+            </a>
+          </div>
+      </div>
+      <p>We can also test variables:</p>
+      <h3>Example</h3>
+      <div class="ex_h">
+        <pre><span class="text_code">int</span> x = <span class="text_code">20</span>;
+<span class="text_code">int</span> y = <span class="bool">18</span>;
+<span class="text_code">if</span> (x > y) {
+  printf(<span class="text_code">"x is greater than y"</span>);
+}</pre>
+      </div>
+          <div class="compiler">
+            <a href="https://www.programiz.com/c-programming/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+            </a>
+          </div>
+          <h3>Example explained</h3>
+          <p>In the example above we use two variables, x and y, to test whether <mark><b>x</b></mark> is greater than <mark><b>y</b></mark> (using the <span class="bool">></span> operator). As x is 20, and y is 18, and we know that 20 is greater than 18, we print to the screen that "x is greater than y".</p>
+          <div class="Ex_each_chapter"></div>
+          <h1>C Else</h1>
+          <h2>The else Statement</h2>
+          <p>Use the <span class="bool">else</span> statement to specify a block of code to be executed if the condition is <span class="bool">false</span>.</p>
+          <h3>Syntax</h3>
+          <div class="ex_h">
+            <pre><span class="text_code">if</span> (condition) {
+  <span class="comment">// block of code to be executed if the condition is true</span>
+} <span class="text_code">else</span> {
+  <span class="comment">// block of code to be executed if the condition is false</span>
+}</pre>
+          </div>
+          <h2>Example</h2>
+          <div class="ex_h">
+            <pre><span class="text_code">int</span> time = <span class="text_code">20</span>;
+<span class="text_code">if</span> (time < <span class="text_code">18</span>) {
+  printf(<span class="text_code">"Good day."</span>);
+} <span class="text_code">else</span> {
+  printf(<span class="text_code">"Good evening."</span>);
+}
+<span class="comment">// Outputs "Good evening."</span></pre>
+          </div>
+          <h3>Example explained</h3>
+          <p>In the example above, time (20) is greater than 18, so the condition is <span class="bool">false</span>. Because of this, we move on to the</p>
+          <p><span class="bool">else</span> condition and print to the screen <mark><b>"Good evening"</b></mark>. If the time was less than 18,</p>
+          <p>the program would print <mark><b>"Good day"</b></mark>.</p>
+          <div class="Ex_each_chapter"></div>
+          <h1>C Else If</h1>
+          <h2>The else if Statement</h2>
+          <p>Use the <span class="bool">else if</span> statement to specify a new condition if the first condition is <span class="bool">false</span>.</p>
+          <h3>Syntax</h3>
+           <div class="ex_h">
+            <div class="code_container">
+                <pre>
+<span class="text_code">if</span> (condition1) {
+  <span class="comment">// block of code to be executed if condition1 is true</span>
+} <span class="text_code">else if</span> (condition2) {
+  <span class="comment">// block of code to be executed if the condition1 is false and condition2 is true</span>
+} <span class="text_code">else</span> {
+  <span class="comment">// block of code to be executed if the condition1 is false and condition2 is false</span>
+}</pre>
+            </div>
+        </div>
+        <h3>Example</h3>
+        <div class="ex_h">
+            <div class="code_container">
+                <pre><span class="text_code">int</span> time = <span class="text_code">22</span>;
+<span class="text_code">if</span> (time < <span class="text_code">10</span>) {
+  printf(<span class="text_code">"Good morning."</span>);
+} <span class="text_code">else if</span> (time < <span class="text_code">20</span>) {
+  printf(<span class="text_code">"Good day."</span>);
+} <span class="text_code">else</span> {
+  printf(<span class="text_code">"Good evening."</span>);
+}
+<span class="comment">// Outputs "Good evening."</span></pre>
+            </div>
+        </div>
+        <div class="compiler">
+            <a href="https://www.programiz.com/c-programming/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+            </a>
+        </div>
+        <h3>Example explained</h3>
+        <p>In the example above, time (22) is greater than 10, so the <mark><b>first condition</b></mark> is <span class="bool">false</span>. The next condition, in the <span class="bool">else if</span> statement, is also</p>
+        <p><span class="bool">false</span>, so we move on to the else condition since <mark><b>condition1</b></mark> and <mark><b>condition2</b></mark> is both <span class="bool">false</span> - and print to the screens</p>
+        <p>"Good evening".</p>
+        <p>However, if the time was 14, our program would print "Good day."</p>
+    </div>
+    
 
-    <script src="control.js"></script>
+    <aside class="activity_sidebar">
+      <h1>Activity API</h1>
+      <button onclick="dog()">Dog API Generator</button>
+      <button onclick="cat()">Cat API Generator</button>
+      <button onclick="quotes()">Quotes API Generator</button>
+    </aside>
+  </div>
+
+
+  <footer>
+    <div class="footer">
+      <p>Learning Hub 2025</p>
+      <p>GMAIL: <a href="mailto:jhinbangcoyo@gmail.com">jhinbangcoyo@gmail.com</a></p>
+      <div class="social-links">
+        <a href="https://www.facebook.com/jhinbangcoyo" target="_blank">
+          <img class="socials" src="../socials/fb.jpg" alt="Facebook" />
+        </a>
+        <a href="https://twitter.com/" target="_blank">
+          <img class="socials" src="../socials/twitter.jpg" alt="Twitter" />
+        </a>
+        <a href="https://www.instagram.com/kryll_dave" target="_blank">
+          <img class="socials" src="../socials/insta.jpg" alt="Instagram" />
+        </a>
+        <a href="https://www.youtube.com/" target="_blank">
+          <img class="socials" src="../socials/yt.png" alt="YouTube" />
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="control.js"></script>
 
 </body>
 </html>
