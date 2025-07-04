@@ -1,83 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>C Switch</title>
-    <link rel="stylesheet" href="c_switch.css">
-    <link rel="icon" href="../TechStack_icon/C_icon.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>C Switch</title>
+  <link rel="stylesheet" href="C_css/c_switch.css"/>
+  <link rel="icon" href="../TechStack_icon/C_icon.png"/>
 </head>
 <body>
 
-    <header>
-        <div class="container">
-            <div class="logo">
-                <img src="../TechStack_icon/C_icon.png" alt="JPCS Logo" onclick="window.location.href='../page_content.html'" >
-                <h1>Learning Hub</h1>
-            </div>
-            <nav>
-                <div class="nav-buttons">
-                    <button onclick="maincontent('home')">HOME</button>
-                    <button onclick="maincontent('c_lang')">C Language</button>
-                    <button onclick="maincontent('python')">Python</button>
-                    <button onclick="maincontent('html')">HTML</button>
-                    <button onclick="maincontent('js')">JavaScript</button>
-                    <button onclick="maincontent('php')">PHP</button>
-                    <button onclick="maincontent('about')">ABOUT</button>
-                </div>
-            </nav>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="../TechStack_icon/C_icon.png" alt="C Logo" onclick="window.location.href='../page_content.html'" />
+        <h1>Learning Hub</h1>
+      </div>
+      <nav>
+        <div class="nav-buttons">
+          <button onclick="maincontent('home')">HOME</button>
+          <button onclick="maincontent('c_lang')">C Language</button>
+          <button onclick="maincontent('python')">Python</button>
+          <button onclick="maincontent('html')">HTML</button>
+          <button onclick="maincontent('js')">JavaScript</button>
+          <button onclick="maincontent('php')">PHP</button>
+          <button onclick="maincontent('about')">ABOUT</button>
         </div>
-    </header>
-
-    <div class="activity_content">
-        <aside class="activity_sidebar">
-            <h1>Activity API</h1>
-            <button onclick="dog()">Dog API Generator</button>
-            <button onclick="cat()">Cat API Generator</button>
-            <button onclick="quotes()">Quotes API Generator</button>
-        </aside>
+      </nav>
     </div>
+  </header>
 
-    <div class="page_content">
-        <aside class="sidebar">
-            <h1>C Language</h1>
-            <button onclick="c_introduction('c_introduction')">C Introduction</button>
-            <button onclick="c_introduction('c_syntax')">C Syntax</button>
-            <button onclick="c_introduction('c_operators')">C Operators</button>
-            <button onclick="c_introduction('c_booleans')">C Booleans</button>
-            <button onclick="c_introduction('c_if-else')">C If Else</button>
-            <button onclick="c_introduction('c_switch')">C Switch</button>
-            <button onclick="c_introduction('c_while-loop')">C While Loop</button>
-            <button onclick="c_introduction('c_do-while-loop')">C Do / While Loop</button>
-            <button onclick="c_introduction('c_for-loop')">C For Loop</button>
-            <button onclick="c_introduction('c_nested-loop')">C Nested Loop</button>
-            <button onclick="c_introduction('c_user-input')">C User Input</button>
-            <button onclick="c_introduction('c_functions')">C Functions</button>
-        </aside>
-    </div>
+  <div class="main_container">
+    <aside class="sidebar">
+      <h1>C Language</h1>
+      <button onclick="c_introduction('c_introduction')">C Introduction</button>
+      <button onclick="c_introduction('c_syntax')">C Syntax</button>
+      <button onclick="c_introduction('c_operators')">C Operators</button>
+      <button onclick="c_introduction('c_booleans')">C Booleans</button>
+      <button onclick="c_introduction('c_if-else')">C If Else</button>
+      <button onclick="c_introduction('c_switch')">C Switch</button>
+      <button onclick="c_introduction('c_while-loop')">C While Loop</button>
+      <button onclick="c_introduction('c_do-while-loop')">C Do / While Loop</button>
+      <button onclick="c_introduction('c_for-loop')">C For Loop</button>
+      <button onclick="c_introduction('c_nested-loop')">C Nested Loop</button>
+      <button onclick="c_introduction('c_user-input')">C User Input</button>
+      <button onclick="c_introduction('c_functions')">C Functions</button>
+    </aside>
 
-    <footer>
-        <div class="footer">
-            <p>Learning Hub 2025</p>
-            <p>GMAIL: <a href="mailto:jhinbangcoyo@gmail.com">jhinbangcoyo@gmail.com</a></p>
-            <div class="social-links">
-                <a href="https://www.facebook.com/jhinbangcoyo" target="_blank">
-                    <img class="socials" src="../socials/fb.jpg" alt="Facebook">
-                </a>
-                <a href="https://twitter.com/" target="_blank">
-                    <img class="socials" src="../socials/twitter.jpg" alt="Twitter">
-                </a>
-                <a href="https://www.instagram.com/user.d4veee" target="_blank">
-                    <img class="socials" src="../socials/insta.jpg" alt="Instagram">
-                </a>
-                <a href="https://www.youtube.com/" target="_blank">
-                    <img class="socials" src="../socials/yt.png" alt="YouTube">
-                </a>
+    <div class="c_intro">
+      <h1>C Switch</h1>
+      <div class="c_title">
+        <h2>Switch Statement</h2>
+        <p>Instead of writing <mark><b>many</b></mark> <span class="bool">if..else</span> statements, you can use the <span class="bool">switch</span> statement.</p>
+        <p>The <span class="bool">switch</span> statement selects one of many code blocks to be executed:</p>
+      </div>
+
+      <div class="Ex_each_chapter">
+        <h3>Syntax</h3>
+        <div class="ex_h">
+            <div class="code_container">
+                <pre><span class="text_code">switch</span> (expression) {
+  <span class="text_code">case</span> x:
+    <span class="comment">// code block</span>
+    break;
+  <span class="text_code">case</span> y:
+    <span class="comment">// code block</span>
+    <span class="text_code">break</span>;
+  <span class="text_code">default</span>:
+    <span class="comment">// code block</span>
+}</pre>
             </div>
         </div>
-    </footer>
+        <p>This is how it works:</p>
+        <ul>
+            <li>The <span class="bool">switch</span> expression is evaluated once</li>
+            <li>The value of the expression is compared with the values of each <span class="bool">case</span></li>
+            <li>If there is a match, the associated block of code is executed</li>
+            <li>The <span class="bool">break</span> statement breaks out of the switch block and stops the execution</li>
+            <li>The <span class="bool">default</span> statement is optional, and specifies some code to run if there is no case match</li>
+        </ul>
+        <p>The example below uses the weekday number to calculate the weekday name:</p>
+        <h3>Example</h3>
+        <div class="ex_h">
+            <pre>int day = 4;
 
-    <script src="control.js"></script>
+<span class="text_code">switch</span> (day) {
+  <span class="text_code">case 1</span>:
+    printf(<span class="text_code">"Monday"</span>);
+    <span class="text_code">break</span>;
+  <span class="text_code">case 2</span>:
+    printf(<span class="text_code">"Tuesday"</span>);
+    <span class="text_code">break</span>;
+  <span class="text_code">case 3</span>:
+    printf(<span class="text_code">"Wednesday"</span>);
+    <span class="text_code">break</span>;
+  <span class="text_code">case 4</span>:
+    printf(<span class="text_code">"Thursday"</span>);
+    <span class="text_code">break</span>;
+  <span class="text_code">case 5</span>:
+    printf(<span class="text_code">"Friday"</span>);
+    <span class="text_code">break</span>;
+  <span class="text_code">case 6</span>:
+    printf(<span class="text_code">"Saturday"</span>);
+    <span class="text_code">break</span>;
+  <span class="text_code">case 7</span>:
+    printf(<span class="text_code">"Sunday"</span>);
+    <span class="text_code">break</span>;
+}
+
+<span class="comment">// Outputs "Thursday" (day 4)</span></pre>
+        </div>
+        <div class="compiler">
+            <a href="https://www.programiz.com/c-programming/online-compiler/" target="_blank">
+                <button class="try">Try it yourself bro..</button>
+            </a>
+        </div>
+      </div>
+          <h3>The break Keyword</h3>
+          <p>When C reaches a <span class="bool">break</span> keyword, it breaks out of the switch block.</p>
+          <p>This will stop the execution of more code and case testing inside the block.</p>
+          <p>When a match is found, and the job is done, it's time for a break. There is no need for more testing.</p>
+          <p>You are not limited to only compare numbers. You can also compare boolean variables, or even special structures, like arrays (which you will learn more about in a later chapter):</p>
+          <h3>Example</h3>
+          <div class="ex_h">
+            <pre><span class="text_code">int</span> day = <span class="text_code">4</span>;
+
+<span class="text_code">switch</span> (day) {
+  <span class="text_code">case 6</span>:
+    printf(<span class="text_code">"Today is Saturday"</span>);
+    <span class="text_code">break</span>;
+  <span class="text_code">case 7</span>:
+    printf(<span class="text_code">"Today is Sunday"</span>);
+    <span class="text_code">break</span>;
+  <span class="text_code">default</span>:
+    printf(<span class="text_code">"Looking forward to the Weekend"</span>);
+}
+
+<span class="comment">// Outputs "Looking forward to the Weekend"</span></pre>
+          </div>
+          <div class="compiler">
+            <a href="https://www.programiz.com/c-programming/online-compiler/" target="_blank">
+                <button class="try">Try it yourself bro..</button>
+            </a>
+        </div>
+    </div>
+    
+
+    <aside class="activity_sidebar">
+      <h1>Activity API</h1>
+      <button onclick="dog()">Dog API Generator</button>
+      <button onclick="cat()">Cat API Generator</button>
+      <button onclick="quotes()">Quotes API Generator</button>
+    </aside>
+  </div>
+
+  <footer>
+    <div class="footer">
+      <p>Learning Hub 2025</p>
+      <p>GMAIL: <a href="mailto:jhinbangcoyo@gmail.com">jhinbangcoyo@gmail.com</a></p>
+      <div class="social-links">
+        <a href="https://www.facebook.com/jhinbangcoyo" target="_blank">
+          <img class="socials" src="../socials/fb.jpg" alt="Facebook" />
+        </a>
+        <a href="https://twitter.com/" target="_blank">
+          <img class="socials" src="../socials/twitter.jpg" alt="Twitter" />
+        </a>
+        <a href="https://www.instagram.com/kryll_dave" target="_blank">
+          <img class="socials" src="../socials/insta.jpg" alt="Instagram" />
+        </a>
+        <a href="https://www.youtube.com/" target="_blank">
+          <img class="socials" src="../socials/yt.png" alt="YouTube" />
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="control.js"></script>
 
 </body>
 </html>

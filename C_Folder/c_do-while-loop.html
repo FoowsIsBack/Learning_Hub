@@ -1,83 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>C Do While Loop</title>
-    <link rel="stylesheet" href="c_do-while-loop.css">
-    <link rel="icon" href="../TechStack_icon/C_icon.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>C Do While Loop</title>
+  <link rel="stylesheet" href="C_css/c_do-while-loop.css"/>
+  <link rel="icon" href="../TechStack_icon/C_icon.png"/>
 </head>
 <body>
 
-    <header>
-        <div class="container">
-            <div class="logo">
-                <img src="../TechStack_icon/C_icon.png" alt="JPCS Logo" onclick="window.location.href='../page_content.html'" >
-                <h1>Learning Hub</h1>
-            </div>
-            <nav>
-                <div class="nav-buttons">
-                    <button onclick="maincontent('home')">HOME</button>
-                    <button onclick="maincontent('c_lang')">C Language</button>
-                    <button onclick="maincontent('python')">Python</button>
-                    <button onclick="maincontent('html')">HTML</button>
-                    <button onclick="maincontent('js')">JavaScript</button>
-                    <button onclick="maincontent('php')">PHP</button>
-                    <button onclick="maincontent('about')">ABOUT</button>
-                </div>
-            </nav>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="../TechStack_icon/C_icon.png" alt="C Logo" onclick="window.location.href='../page_content.html'" />
+        <h1>Learning Hub</h1>
+      </div>
+      <nav>
+        <div class="nav-buttons">
+          <button onclick="maincontent('home')">HOME</button>
+          <button onclick="maincontent('c_lang')">C Language</button>
+          <button onclick="maincontent('python')">Python</button>
+          <button onclick="maincontent('html')">HTML</button>
+          <button onclick="maincontent('js')">JavaScript</button>
+          <button onclick="maincontent('php')">PHP</button>
+          <button onclick="maincontent('about')">ABOUT</button>
         </div>
-    </header>
-
-    <div class="page_content">
-        <aside class="sidebar">
-            <h1>C Language</h1>
-            <button onclick="c_introduction('c_introduction')">C Introduction</button>
-            <button onclick="c_introduction('c_syntax')">C Syntax</button>
-            <button onclick="c_introduction('c_operators')">C Operators</button>
-            <button onclick="c_introduction('c_booleans')">C Booleans</button>
-            <button onclick="c_introduction('c_if-else')">C If Else</button>
-            <button onclick="c_introduction('c_switch')">C Switch</button>
-            <button onclick="c_introduction('c_while-loop')">C While Loop</button>
-            <button onclick="c_introduction('c_do-while-loop')">C Do / While Loop</button>
-            <button onclick="c_introduction('c_for-loop')">C For Loop</button>
-            <button onclick="c_introduction('c_nested-loop')">C Nested Loop</button>
-            <button onclick="c_introduction('c_user-input')">C User Input</button>
-            <button onclick="c_introduction('c_functions')">C Functions</button>
-        </aside>
+      </nav>
     </div>
+  </header>
 
-    <div class="activity_content">
-        <aside class="activity_sidebar">
-            <h1>Activity API</h1>
-            <button onclick="dog()">Dog API Generator</button>
-            <button onclick="cat()">Cat API Generator</button>
-            <button onclick="quotes()">Quotes API Generator</button>
-        </aside>
-    </div>
+  <div class="main_container">
+    <aside class="sidebar">
+      <h1>C Language</h1>
+      <button onclick="c_introduction('c_introduction')">C Introduction</button>
+      <button onclick="c_introduction('c_syntax')">C Syntax</button>
+      <button onclick="c_introduction('c_operators')">C Operators</button>
+      <button onclick="c_introduction('c_booleans')">C Booleans</button>
+      <button onclick="c_introduction('c_if-else')">C If Else</button>
+      <button onclick="c_introduction('c_switch')">C Switch</button>
+      <button onclick="c_introduction('c_while-loop')">C While Loop</button>
+      <button onclick="c_introduction('c_do-while-loop')">C Do / While Loop</button>
+      <button onclick="c_introduction('c_for-loop')">C For Loop</button>
+      <button onclick="c_introduction('c_nested-loop')">C Nested Loop</button>
+      <button onclick="c_introduction('c_user-input')">C User Input</button>
+      <button onclick="c_introduction('c_functions')">C Functions</button>
+    </aside>
 
-    <footer>
-        <div class="footer">
-            <p>Learning Hub 2025</p>
-            <p>GMAIL: <a href="mailto:jhinbangcoyo@gmail.com">jhinbangcoyo@gmail.com</a></p>
-            <div class="social-links">
-                <a href="https://www.facebook.com/jhinbangcoyo" target="_blank">
-                    <img class="socials" src="../socials/fb.jpg" alt="Facebook">
-                </a>
-                <a href="https://twitter.com/" target="_blank">
-                    <img class="socials" src="../socials/twitter.jpg" alt="Twitter">
-                </a>
-                <a href="https://www.instagram.com/user.d4veee" target="_blank">
-                    <img class="socials" src="../socials/insta.jpg" alt="Instagram">
-                </a>
-                <a href="https://www.youtube.com/" target="_blank">
-                    <img class="socials" src="../socials/yt.png" alt="YouTube">
-                </a>
+    <div class="c_intro">
+      <h1>C Do/While Loop</h1>
+      <div class="c_title">
+        <h2>The Do/While Loop</h2>
+        <p>The<span class="bool">do/while</span> loop is a variant of the<span class="bool">while loop</span>. This loop will execute the code block once, before checking</p>
+        <p>if the condition is true, then it will repeat the loop as long as the condition is true.</p>
+      </div>
+
+      <div class="Ex_each_chapter">
+        <h2>While Loop</h2>
+        <p>The <span class="bool">while</span> loop loops through a block of code as long as a specified condition is <span class="bool">true</span>:</p>
+        <h3>Syntax</h3>
+        <div class="ex_h">
+            <div class="code_container">
+                <pre><span class="text_code">do</span> {
+  <span class="comment">// code block to be executed</span>
+}
+<span class="text_code">while</span> (condition);</pre>
             </div>
         </div>
-    </footer>
+        <p>The example below uses a <span class="bool">do/while loop</span>. The loop will always be executed at least once, even if the condition is</p>
+        <p>false, because the code block is executed before the condition is tested:</p>
+        <h3>Example</h3>
+        <div class="ex_h">
+            <pre><span class="text_code">int</span> i = 0;
 
-    <script src="control.js"></script>
+<span class="text_code">do</span> {
+  printf(<span class="text_code">"%d\n"</span>, i);
+  i++;
+}
+<span class="text_code">while</span> (i < <span class="text_code">5</span>);
+
+<span class="comment">// Do not forget to increase the variable used in the condition, otherwise the loop will never end!</span></pre>
+        </div>
+        <div class="compiler">
+            <a href="https://www.programiz.com/c-programming/online-compiler/" target="_blank">
+                <button class="try">Try it yourself bro..</button>
+            </a>
+        </div>
+      </div>
+          <h3>Condition is False from the Start</h3>
+          <p>In the example above, the condition <span class="bool">i < 5</span> was true at the beginning, so the loop executed multiple times. But what</p>
+          <p>if the condition is false right from the start?</p>
+          <p>In the example below, the variable span.bool<span class="oolb">i</span> starts <span class="bool">10</span>, so the condition span.bool<span class="bool">i < 5</span> is false immediately - yet</p>
+          <p>the <span class="bool">do/while</span> loop still runs once:</p>
+          <h3>Example</h3>
+          <div class="ex_h">
+            <pre><span class="text_code">int</span> <span class="text_code">i</span> = <span class="text_code">10</span>;
+
+<span class="text_code">do</span> {
+  printf(<span class="text_code">"i is %d\n"</span>, i);
+  i++;
+} <span class="text_code">while</span> (i < 5);
+</pre>
+          </div>
+          <div class="compiler">
+            <a href="https://www.programiz.com/c-programming/online-compiler/" target="_blank">
+                <button class="try">Try it yourself bro..</button>
+            </a>
+        </div>
+        <br>
+        <div class="summary">
+            <div class="test">
+                <h2>Summary</h2>
+                <p>The <span class="bool">do/while</span> loop always runs at least once, even if the condition is already false. This is different from a</p>
+                <p>regular while loop, which would skip the loop entirely if the condition is false at the start.</p>
+                <p>This behavior makes <span class="bool">do/while</span> useful when you want to ensure something happens at least once, like showing a message or asking for user input.</p>
+            </div>
+        </div>
+        <h3>Practical Example: User Input</h3>
+        <p>This example keeps asking the user to enter a positive number. The loop stops when the user enters 0 or a negative number:</p>
+        <h3>Example</h3>
+        <div class="ex_h">
+            <pre><span class="text_code">int</span> number;
+
+<span class="text_code">do</span> {
+  printf(<span class="text_code">"Enter a positive number: "</span>);
+  scanf(<span class="text_code">"%d"</span>, &number);
+} <span class="text_code">while</span> (number > 0);
+
+<span class="comment">// Note: You will learn more about the scanf() function and user input in a later chapter.</span></pre>
+        </div>
+    </div>
+    
+
+    <aside class="activity_sidebar">
+      <h1>Activity API</h1>
+      <button onclick="dog()">Dog API Generator</button>
+      <button onclick="cat()">Cat API Generator</button>
+      <button onclick="quotes()">Quotes API Generator</button>
+    </aside>
+  </div>
+
+  <footer>
+    <div class="footer">
+      <p>Learning Hub 2025</p>
+      <p>GMAIL: <a href="mailto:jhinbangcoyo@gmail.com">jhinbangcoyo@gmail.com</a></p>
+      <div class="social-links">
+        <a href="https://www.facebook.com/jhinbangcoyo" target="_blank">
+          <img class="socials" src="../socials/fb.jpg" alt="Facebook" />
+        </a>
+        <a href="https://twitter.com/" target="_blank">
+          <img class="socials" src="../socials/twitter.jpg" alt="Twitter" />
+        </a>
+        <a href="https://www.instagram.com/kryll_dave" target="_blank">
+          <img class="socials" src="../socials/insta.jpg" alt="Instagram" />
+        </a>
+        <a href="https://www.youtube.com/" target="_blank">
+          <img class="socials" src="../socials/yt.png" alt="YouTube" />
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="control.js"></script>
 
 </body>
 </html>
