@@ -1,83 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>C User Input</title>
-    <link rel="stylesheet" href="c_user-input.css">
-    <link rel="icon" href="../TechStack_icon/C_icon.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>C User Input</title>
+  <link rel="stylesheet" href="C_css/c_user-input.css"/>
+  <link rel="icon" href="../TechStack_icon/C_icon.png"/>
 </head>
 <body>
 
-    <header>
-        <div class="container">
-            <div class="logo">
-                <img src="../TechStack_icon/C_icon.png" alt="JPCS Logo" onclick="window.location.href='../page_content.html'" >
-                <h1>Learning Hub</h1>
-            </div>
-            <nav>
-                <div class="nav-buttons">
-                    <button onclick="maincontent('home')">HOME</button>
-                    <button onclick="maincontent('c_lang')">C Language</button>
-                    <button onclick="maincontent('python')">Python</button>
-                    <button onclick="maincontent('html')">HTML</button>
-                    <button onclick="maincontent('js')">JavaScript</button>
-                    <button onclick="maincontent('php')">PHP</button>
-                    <button onclick="maincontent('about')">ABOUT</button>
-                </div>
-            </nav>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="../TechStack_icon/C_icon.png" alt="C Logo" onclick="window.location.href='../page_content.html'" />
+        <h1>Learning Hub</h1>
+      </div>
+      <nav>
+        <div class="nav-buttons">
+          <button onclick="maincontent('home')">HOME</button>
+          <button onclick="maincontent('c_lang')">C Language</button>
+          <button onclick="maincontent('python')">Python</button>
+          <button onclick="maincontent('html')">HTML</button>
+          <button onclick="maincontent('js')">JavaScript</button>
+          <button onclick="maincontent('php')">PHP</button>
+          <button onclick="maincontent('about')">ABOUT</button>
         </div>
-    </header>
-
-    <div class="page_content">
-        <aside class="sidebar">
-            <h1>C Language</h1>
-            <button onclick="c_introduction('c_introduction')">C Introduction</button>
-            <button onclick="c_introduction('c_syntax')">C Syntax</button>
-            <button onclick="c_introduction('c_operators')">C Operators</button>
-            <button onclick="c_introduction('c_booleans')">C Booleans</button>
-            <button onclick="c_introduction('c_if-else')">C If Else</button>
-            <button onclick="c_introduction('c_switch')">C Switch</button>
-            <button onclick="c_introduction('c_while-loop')">C While Loop</button>
-            <button onclick="c_introduction('c_do-while-loop')">C Do / While Loop</button>
-            <button onclick="c_introduction('c_for-loop')">C For Loop</button>
-            <button onclick="c_introduction('c_nested-loop')">C Nested Loop</button>
-            <button onclick="c_introduction('c_user-input')">C User Input</button>
-            <button onclick="c_introduction('c_functions')">C Functions</button>
-        </aside>
+      </nav>
     </div>
+  </header>
 
-    <div class="activity_content">
-        <aside class="activity_sidebar">
-            <h1>Activity API</h1>
-            <button onclick="dog()">Dog API Generator</button>
-            <button onclick="cat()">Cat API Generator</button>
-            <button onclick="quotes()">Quotes API Generator</button>
-        </aside>
-    </div>
+  <div class="main_container">
+    <aside class="sidebar">
+      <h1>C Language</h1>
+      <button onclick="c_introduction('c_introduction')">C Introduction</button>
+      <button onclick="c_introduction('c_syntax')">C Syntax</button>
+      <button onclick="c_introduction('c_operators')">C Operators</button>
+      <button onclick="c_introduction('c_booleans')">C Booleans</button>
+      <button onclick="c_introduction('c_if-else')">C If Else</button>
+      <button onclick="c_introduction('c_switch')">C Switch</button>
+      <button onclick="c_introduction('c_while-loop')">C While Loop</button>
+      <button onclick="c_introduction('c_do-while-loop')">C Do / While Loop</button>
+      <button onclick="c_introduction('c_for-loop')">C For Loop</button>
+      <button onclick="c_introduction('c_nested-loop')">C Nested Loop</button>
+      <button onclick="c_introduction('c_user-input')">C User Input</button>
+      <button onclick="c_introduction('c_functions')">C Functions</button>
+    </aside>
 
-    <footer>
-        <div class="footer">
-            <p>Learning Hub 2025</p>
-            <p>GMAIL: <a href="mailto:jhinbangcoyo@gmail.com">jhinbangcoyo@gmail.com</a></p>
-            <div class="social-links">
-                <a href="https://www.facebook.com/jhinbangcoyo" target="_blank">
-                    <img class="socials" src="../socials/fb.jpg" alt="Facebook">
-                </a>
-                <a href="https://twitter.com/" target="_blank">
-                    <img class="socials" src="../socials/twitter.jpg" alt="Twitter">
-                </a>
-                <a href="https://www.instagram.com/user.d4veee" target="_blank">
-                    <img class="socials" src="../socials/insta.jpg" alt="Instagram">
-                </a>
-                <a href="https://www.youtube.com/" target="_blank">
-                    <img class="socials" src="../socials/yt.png" alt="YouTube">
-                </a>
+    <div class="c_intro">
+      <h1>C User Input</h1>
+      <div class="c_title">
+        <h2>User Input</h2>
+        <p>You have already learned that <span class="bool">printf()</span> is used to output values in C.</p>
+        <p>To get <mark><b>user input</b></mark>, you can use the <span class="bool">scanf()</span> function:</p>
+      </div>
+
+      <div class="Ex_each_chapter">
+        <h3>Example</h3>
+        <ul>
+            <li>Output a number entered by the user:</li>
+        </ul>
+        <div class="ex_h">
+            <div class="code_container">
+                <pre><span class="comment">// Create an integer variable that will store the number we get from the user</span>
+<span class="text_code">int</span> myNum;
+
+<span class="comment">// Ask the user to type a number</span>
+printf(<span class="text_code">"Type a number: \n"</span>);
+
+<span class="comment">// Get and save the number the user types</span>
+scanf(<span class="text_code">"%d"</span>, &myNum);
+
+<span class="comment">// Output the number the user typed</span>
+printf(<span class="text_code">"Your number is: %d"</span>, myNum);</pre>
             </div>
         </div>
-    </footer>
+        <div class="compiler">
+            <a href="https://www.programiz.com/c-programming/online-compiler/" target="_blank">
+                <button class="try">Try it yourself bro..</button>
+            </a>
+        </div>
+        <br>
+        <div class="summary">
+            <div class="test">
+                <p>The <span class="bool">scanf()</span> function takes two arguments: the format specifier of the variable (<span class="bool">%d</span> in the example above) and the reference operator</p>
+                <p>(<span class="bool">&myNum</span>), which stores the memory address of the variable.</p>
+            </div>
+        </div>
+      </div>
+          <h2>Multiple Inputs</h2>
+          <p>The <span class="bool">scanf()</span> function also allow multiple inputs (an integer and a character in the following example):</p>
+          <h3>Example</h3>
+          <div class="ex_h">
+            <pre><span class="comment">// Create an int and a char variable</span>
+<span class="text_code">int</span> myNum;
+<span class="text_code">char</span> myChar;
 
-    <script src="control.js"></script>
+<span class="comment">// Ask the user to type a number AND a character</span>
+printf(<span class="text_code">"Type a number AND a character and press enter: \n"</span>);
+
+<span class="comment">// Get and save the number AND character the user types</span>
+scanf(<span class="text_code">"%d %c"</span>, &myNum, &myChar);
+
+<span class="comment">// Print the number</span>
+printf(<span class="text_code">"Your number is: %d\n"</span>, myNum);
+
+<span class="comment">// Print the character</span>
+printf(<span class="text_code">"Your character is: %c\n"</span>, myChar);</pre>
+          </div>
+          <div class="compiler">
+            <a href="https://www.programiz.com/c-programming/online-compiler/" target="_blank">
+                <button class="try">Try it yourself bro..</button>
+            </a>
+        </div>
+        <div class="Ex_each_chapter"></div>
+        <h2>Take String Input</h2>
+        <p>You can also get a string entered by the user:</p>
+        <h3>Example</h3>
+        <ul>
+            <li>Output the name of a user:</li>
+        </ul>
+        <div class="ex_h">
+            <pre><span class="comment">// Create a string</span>
+<span class="text_code">char</span> firstName[<span class="text_code">30</span>];
+
+<span class="comment">// Ask the user to input some text</span>
+printf(<span class="text_code">"Enter your first name: \n"</span);
+
+<span class="comment">// Get and save the text</span>
+scanf(<span class="text_code">"%s"</span>, firstName);
+
+<span class="comment">// Output the text</span>
+printf(<span class="text_code">"Hello %s"</span>, firstName);</pre>
+        </div>
+          <div class="compiler">
+            <a href="https://www.programiz.com/c-programming/online-compiler/" target="_blank">
+                <button class="try">Try it yourself bro..</button>
+            </a>
+        </div>
+        <br>
+        <div class="summary">
+            <div class="test">
+                <p><mark><b>Note:</b></mark> When working with strings in <span class="bool">scanf()</span>, you must specify the size of the string/array (we used a very high number, 30 in our example, but</p>
+                <p>at least then we are certain it will store enough characters for the first name), and you don't have to use the reference operator (<span class="bool">&</span>).</p>
+            </div>
+        </div>
+        <p>However, the <span class="bool">scanf()</span> function has some limitations: it considers space (whitespace, tabs, etc) as a terminating character, which means that it can only display a single word (even if you type many words). For example:</p>
+        <h3>Example</h3>
+        <div class="ex_h">
+            <pre><span class="text_code">char</span> fullName[<span class="text_code">30</span>];
+
+printf(<span class="text_code">"Type your full name: \n"</span>);
+scanf(<span class="text_code">"%s"</span>, &fullName);
+
+printf(<span class="text_code">"Hello %s"</span>, fullName);
+
+<span class="comment">// Type your full name: John Doe</span>
+<span class="comment">// Hello John</span></pre>
+        </div>
+        <p>From the example above, you would expect the program to print "John Doe", but it only prints "John".</p>
+        <p>That's why, when working with strings, we often use the <span class="bool">fgets()</span> function to read a line of text. Note that you must include the following</p>
+        <p>arguments: the name of the string variable, <span class="bool">sizeof</span>(string_name), and <span class="bool">stdin:</span></p>
+        <h3>Example</h3>
+        <div class="ex_h">
+            <pre><span class="text_code">char</span> fullName[<span class="text_code">30</span>];
+
+printf(<span class="text_code">"Type your full name: \n"</span>);
+fgets(fullName, sizeof(fullName), stdin);
+
+printf(<span class="text_code">"Hello %s"</span>, fullName);
+
+<span class="comment">// Type your full name: John Doe</span>
+<span class="comment">// Hello John Doe</span></pre>
+        </div>
+          <div class="compiler">
+            <a href="https://www.programiz.com/c-programming/online-compiler/" target="_blank">
+                <button class="try">Try it yourself bro..</button>
+            </a>
+        </div>
+        <br>
+        <div class="summary">
+            <div class="test">
+                <p>Use the span.bool<span class="bool">scanf()</span> function to get a single word as input, and u<span class="bool">fgets()</span> for multiple words.</p>
+            </div>
+        </div>
+    </div>
+    
+
+    <aside class="activity_sidebar">
+      <h1>Activity API</h1>
+      <button onclick="dog()">Dog API Generator</button>
+      <button onclick="cat()">Cat API Generator</button>
+      <button onclick="quotes()">Quotes API Generator</button>
+    </aside>
+  </div>
+
+  <footer>
+    <div class="footer">
+      <p>Learning Hub 2025</p>
+      <p>GMAIL: <a href="mailto:jhinbangcoyo@gmail.com">jhinbangcoyo@gmail.com</a></p>
+      <div class="social-links">
+        <a href="https://www.facebook.com/jhinbangcoyo" target="_blank">
+          <img class="socials" src="../socials/fb.jpg" alt="Facebook" />
+        </a>
+        <a href="https://twitter.com/" target="_blank">
+          <img class="socials" src="../socials/twitter.jpg" alt="Twitter" />
+        </a>
+        <a href="https://www.instagram.com/kryll_dave" target="_blank">
+          <img class="socials" src="../socials/insta.jpg" alt="Instagram" />
+        </a>
+        <a href="https://www.youtube.com/" target="_blank">
+          <img class="socials" src="../socials/yt.png" alt="YouTube" />
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="control.js"></script>
 
 </body>
 </html>
