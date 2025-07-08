@@ -1,85 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Python Booleans</title>
-    <link rel="stylesheet" href="python_booleans.css">
-    <link rel="icon" href="../TechStack_icon/python_icon.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Python Booleans</title>
+  <link rel="stylesheet" href="py_css/python_booleans.css" />
+  <link rel="icon" href="../TechStack_icon/python_icon.png"/>
 </head>
 <body>
 
-    <header>
-        <div class="container">
-            <div class="logo">
-                <img src="../TechStack_icon/python_icon.png" alt="JPCS Logo" onclick="window.location.href='../page_content.html'" >
-                <h1>Learning Hub</h1>
-            </div>
-            <nav>
-                <div class="nav-buttons">
-                    <button onclick="maincontent('home')">HOME</button>
-                    <button onclick="maincontent('c_lang')">C Language</button>
-                    <button onclick="maincontent('python')">Python</button>
-                    <button onclick="maincontent('html')">HTML</button>
-                    <button onclick="maincontent('js')">JavaScript</button>
-                    <button onclick="maincontent('php')">PHP</button>
-                    <button onclick="maincontent('about')">ABOUT</button>
-                </div>
-            </nav>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="../TechStack_icon/python_icon.png" alt="C Logo" onclick="window.location.href='../page_content.html'" />
+        <h1>Learning Hub</h1>
+      </div>
+      <nav>
+        <div class="nav-buttons">
+          <button onclick="maincontent('home')">HOME</button>
+          <button onclick="maincontent('c_lang')">C Language</button>
+          <button onclick="maincontent('python')">Python</button>
+          <button onclick="maincontent('html')">HTML</button>
+          <button onclick="maincontent('js')">JavaScript</button>
+          <button onclick="maincontent('php')">PHP</button>
+          <button onclick="maincontent('about')">ABOUT</button>
         </div>
-    </header>
+      </nav>
+    </div>
+  </header>
 
-    <div class="page_content">
-        <aside class="sidebar">
-            <h1>Python Language</h1>
-            <button onclick="python_introduction('python_introduction')">Python Introduction</button>
-            <button onclick="python_introduction('python_syntax')">Python Syntax</button>
-            <button onclick="python_introduction('python_data-types')">Python Data Types</button>
-            <button onclick="python_introduction('python_booleans')">Python Booleans</button>
-            <button onclick="python_introduction('python_operators')">Python Operators</button>
-            <button onclick="python_introduction('python_list')">Python List</button>
-            <button onclick="python_introduction('python_tuple')">Python Tuple</button>
-            <button onclick="python_introduction('python_sets')">Python Sets</button>
-            <button onclick="python_introduction('python_if-else')">Python If Else</button>
-            <button onclick="python_introduction('python_while-loop')">Python While Loop</button>
-            <button onclick="python_introduction('python_for-loop')">Python For Loop</button>
-            <button onclick="python_introduction('python_functions')">Python Functions</button>
-            <button onclick="python_introduction('python_user-input')">Python User Input</button>
-        </aside>
+  <div class="main_container">
+    <aside class="sidebar">
+        <h1>Python Language</h1>
+        <button onclick="python_introduction('python_introduction')">Python Introduction</button>
+        <button onclick="python_introduction('python_syntax')">Python Syntax</button>
+        <button onclick="python_introduction('python_data-types')">Python Data Types</button>
+        <button onclick="python_introduction('python_booleans')">Python Booleans</button>
+        <button onclick="python_introduction('python_operators')">Python Operators</button>
+        <button onclick="python_introduction('python_list')">Python List</button>
+        <button onclick="python_introduction('python_tuple')">Python Tuple</button>
+        <button onclick="python_introduction('python_sets')">Python Sets</button>
+        <button onclick="python_introduction('python_if-else')">Python If Else</button>
+        <button onclick="python_introduction('python_while-loop')">Python While Loop</button>
+        <button onclick="python_introduction('python_for-loop')">Python For Loop</button>
+        <button onclick="python_introduction('python_functions')">Python Functions</button>
+        <button onclick="python_introduction('python_user-input')">Python User Input</button>
+        <br>
+        <br>                                                                                                                                                                       ')">Python User Input</button>
+    </aside>
+
+    <div class="py_intro">
+      <h1>Python Booleans</h1>
+      <div class="Ex_each_chapter"></div>
+      <p><b>Booleans represent one of two values: <span class="bool">True</span> or <span class="bool">False</span> .</b></p>
+      <div class="py_title">
+        <h2>Boolean Values</h2>
+        <p>In programming you often need to know if an expression is <span class="bool">True</span> or <span class="bool">False</span> .</p>
+        <p>You can evaluate any expression in Python, and get one of two answers, <span class="bool">True</span> or <span class="bool">False</span> .</p>
+        <p>When you compare two values, the expression is evaluated and Python returns the Boolean answer:</p>
+        <h3>Example</h3>
+        <div class="code_container">
+            <pre><span class="py_code">print</span>(<span class="text_code">10</span> > <span class="text_code">9</span>)
+<span class="py_code">print</span>(<span class="text_code">10</span> == <span class="text_code">9</span>)
+<span class="py_code">print</span>(<span class="text_code">10</span> < <span class="text_code">9</span>)</pre>
+        </div>
+        <div class="compiler">
+            <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">
+                <button class="try">Try it yourself bro..</button>
+            </a>
+        </div>
+        <p>When you run a condition in an if statement, Python returns <span class="bool">True</span> or <span class="bool">False</span>:</p>
+        <h3>Example</h3>
+        <ul>
+            <li>Print a message based on whether the condition is <span class="bool">True</span> or <span class="bool">False</span>:</li>
+        </ul>
+        <div class="code_container">
+            <pre>a = <span class="text_code">200</span>
+b = <span class="text_code">33</span>
+
+<span class="py_code">if</span> b > a:
+  <span class="py_code">print</span>(<span class="text_code">"b is greater than a"</span>)
+<span class="py_code">else</span>:
+  <span class="py_code">print</span>(<span class="text_code">"b is not greater than a"</span>)</pre>
+        </div>
+        <div class="compiler">
+            <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">
+                <button class="try">Try it yourself bro..</button>
+            </a>
+        </div>
+      </div>
+
+    <div class="Ex_each_chapter">
+        <h2>Evaluate Values and Variables</h2>
+        <p>The <span class="bool">bool()</span> function allows you to evaluate any value, and give you <span class="bool">True</span> or <span class="bool">False</span> in return,</p>
+        <h3>Example</h3>
+        <ul>
+            <li>Evaluate a string and a number:</li>
+        </ul>
+        <div class="code_container">
+            <pre><span class="py_code">print</span>(<span class="py_code">bool</span>(<span class="text_code">"Hello"</span>))
+<span class="py_code">print</span>(<span class="py_code">bool</span>(<span class="text_code">15</span>))</pre>
+        </div>
+        <div class="compiler">
+            <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">
+                <button class="try">Try it yourself bro..</button>
+            </a>
+        </div>
+        <h3>Example</h3>
+        <ul>
+            <li>Evaluate two variables:</li>
+        </ul>
+        <div class="code_container">
+            <pre>x = <span class="text_code">"Hello"</span>
+y = <span class="text_code">15</span>
+
+<span class="py_code">print</span>(<span class="py_code">bool</span>(x))
+<span class="py_code">print</span>(<span class="py_code">bool</span>(y))</pre>
+        </div>
+        <div class="compiler">
+            <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">
+                <button class="try">Try it yourself bro..</button>
+            </a>
+        </div>
+        <div class="Ex_each_chapter"></div>
+        <h2>Most Values are True</h2>
+        <p>Almost any value is evaluated to <span class="bool">True</span> if it has some sort of content.</p>
+        <p>Any string is <span class="bool">True</span> , except empty strings.</p>
+        <p>Any number is <span class="bool">True</span> , except <span class="bool">0</span> .</p>
+        <p>Any list, tuple, set, and dictionary are <span class="bool">True</span> , except empty ones.</p>
+        <h3>Example</h3>
+        <ul>
+            <li>The following will return True:</li>
+        </ul>
+        <div class="code_container">
+            <pre><span class="py_code">bool</span>(<span class="text_code">"abc"</span>)
+<span class="py_code">bool</span>(<span class="text_code">123</span>)
+<span class="py_code">bool</span>([<span class="text_code">"apple"</span>,<span class="text_code">"cherry"</span>, <span class="text_code">"banana"</span>])</pre>
+        </div>
+        <div class="compiler">
+        <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+            </div>
+          </a>
+      </div>
+      <h2>Some Values are False</h2>
+      <p>In fact, there are not many values that evaluate to <span class="bool">False</span> , except empty values, such as <span class="bool">()</span> , <span class="bool">[]</span> , <span class="bool">{}</span> , <span class="bool">""</span> , the number <span class="bool">0</span>, and the value <span class="bool">None</span>. And of course the value</p>
+      <p><span class="bool">False</span> evaluates to <span class="bool">False</span> .</p>
+      <h3>Example</h3>
+      <ul>
+        <li>The following will return False:</li>
+      </ul>
+      <div class="code_container">
+        <pre><span class="py_code">bool</span>(<span class="py_code">False</span>)
+<span class="py_code">bool</span>(None)
+<span class="py_code">bool</span>(<span class="text_code">0</span>)
+<span class="py_code">bool</span>(<span class="text_code">""</span>)
+<span class="py_code">bool</span>(())
+<span class="py_code">bool</span>([])
+<span class="py_code">bool</span>({})</pre>
+      </div>
+      <div class="compiler">
+        <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+      </div>
+      <p>One more value, or object in this case, evaluates to <span class="bool">False</span> , and that is if you have an object that is made from a class with a <span class="bool">__len__   </span> function</p>
+      <p>that returns <span class="bool">0</span> or <span class="bool">False</span> :</p>
+      <h3>Example</h3>
+      <div class="code_container">
+        <pre><span class="py_code">class</span> myclass():
+  <span class="py_code">def</span> __len__(self):
+    <span class="py_code">return</span> <span class="text_code">0</span>
+
+myobj = myclass()
+<span class="py_code">print</span>(<span class="py_code">bool</span>(myobj))</pre>
+      </div>
+      <div class="compiler">
+        <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+      </div>
+      <div class="Ex_each_chapter"></div>
+      <h3>Example</h3>
+      <ul>
+        <li>Print the answer of a function:</li>
+      </ul>
+      <div class="code_container">
+        <pre><span class="py_code">def</span> myFunction() :
+  <span class="py_code">return</span> <span class="text_code">True</span>
+
+<span class="py_code">print</span>(myFunction())</pre>
+      </div>
+      <div class="compiler">
+        <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+      </div>
+      <p>You can execute code based on the Boolean answer of a function:</p>
+      <h3>Example</h3>
+      <ul>
+        <li>Print <mark>"YES!"</mark> if the function returns True, otherwise print "NO!":</li>
+      </ul>
+      <div class="code_container">
+        <pre><span class="py_code">def</span> myFunction() :
+  <span class="py_code">return</span> <span class="text_code">True</span>
+
+<span class="py_code">if</span> myFunction():
+  <span class="py_code">print</span>(<span class="text_code">"YES!"</span>)
+<span class="py_code">else</span>:
+  <span class="py_code">print</span>(<span class="text_code">"NO!"</span>)</pre>
+      </div>
+      <div class="compiler">
+        <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+      </div>
+      <p>Python also has many built-in functions that return a boolean value, like the <span class="bool">isinstance()</span> function, which can be used to determine if an object is of a certain data type:</p>
+      <h3>Example</h3>
+      <ul>
+        <li>Check if an object is an integer or not:</li>
+      </ul>
+      <div class="code_container">
+        <pre>x = <span class="text_code">200</span>
+<span class="py_code">print</span>(<span class="py_code">isinstance</span>(x, <span class="py_code">int</span>))</pre>
+      </div>
+      <div class="compiler">
+        <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+      </div>
+      <br>
     </div>
 
-    <div class="activity_content">
-        <aside class="activity_sidebar">
-            <h1>Activity API</h1>
-            <button onclick="dog()">Dog API Generator</button>
-            <button onclick="cat()">Cat API Generator</button>
-            <button onclick="quotes()">Quotes API Generator</button>
-        </aside>
+    <aside class="activity_sidebar">
+      <h1>Activity API</h1>
+      <button onclick="dog()">Dog API Generator</button>
+      <button onclick="cat()">Cat API Generator</button>
+      <button onclick="quotes()">Quotes API Generator</button>
+    </aside>
+  </div>
+
+  <footer>
+    <div class="footer">
+      <p>Learning Hub 2025</p>
+      <p>GMAIL: <a href="mailto:jhinbangcoyo@gmail.com">jhinbangcoyo@gmail.com</a></p>
+      <div class="social-links">
+        <a href="https://www.facebook.com/jhinbangcoyo" target="_blank">
+          <img class="socials" src="../socials/fb.jpg" alt="Facebook" />
+        </a>
+        <a href="https://twitter.com/" target="_blank">
+          <img class="socials" src="../socials/twitter.jpg" alt="Twitter" />
+        </a>
+        <a href="https://www.instagram.com/kryll_dave" target="_blank">
+          <img class="socials" src="../socials/insta.jpg" alt="Instagram" />
+        </a>
+        <a href="https://www.youtube.com/" target="_blank">
+          <img class="socials" src="../socials/yt.png" alt="YouTube" />
+        </a>
+      </div>
     </div>
+  </footer>
 
-
-    <footer>
-        <div class="footer">
-            <p>Learning Hub 2025</p>
-            <p>GMAIL: <a href="mailto:jhinbangcoyo@gmail.com">jhinbangcoyo@gmail.com</a></p>
-            <div class="social-links">
-                <a href="https://www.facebook.com/jhinbangcoyo" target="_blank">
-                    <img class="socials" src="../socials/fb.jpg" alt="Facebook">
-                </a>
-                <a href="https://twitter.com/" target="_blank">
-                    <img class="socials" src="../socials/twitter.jpg" alt="Twitter">
-                </a>
-                <a href="https://www.instagram.com/user.d4veee" target="_blank">
-                    <img class="socials" src="../socials/insta.jpg" alt="Instagram">
-                </a>
-                <a href="https://www.youtube.com/" target="_blank">
-                    <img class="socials" src="../socials/yt.png" alt="YouTube">
-                </a>
-            </div>
-        </div>
-    </footer>
-
-    <script src="control.js"></script>
+  <script src="control.js"></script>
 
 </body>
 </html>

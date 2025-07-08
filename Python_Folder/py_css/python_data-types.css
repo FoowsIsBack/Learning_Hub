@@ -43,6 +43,8 @@ html{
     padding: 20px;
     height: 639px;
     overflow-y: auto;
+
+
 }
 
 .sidebar button {
@@ -129,45 +131,29 @@ button {
     padding: 10px 15px;
 }
 
-.c_intro {
-    width: 95%;
-    background-color: rgba(51, 67, 43, 0.751);
-    padding: 20px 0px 20px 20px;
-    height: 627px;
-    margin: 0px;
-    overflow-y: auto;
-}
-
-.ex_h{
-    background-color: #0f1a26;
-    color: #cbd5e1;
-    padding: 20px;
-    border-radius: 8px;
-    font-size: 15px;
-    width: 90%;
-}
-
-.ex_h1{
-    background-color: #0f1a26;
-    color: #cbd5e1;
-    padding: 20px;
-    border-radius: 8px;
-    font-size: 15px;
-    width: 90%;
-}
-
-button[onclick="maincontent('c_lang')"]{
+button[onclick="maincontent('python')"]{
     border-radius: 5px;
     background-color: red;
 }
 
-button[onclick="c_introduction('c_booleans')"]{
+button[class="Clearn"]{
+    background-color: red;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[onclick="python_introduction('python_data-types')"]{
     background-color: red;
 }
 
 button[class="Clearn"]:hover{
     background-color: #2db134;
     border-bottom: #2db134;
+}
+
+video{
+    width: 1000px;
+    height: 700px;
 }
 
 button:hover{
@@ -202,7 +188,7 @@ footer {
     padding-right: 10px;
 }
 
-.c_intro {
+.py_intro {
     width: 95%;
     background-color: rgba(51, 67, 43, 0.751);
     padding: 20px 0px 20px 20px;
@@ -215,17 +201,17 @@ footer {
     margin: 0px;
 }
 
-.c_intro h1{
+.py_intro h1{
     text-align: center;
     padding-bottom: 20px;
 }
 
-.c_intro h2{
+.py_intro h2{
     color: white;
     font-size: 35px;
 }
 
-.c_title{
+.py_title{
     padding-bottom: 10px;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
@@ -237,16 +223,34 @@ footer {
     padding: 10px;
 }
 
+.code_container{
+    background-color: #0f1a26;
+    color: #cbd5e1;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 15px;
+    width: 90%;
+}
+
+.code_container1{
+    background-color: #FFC0CB;
+    color: #cbd5e1;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 15px;
+    width: 90%;
+}
+
+.p_error{
+    color: black;
+}
+
 .text_code{
     color: #2db134;
 }
 
-.comment{
-    color: grey;
-}
-
-.compiler{
-    padding-top: 10px;
+.py_code{
+    color: rgb(204, 91, 91);
 }
 
 .try{
@@ -254,8 +258,27 @@ footer {
     border-radius: 5px;
 }
 
-pre{
-    color: white;
+.tryit{
+    background-color: red;
+    border-radius: 5px;
+}
+
+.py_video{
+    text-align: center;
+}
+
+.click_to_switch{
+    background-color: red;
+    border-radius: 5px;
+}
+
+.click_to_switch:hover{
+    background-color: #2db134;
+    border-bottom: #2db134;
+}
+
+.compiler{
+    padding-top: 10px;
 }
 
 button[class="try"]:hover{
@@ -263,15 +286,7 @@ button[class="try"]:hover{
     border-bottom: #2db134;
 }
 
-a{
-    color: black;
-}
-
-a:hover{
-    color: red;
-}
-
-.c_intro p{
+.py_intro p{
     font-size: 20px;
 }
 
@@ -286,9 +301,74 @@ a:hover{
     margin-top: 10px;
 }
 
+pre{
+    color: white;
+}
+
+.comment{
+    color: grey;
+}
+
 .bool{
     color: #2db134;
     background-color: #0f1a26;
     padding: 5px;
     border-radius: 5px;
+}
+
+li{
+    padding-top: 20px;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 10px;
+}
+
+ul{
+    list-style-type: square;
+}
+
+.label {
+    display: inline-block;
+    width: 200px;
+    font-weight: bold;
+}
+
+tr{
+    border: 1px solid gray;
+}
+
+table{
+    width: 90%;
+    border-collapse: collapse;
+    padding-left: 50px;
+}
+
+th{
+    padding: 10px;
+    border: 1px solid gray;
+    font-size: larger;
+}
+
+td{
+    padding: 10px;
+    border: 1px solid gray;
+    font-size: larger;
+}
+
+tr:hover{
+    background-color: rgb(178, 155, 25);
+}
+
+.tab{
+    background-color: rgba(128, 128, 128, 0.205);
+}
+
+.setting_data_type{
+    background-color: #0f1a26;
+    color: #cbd5e1;
+    padding: 20px;
+    width: 80%;
+    padding-left: 140px;
+    border-radius: 10px;
+    font-size: large;
 }
