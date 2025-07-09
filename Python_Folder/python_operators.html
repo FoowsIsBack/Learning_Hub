@@ -1,85 +1,698 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Python Operators</title>
-    <link rel="stylesheet" href="python_operator.css">
-    <link rel="icon" href="../TechStack_icon/python_icon.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Python Python Operators</title>
+  <link rel="stylesheet" href="py_css/python_operator.css" />
+  <link rel="icon" href="../TechStack_icon/python_icon.png"/>
 </head>
 <body>
 
-    <header>
-        <div class="container">
-            <div class="logo">
-                <img src="../TechStack_icon/python_icon.png" alt="JPCS Logo" onclick="window.location.href='../page_content.html'" >
-                <h1>Learning Hub</h1>
-            </div>
-            <nav>
-                <div class="nav-buttons">
-                    <button onclick="maincontent('home')">HOME</button>
-                    <button onclick="maincontent('c_lang')">C Language</button>
-                    <button onclick="maincontent('python')">Python</button>
-                    <button onclick="maincontent('html')">HTML</button>
-                    <button onclick="maincontent('js')">JavaScript</button>
-                    <button onclick="maincontent('php')">PHP</button>
-                    <button onclick="maincontent('about')">ABOUT</button>
-                </div>
-            </nav>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="../TechStack_icon/python_icon.png" alt="C Logo" onclick="window.location.href='../page_content.html'" />
+        <h1>Learning Hub</h1>
+      </div>
+      <nav>
+        <div class="nav-buttons">
+          <button onclick="maincontent('home')">HOME</button>
+          <button onclick="maincontent('c_lang')">C Language</button>
+          <button onclick="maincontent('python')">Python</button>
+          <button onclick="maincontent('html')">HTML</button>
+          <button onclick="maincontent('js')">JavaScript</button>
+          <button onclick="maincontent('php')">PHP</button>
+          <button onclick="maincontent('about')">ABOUT</button>
         </div>
-    </header>
+      </nav>
+    </div>
+  </header>
 
-    <div class="page_content">
-        <aside class="sidebar">
-            <h1>Python Language</h1>
-            <button onclick="python_introduction('python_introduction')">Python Introduction</button>
-            <button onclick="python_introduction('python_syntax')">Python Syntax</button>
-            <button onclick="python_introduction('python_data-types')">Python Data Types</button>
-            <button onclick="python_introduction('python_booleans')">Python Booleans</button>
-            <button onclick="python_introduction('python_operators')">Python Operators</button>
-            <button onclick="python_introduction('python_list')">Python List</button>
-            <button onclick="python_introduction('python_tuple')">Python Tuple</button>
-            <button onclick="python_introduction('python_sets')">Python Sets</button>
-            <button onclick="python_introduction('python_if-else')">Python If Else</button>
-            <button onclick="python_introduction('python_while-loop')">Python While Loop</button>
-            <button onclick="python_introduction('python_for-loop')">Python For Loop</button>
-            <button onclick="python_introduction('python_functions')">Python Functions</button>
-            <button onclick="python_introduction('python_user-input')">Python User Input</button>
-        </aside>
+  <div class="main_container">
+    <aside class="sidebar">
+        <h1>Python Language</h1>
+        <button onclick="python_introduction('python_introduction')">Python Introduction</button>
+        <button onclick="python_introduction('python_syntax')">Python Syntax</button>
+        <button onclick="python_introduction('python_data-types')">Python Data Types</button>
+        <button onclick="python_introduction('python_booleans')">Python Booleans</button>
+        <button onclick="python_introduction('python_operators')">Python Operators</button>
+        <button onclick="python_introduction('python_list')">Python List</button>
+        <button onclick="python_introduction('python_tuple')">Python Tuple</button>
+        <button onclick="python_introduction('python_sets')">Python Sets</button>
+        <button onclick="python_introduction('python_if-else')">Python If Else</button>
+        <button onclick="python_introduction('python_while-loop')">Python While Loop</button>
+        <button onclick="python_introduction('python_for-loop')">Python For Loop</button>
+        <button onclick="python_introduction('python_functions')">Python Functions</button>
+        <button onclick="python_introduction('python_user-input')">Python User Input</button>
+        <br>
+        <br>                                                                                                                                                                       ')">Python User Input</button>
+    </aside>
+
+    <div class="py_intro">
+      <h1>Python Operators</h1>
+      <div class="py_title">
+        <h2>Python Operators</h2>
+        <p>Operators are used to perform operations on variables and values.</p>
+        <p>In the example below, we use the <span class="bool">+</span> operator to add together two values:</p>
+        <h3>Example</h3>
+        <div class="code_container">
+            <pre><span class="py_code">print</span>(<span class="text_code">10</span> + <span class="text_code">5</span>)</pre>
+        </div>
+        <div class="compiler">
+            <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">
+                <button class="try">try it yourself bro..</button>
+            </a>
+        </div>
+        <h4>Python divides the operators in the following groups:</h4>
+        <ul>
+            <li>Arithmetic operators</li>
+            <li>Assignment operators</li>
+            <li>Comparison operators</li>
+            <li>Logical operators</li>
+            <li>Identity operators</li>
+            <li>Membership operators</li>
+            <li>Bitwise operators</li>
+        </ul>
+      </div>
+
+      <h2>Python Arithmetic Operators</h2>
+      <p>Arithmetic operators are used with numeric values to perform common mathematical operations:</p>
+      <div class="setting_data_type">
+        <table>
+            <tr>
+                <th>Operator</th>
+                <th>Name</th>
+                <th>Example</th>
+                <th>Try it</th>
+            </tr>
+
+            <tr>
+                <td>x</td>
+                <td>Addition</td>
+                <td>x + y</td>
+                <td><span class="compiler"><a href="https://www.w3schools.com/python/trypython.asp?filename=demo_oper_add" target="_blank">
+            <button class="tryit">Try it bro..</button></a></span></td>
+            </tr>
+
+            <tr>
+                <td class="tab">-</td>
+                <td class="tab">Subtraction</td>
+                <td class="tab">x - y</td>
+                <td class="tab"><span class="compiler"><a href="https://www.w3schools.com/python/trypython.asp?filename=demo_oper_sub" target="_blank">
+            <button class="tryit">Try it bro..</button></a></span></td>
+            </tr>
+
+            <tr>
+                <td>*</td>
+                <td>Multiplication</td>
+                <td>x * y</td>
+                <td><span class="compiler"><a href="https://www.w3schools.com/python/trypython.asp?filename=demo_oper_mult" target="_blank">
+            <button class="tryit">Try it bro..</button></a></span></td>
+            </tr>
+
+            <tr>
+                <td class="tab">/</td>
+                <td class="tab">Division</td>
+                <td class="tab">x / y</td>
+                <td class="tab"><span class="compiler"><a href="https://www.w3schools.com/python/trypython.asp?filename=demo_oper_div" target="_blank">
+            <button class="tryit">Try it bro..</button></a></span></td>
+            </tr>
+
+            <tr>
+                <td>%</td>
+                <td>Modulus</td>
+                <td>x % y</td>
+                <td><span class="compiler"><a href="https://www.w3schools.com/python/trypython.asp?filename=demo_oper_mod" target="_blank">
+            <button class="tryit">Try it bro..</button></a></span></td>
+            </tr>
+
+            <tr>
+                <td class="tab">**</td>
+                <td class="tab">Exponentiation</td>
+                <td class="tab">x ** y</td>
+                <td class="tab"><span class="compiler"><a href="https://www.w3schools.com/python/trypython.asp?filename=demo_oper_exp" target="_blank">
+            <button class="tryit">Try it bro..</button></a></span></td>
+            </tr>
+
+            <tr>
+                <td>//</td>
+                <td>Floor division</td>
+                <td>x // y	</td>
+                <td><span class="compiler"><a href="https://www.w3schools.com/python/trypython.asp?filename=demo_oper_floordiv" target="_blank">
+            <button class="tryit">Try it you..</button></a></span></td>
+            </tr>
+        </table>
+      </div>
+      <div class="Ex_each_chapter"></div>
+      <h2>Python Assignment Operators</h2>
+      <p>Assignment operators are used to assign values to variables:</p>
+      <div class="setting_data_type">
+        <table>
+            <tr>
+                <th>Operator</th>
+                <th>Example</th>
+                <th>Same As</th>
+                <th>Try it</th>
+            </tr>
+
+            <tr>
+                <td>=</td>
+                <td>x = 5</td>
+                <td>x = 5</td>
+                <td><span class="compiler"><a href="https://www.w3schools.com/python/trypython.asp?filename=demo_oper_ass1" target="_blank">
+            <button class="tryit">Try it bro..</button></a></span></td>
+            </tr>
+
+            <tr>
+                <td class="tab">+=</td>
+                <td class="tab">x += 3</td>
+                <td class="tab">x = x + 3</td>
+                <td class="tab"><span class="compiler"><a href="https://www.w3schools.com/python/trypython.asp?filename=demo_oper_ass2" target="_blank">
+            <button class="tryit">Try it bro..</button></a></span></td>
+            </tr>
+
+            <tr>
+                <td>-=</td>
+                <td>x -= 3</td>
+                <td>x = x - 3</td>
+                <td><span class="compiler"><a href="https://www.w3schools.com/python/trypython.asp?filename=demo_oper_ass3" target="_blank">
+            <button class="tryit">Try it bro..</button></a></span></td>
+            </tr>
+
+            <tr>
+                <td class="tab">*=</td>
+                <td class="tab">x *= 3</td>
+                <td class="tab">x = x * 3</td>
+                <td class="tab"><span class="compiler"><a href="https://www.w3schools.com/python/trypython.asp?filename=demo_oper_ass4" target="_blank">
+            <button class="tryit">Try it bro..</button></a></span></td>
+            </tr>
+
+            <tr>
+                <td>/=</td>
+                <td>x /= 3</td>
+                <td>x = x / 3</td>
+                <td><span class="compiler"><a href="https://www.w3schools.com/python/trypython.asp?filename=demo_oper_ass5" target="_blank">
+            <button class="tryit">Try it bro..</button></a></span></td>
+            </tr>
+
+            <tr>
+                <td class="tab">%=</td> class="tab"
+                <td class="tab">x %= 3</td>
+                <td class="tab">x = x % 3</td>
+                <td class="tab"><span class="compiler"><a href="https://www.w3schools.com/python/trypython.asp?filename=demo_oper_ass6" target="_blank">
+            <button class="tryit">Try it bro..</button></a></span></td>
+            </tr>
+
+            <tr>
+                <td>//=</td>
+                <td>x //= 3</td>
+                <td>x = x // 3</td>
+                <td><span class="compiler"><a href="https://www.w3schools.com/python/trypython.asp?filename=demo_oper_ass7" target="_blank">
+            <button class="tryit">Try it bro..</button></a></span></td>
+            </tr>
+
+            <tr>
+                <td class="tab">**=</td>
+                <td class="tab">x **= 3</td>
+                <td class="tab">x = x ** 3</td>
+                <td class="tab"><span class="compiler"><a href="https://www.w3schools.com/python/trypython.asp?filename=demo_oper_ass8" target="_blank">
+            <button class="tryit">Try it bro..</button></a></span></td>
+            </tr>
+
+            <tr>
+                <td>&=</td>
+                <td>x &= 3</td>
+                <td>x = x & 3</td>
+                <td><span class="compiler"><a href="https://www.w3schools.com/python/trypython.asp?filename=demo_oper_ass9" target="_blank">
+            <button class="tryit">Try it bro..</button></a></span></td>
+            </tr>
+
+            <tr>
+                <td class="tab">|=</td>
+                <td class="tab">x |= 3</td>
+                <td class="tab">x = x | 3</td>
+                <td class="tab"><span class="compiler"><a href="https://www.w3schools.com/python/trypython.asp?filename=demo_oper_ass10" target="_blank">
+            <button class="tryit">Try it bro..</button></a></span></td>
+            </tr>
+
+            <tr>
+                <td>^=</td>
+                <td>x ^= 3</td>
+                <td>x = x ^ 3</td>
+                <td><span class="compiler"><a href="https://www.w3schools.com/python/trypython.asp?filename=demo_oper_ass11" target="_blank">
+            <button class="tryit">Try it bro..</button></a></span></td>
+            </tr>
+
+            <tr>
+                <td class="tab">>>=</td>
+                <td class="tab">x >>= 3</td>
+                <td class="tab">x = x >> 3</td>
+                <td class="tab"><span class="compiler"><a href="https://www.w3schools.com/python/trypython.asp?filename=demo_oper_ass12" target="_blank">
+            <button class="tryit">Try it bro..</button></a></span></td>
+            </tr>
+
+            <tr>
+                <td><<=</td>
+                <td>x <<= 3</td>
+                <td>x = x << 3</td>
+                <td><span class="compiler"><a href="https://www.w3schools.com/python/trypython.asp?filename=demo_oper_ass13" target="_blank">
+            <button class="tryit">Try it bro..</button></a></span></td>
+            </tr>
+
+            <tr>
+                <td class="tab">:=</td>
+                <td class="tab">print(x := 3)</td>
+                <td class="tab">x = 3 print(x)</td>
+                <td class="tab"><span class="compiler"><a href="https://www.w3schools.com/python/trypython.asp?filename=demo_oper_walrus" target="_blank">
+            <button class="tryit">Try it bro..</button></a></span></td>
+            </tr>
+        </table>
+      </div>
+      <div class="Ex_each_chapter"></div>
+      <h2>Python Comparison Operators</h2>
+      <p>Comparison operators are used to compare two values:</p>
+      <div class="setting_data_type">
+        <table>
+            <tr>
+                <th>Operator</th>
+                <th>Name</th>
+                <th>Example</th>
+                <th>Try it</th>
+            </tr>
+
+            <tr>
+                <td>==</td>
+                <td>Equal</td>
+                <td>x == y</td>
+                <td><span class="compiler"><a href="https://www.w3schools.com/python/trypython.asp?filename=demo_oper_compare1" target="_blank">
+                    <button class="tryit">Try It bro..</button>
+                </a></span></td>
+            </tr>
+
+            <tr>
+                <td class="tab">!=</td>
+                <td class="tab">Not equal</td>
+                <td class="tab">x != y</td>
+                <td class="tab"><span class="compiler"><a href="https://www.w3schools.com/python/trypython.asp?filename=demo_oper_compare2" target="_blank">
+                    <button class="tryit">Try it bro..</button>
+                </a></span></td>
+            </tr>
+
+            <tr>
+                <td>></td>
+                <td>Greater than</td>
+                <td>x > y</td>
+                <td><span class="compiler"><a href="https://www.w3schools.com/python/trypython.asp?filename=demo_oper_compare4" target="_blank">
+                    <button class="tryit">Try It bro..</button>
+                </a></span></td>
+            </tr>
+
+            <tr>
+                <td class="tab"><</td>
+                <td class="tab">Less than</td>
+                <td class="tab">x < y</td>
+                <td class="tab"><span class="compiler"><a href="https://www.w3schools.com/python/trypython.asp?filename=demo_oper_compare5" target="_blank">
+                    <button class="tryit">Try it bro..</button>
+                </a></span></td>
+            </tr>
+
+            <tr>
+                <td>>=</td>
+                <td>Greater than or equal to</td>
+                <td>x >= y</td>
+                <td><span class="compiler"><a href="https://www.w3schools.com/python/trypython.asp?filename=demo_oper_compare6" target="_blank">
+                    <button class="tryit">Try It bro..</button>
+                </a></span></td>
+            </tr>
+
+            <tr>
+                <td class="tab"><=</td>
+                <td class="tab">Less than or equal to</td>
+                <td class="tab">x <= y</td>
+                <td class="tab"><span class="compiler"><a href="https://www.w3schools.com/python/trypython.asp?filename=demo_oper_compare7" target="_blank">
+                    <button class="tryit">Try it bro..</button>
+                </a></span></td>
+            </tr>
+        </table>
+      </div>
+      <div class="Ex_each_chapter"></div>
+      <h2>Python Logical Operators</h2>
+      <p>Logical operators are used to combine conditional statements:</p>
+      <div class="setting_data_type">
+        <table>
+            <tr>
+                <th>Operator</th>
+                <th>Description</th>
+                <th>Example</th>
+                <th>Try it</th>
+            </tr>
+
+            <tr>
+                <td>and</td>
+                <td>Returns True if both statements are true</td>
+                <td>x < 5 and  x < 10</td>
+                <td><span class="compiler"><a href="https://www.w3schools.com/python/trypython.asp?filename=demo_oper_logical1" target="_blank">
+                    <button class="tryit">Try it bro..</button>
+                </a></span></td>
+            </tr>
+
+            <tr>
+                <td class="tab">or</td>
+                <td class="tab">Returns True if one of the statements is true</td>
+                <td class="tab">x < 5 or x < 4</td>
+                <td class="tab"><span class="compiler"><a href="https://www.w3schools.com/python/trypython.asp?filename=demo_oper_logical2" target="_blank">
+                    <button class="tryit">Try it bro..</button>
+                </a></span></td>
+            </tr>
+
+            <tr>
+                <td>not</td>
+                <td>Reverse the result, returns False if the result is true</td>
+                <td>not(x < 5 and x < 10)</td>
+                <td><span class="compiler"><a href="https://www.w3schools.com/python/trypython.asp?filename=demo_oper_logical3" target="_blank">
+                    <button class="tryit">Try it bro..</button>
+                </a></span></td>
+            </tr>
+        </table>
+      </div>
+      <div class="Ex_each_chapter"></div>
+      <h2>Python Identity Operators</h2>
+      <p>Identity operators are used to compare the objects, not if they are equal, but if they are actually the same object, with the same memory location:</p>
+      <div class="setting_data_type">
+        <table>
+            <tr>
+                <th>Operator</th>
+                <th>Description</th>
+                <th>Example</th>
+                <th>Try it</th>
+            </tr>
+
+            <tr>
+                <td>is</td>
+                <td>Returns True if both variables are the same object</td>
+                <td>x is</td>
+                <td><span class="compiler"><a href="https://www.w3schools.com/python/trypython.asp?filename=demo_oper_identity1" target="_blank">
+                    <button class="tryit">Try it bro..</button>
+                </a></span></td>
+            </tr>
+
+            <tr>
+                <td class="tab">is not</td>
+                <td class="tab">Returns True if both variables are not the same object</td>
+                <td class="tab">x is not y</td>
+                <td class="tab"><span class="compiler"><a href="https://www.w3schools.com/python/trypython.asp?filename=demo_oper_identity2" target="_blank">
+                    <button class="tryit">Try it bro..</button>
+                </a></span></td>
+            </tr>
+        </table>
+      </div>
+      <div class="Ex_each_chapter"></div>
+      <h2>Python Membership Operators</h2>
+      <p>Membership operators are used to test if a sequence is presented in an object:</p>
+      <div class="setting_data_type">
+        <table>
+            <tr>
+                <th>Operator</th>
+                <th>Description</th>
+                <th>Example</th>
+                <th>Try it</th>
+            </tr>
+
+            <tr>
+                <td>in</td>
+                <td>Returns True if a sequence with the specified value is present in the object	</td>
+                <td>x in y</td>
+                <td><span class="compiler"><a href="https://www.w3schools.com/python/trypython.asp?filename=demo_oper_membership1" target="_blank">
+                    <button class="tryit">Try it bro..</button>
+                </a></span></td>
+            </tr>
+
+            <tr>
+                <td class="tab">not in</td>
+                <td class="tab">Returns True if a sequence with the specified value is not present in the object</td>
+                <td class="tab">x not in y</td>
+                <td class="tab"><span class="compiler"><a href="https://www.w3schools.com/python/trypython.asp?filename=demo_oper_membership2" target="_blank">
+                    <button class="tryit">Try it bro..</button>
+                </a></span></td>
+            </tr>
+        </table>
+      </div>
+      <div class="Ex_each_chapter"></div>
+      <h2>Python Bitwise Operators</h2>
+      <p>Bitwise operators are used to compare (binary) numbers:</p>
+      <div class="setting_data_type">
+        <table>
+            <tr>
+                <th>Operator</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Example</th>
+                <th>Try it</th>
+            </tr>
+
+            <tr>
+                <td>&</td>
+                <td>AND</td>
+                <td>Sets each bit to 1 if both bits are 1</td>
+                <td>x & y</td>
+                <td><span class="compiler"><a href="https://www.w3schools.com/python/trypython.asp?filename=demo_oper_and" target="_blank">
+                    <button class="tryit">Try it bro..</button>
+                </a></span></td>
+            </tr>
+
+            <tr>
+                <td class="tab">|</td>
+                <td class="tab">OR</td>
+                <td class="tab">Sets each bit to 1 if one of two bits is 1</td>
+                <td class="tab">x | y</td>
+                <td class="tab"><span class="compiler"><a href="https://www.w3schools.com/python/trypython.asp?filename=demo_oper_or" target="_blank">
+                    <button class="tryit">Try it bro..</button>
+                </a></span></td>
+            </tr>
+
+            <tr>
+                <td>^</td>
+                <td>XOR</td>
+                <td>Sets each bit to 1 if only one of two bits is 1</td>
+                <td>x ^ y</td>
+                <td><span class="compiler"><a href="https://www.w3schools.com/python/trypython.asp?filename=demo_oper_xor" target="_blank">
+                    <button class="tryit">Try it bro..</button>
+                </a></span></td>
+            </tr>
+
+            <tr>
+                <td class="tab">~</td>
+                <td class="tab">NOT</td>
+                <td class="tab">Inverts all the bits</td>
+                <td class="tab">~x</td>
+                <td class="tab"><span class="compiler"><a href="https://www.w3schools.com/python/trypython.asp?filename=demo_oper_not" target="_blank">
+                    <button class="tryit">Try it bro..</button>
+                </a></span></td>
+            </tr>
+
+            <tr>
+                <td><<</td>
+                <td>Zero fill left shift</td>
+                <td>Shift left by pushing zeros in from the right and let the leftmost bits fall off</td>
+                <td>x << 2</td>
+                <td><span class="compiler"><a href="https://www.w3schools.com/python/trypython.asp?filename=demo_oper_left_shift" target="_blank">
+                    <button class="tryit">Try it bro..</button>
+                </a></span></td>
+            </tr>
+
+            <tr>
+                <td class="tab">>></td>
+                <td class="tab">Signed right shift</td>
+                <td class="tab">Shift right by pushing copies of the leftmost bit in from the left, and let the rightmost bits fall off</td>
+                <td class="tab">x >> 2</td>
+                <td class="tab"><span class="compiler"><a href="https://www.w3schools.com/python/trypython.asp?filename=demo_oper_right_shift" target="_blank">
+                    <button class="tryit">Try it bro..</button>
+                </a></span></td>
+            </tr>
+        </table>
+      </div>
+      <div class="Ex_each_chapter"></div>
+      <h2>Operator Precedence</h2>
+      <p>Operator precedence describes the order in which operations are performed.</p>
+      <h3>Example</h3>
+      <ul>
+        <li>Parentheses has the highest precedence, meaning that expressions inside parentheses must be evaluated first:</li>
+      </ul>
+      <div class="code_container">
+        <pre><span class="py_code">print</span>((<span class="text_code">6</span> + <span class="text_code">3</span>) - (<span class="text_code">6</span> + <span class="text_code">3</span>))</pre>
+      </div>
+      <div class="compiler"><a href="https://www.w3schools.com/python/trypython.asp?filename=demo_precedence_parentheses" target="_blank">
+        <button class="tryit">Try it yourself bro..</button>
+      </a></div>
+      <h3>Example</h3>
+      <ul>
+        <li>Multiplication <span class="bool">*</span> has higher precedence than addition <span class="bool">+</span> , and therefore multiplications are evaluated before additions:</li>
+      </ul>
+      <div class="code_container">
+        <pre><span class="py_code">print</span>(<span class="text_code">100</span> + <span class="text_code">5</span> * <span class="text_code">3</span>)</pre>
+      </div>
+      <div class="compiler"><a href="https://www.w3schools.com/python/trypython.asp?filename=demo_precedence_multiplication" target="_blank">
+        <button class="tryit">Try it yourself bro..</button>
+      </a></div>
+      <p>The precedence order is described in the table below, starting with the highest precedence at the top:</p>
+      <div class="setting_data_type">
+        <table>
+            <tr>
+                <th>Operator</th>
+                <th>Description</th>
+                <th>Try it</th>
+            </tr>
+
+            <tr>
+                <td>()</td>
+                <td>Parentheses</td>
+                <td><span class="compiler"><a href="https://www.w3schools.com/python/trypython.asp?filename=demo_precedence_parentheses">
+                    <button class="tryit">Try it bro..</button>
+                </a></span></td>
+            </tr>
+
+            <tr>
+                <td class="tab">**</td>
+                <td class="tab">Exponentiation</td>
+                <td class="tab"><span class="compiler"><a href="https://www.w3schools.com/python/trypython.asp?filename=demo_precedence_exponent" target="_blank">
+                    <button class="tryit">Try it bro..</button>
+                </a></span></td>
+            </tr>
+
+            <tr>
+                <td>+x  -x  ~x</td>
+                <td>Unary plus, unary minus, and bitwise NOT</td>
+                <td><span class="compiler"><a href="https://www.w3schools.com/python/trypython.asp?filename=demo_precedence_bitwise_not">
+                    <button class="tryit">Try it bro..</button>
+                </a></span></td>
+            </tr>
+
+            <tr>
+                <td class="tab">*  /  //  %</td>
+                <td class="tab">Multiplication, division, floor division, and modulus</td>
+                <td class="tab"><span class="compiler"><a href="https://www.w3schools.com/python/trypython.asp?filename=demo_precedence_multiplication" target="_blank">
+                    <button class="tryit">Try it bro..</button>
+                </a></span></td>
+            </tr>
+
+            <tr>
+                <td>+  -</td>
+                <td>Addition and subtraction</td>
+                <td><span class="compiler"><a href="https://www.w3schools.com/python/trypython.asp?filename=demo_precedence_subtraction">
+                    <button class="tryit">Try it bro..</button>
+                </a></span></td>
+            </tr>
+
+            <tr>
+                <td class="tab"><<  >></td>
+                <td class="tab">Bitwise left and right shifts</td>
+                <td class="tab"><span class="compiler"><a href="https://www.w3schools.com/python/trypython.asp?filename=demo_precedence_shift" target="_blank">
+                    <button class="tryit">Try it bro..</button>
+                </a></span></td>
+            </tr>
+
+            <tr>
+                <td>&</td>
+                <td>Bitwise AND</td>
+                <td><span class="compiler"><a href="https://www.w3schools.com/python/trypython.asp?filename=demo_precedence_bitwise_and">
+                    <button class="tryit">Try it bro..</button>
+                </a></span></td>
+            </tr>
+
+            <tr>
+                <td class="tab">^</td>
+                <td class="tab">Bitwise XOR</td>
+                <td class="tab"><span class="compiler"><a href="https://www.w3schools.com/python/trypython.asp?filename=demo_precedence_bitwise_xor" target="_blank">
+                    <button class="tryit">Try it bro..</button>
+                </a></span></td>
+            </tr>
+
+            <tr>
+                <td>|</td>
+                <td>Bitwise OR</td>
+                <td><span class="compiler"><a href="https://www.w3schools.com/python/trypython.asp?filename=demo_precedence_bitwise_or">
+                    <button class="tryit">Try it bro..</button>
+                </a></span></td>
+            </tr>
+
+            <tr>
+                <td class="tab">==  !=  >  >=  <  <=  is  is not  in  not in</td>
+                <td class="tab">Comparisons, identity, and membership operators</td>
+                <td class="tab"><span class="compiler"><a href="https://www.w3schools.com/python/trypython.asp?filename=demo_precedence_like" target="_blank">
+                    <button class="tryit">Try it bro..</button>
+                </a></span></td>
+            </tr>
+
+            <tr>
+                <td>not</td>
+                <td>Logical NOT</td>
+                <td><span class="compiler"><a href="https://www.w3schools.com/python/trypython.asp?filename=demo_precedence_not">
+                    <button class="tryit">Try it bro..</button>
+                </a></span></td>
+            </tr>
+
+            <tr>
+                <td class="tab">and</td>
+                <td class="tab">AND</td>
+                <td class="tab"><span class="compiler"><a href="https://www.w3schools.com/python/trypython.asp?filename=demo_precedence_and" target="_blank">
+                    <button class="tryit">Try it bro..</button>
+                </a></span></td>
+            </tr>
+
+            <tr>
+                <td>or</td>
+                <td>OR</td>
+                <td><span class="compiler"><a href="https://www.w3schools.com/python/trypython.asp?filename=demo_precedence_or">
+                    <button class="tryit">Try it bro..</button>
+                </a></span></td>
+            </tr>
+        </table>
+      </div>
+      <p>If two operators have the same precedence, the expression is evaluated from left to right.</p>
+      <h3>Example</h3>
+      <ul>
+        <li>Addition <span class="bool">+</span> and subtraction <span class="bool">-</span> has the same precedence, and therefore we evaluate the expression from left to right:</li>
+      </ul>
+      <div class="code_container">
+        <pre><span class="py_code">print</span>(<span class="text_code">5</span> + <span class="text_code">4</span> - <span class="text_code">7</span> + <span class="text_code">3</span>)</pre>
+      </div>
+      <div class="compiler"><a href="https://www.w3schools.com/python/trypython.asp?filename=demo_precedence_same" target="_blank">
+        <button class="tryit">Try it yourself bro..</button>
+      </a></div>
+      <br>
     </div>
 
-    <div class="activity_content">
-        <aside class="activity_sidebar">
-            <h1>Activity API</h1>
-            <button onclick="dog()">Dog API Generator</button>
-            <button onclick="cat()">Cat API Generator</button>
-            <button onclick="quotes()">Quotes API Generator</button>
-        </aside>
+    <aside class="activity_sidebar">
+      <h1>Activity API</h1>
+      <button onclick="dog()">Dog API Generator</button>
+      <button onclick="cat()">Cat API Generator</button>
+      <button onclick="quotes()">Quotes API Generator</button>
+    </aside>
+  </div>
+
+  <footer>
+    <div class="footer">
+      <p>Learning Hub 2025</p>
+      <p>GMAIL: <a href="mailto:jhinbangcoyo@gmail.com">jhinbangcoyo@gmail.com</a></p>
+      <div class="social-links">
+        <a href="https://www.facebook.com/jhinbangcoyo" target="_blank">
+          <img class="socials" src="../socials/fb.jpg" alt="Facebook" />
+        </a>
+        <a href="https://twitter.com/" target="_blank">
+          <img class="socials" src="../socials/twitter.jpg" alt="Twitter" />
+        </a>
+        <a href="https://www.instagram.com/kryll_dave" target="_blank">
+          <img class="socials" src="../socials/insta.jpg" alt="Instagram" />
+        </a>
+        <a href="https://www.youtube.com/" target="_blank">
+          <img class="socials" src="../socials/yt.png" alt="YouTube" />
+        </a>
+      </div>
     </div>
+  </footer>
 
-
-    <footer>
-        <div class="footer">
-            <p>Learning Hub 2025</p>
-            <p>GMAIL: <a href="mailto:jhinbangcoyo@gmail.com">jhinbangcoyo@gmail.com</a></p>
-            <div class="social-links">
-                <a href="https://www.facebook.com/jhinbangcoyo" target="_blank">
-                    <img class="socials" src="../socials/fb.jpg" alt="Facebook">
-                </a>
-                <a href="https://twitter.com/" target="_blank">
-                    <img class="socials" src="../socials/twitter.jpg" alt="Twitter">
-                </a>
-                <a href="https://www.instagram.com/kryll_dave" target="_blank">
-                    <img class="socials" src="../socials/insta.jpg" alt="Instagram">
-                </a>
-                <a href="https://www.youtube.com/" target="_blank">
-                    <img class="socials" src="../socials/yt.png" alt="YouTube">
-                </a>
-            </div>
-        </div>
-    </footer>
-
-    <script src="control.js"></script>
+  <script src="control.js"></script>
 
 </body>
 </html>
