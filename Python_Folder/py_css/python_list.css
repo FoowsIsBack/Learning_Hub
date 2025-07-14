@@ -151,11 +151,6 @@ button[class="Clearn"]:hover{
     border-bottom: #2db134;
 }
 
-video{
-    width: 1000px;
-    height: 700px;
-}
-
 button:hover{
     border-radius: 5px;
     border-bottom: 2px solid red;
@@ -261,10 +256,6 @@ footer {
 .tryit{
     background-color: red;
     border-radius: 5px;
-}
-
-.py_video{
-    text-align: center;
 }
 
 .click_to_switch{

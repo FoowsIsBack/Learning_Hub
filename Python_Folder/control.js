@@ -45,7 +45,9 @@ function python_introduction(python_language) {
         window.location.href = "python_functions.html";
     } else if (python_language === "python_user-input") {
         window.location.href = "python_user-input.html";
-    } 
+    } else if (python_language === "python_dictionaries"){
+        window.location.href = "python_dictionaries.html";
+    }
 }
 
 function cat() {

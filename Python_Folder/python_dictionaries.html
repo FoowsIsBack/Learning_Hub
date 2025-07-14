@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Python Sets</title>
-  <link rel="stylesheet" href="py_css/python_sets.css" />
+  <title>Python Dictionaries</title>
+  <link rel="stylesheet" href="py_css/python_dictionaries.css" />
   <link rel="icon" href="../TechStack_icon/python_icon.png"/>
 </head>
 <body>
@@ -51,70 +51,45 @@
     </aside>
 
     <div class="py_intro">
-      <h1>Python Sets</h1>
+      <h1>Python Dictionaries</h1>
       <div class="py_title">
-        <h2>Set</h2>
-        <p>Sets are used to store multiple items in a single variable.</p>
-        <p>Set is one of 4 built-in data types in Python used to store collections of data, the other 3 are <a href="python_list.html">List</a>, <a href="python_tuple.html">Tuple</a>, and <a href="python_dictionaries.html">Dictionary</a>, all with different qualities and usage.</p>
-        <p>A set is a collection which is unordered, unchangeable*, and unindexed.</p>
-        <p><mark><b>* Note:</b> Set items are unchangeable, but you can remove items and add new items.</mark></p>
-        <p>Sets are written with curly brackets.</p>
+        <h2>Dictionary</h2>
+        <p>Dictionaries are used to store data values in key:value pairs.</p>
+        <p>A dictionary is a collection which is ordered*, changeable and do not allow duplicates.</p>
+        <p><b><mark>As of Python version 3.7, dictionaries are ordered. In Python 3.6 and earlier, dictionaries are unordered.</mark></b></p>
+        <p>Dictionaries are written with curly brackets, and have keys and values:</p>
         <h3>Example</h3>
         <ul>
-            <li>Create a Set:</li>
+            <li>Create and print a dictionary:</li>
         </ul>
         <div class="code_container">
-            <pre>thisset = {<span class="text_code">"apple"</span>, <span class="text_code">"banana"</span>, <span class="text_code">"cherry"</span>}
-<span class="py_code">print</span>(thisset)</pre>
+            <pre>thisdict = {
+  <span class="text_code">"brand"</span>: <span class="text_code">"Ford"</span>,
+  <span class="text_code">"model"</span>: <span class="text_code">"Mustang"</span>,
+  <span class="text_code">"year"</span>: <span class="text_code">1964</span>
+}
+<span class="py_code">print</span>(thisdict)</pre>
         </div>
         <div class="compiler">
             <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">
                 <button class="try">Try it yourself bro..</button>
             </a>
         </div>
-        <p><mark><b>Note:</b> Sets are unordered, so you cannot be sure in which order the items will appear.</mark></p>
       </div>
-      <div class="Ex_each_chapter">
-        <h2>Set Items</h2>
-        <p>Set items are unordered, unchangeable, and do not allow duplicate values.</p>
-      </div>
-      <div class="Ex_each_chapter">
-        <h2>Unordered</h2>
-        <p>Unordered means that the items in a set do not have a defined order.</p>
-        <p>Set items can appear in a different order every time you use them, and cannot be referred to by index or key.</p>
-      </div>
-      <div class="Ex_each_chapter">
-        <h2>Unchangeable</h2>
-        <p>Set items are unchangeable, meaning that we cannot change the items after the set has been created.</p>
-        <p><mark>Once a set is created, you cannot change its items, but you can remove items and add new items.</mark></p>
-      </div>
-      <div class="Ex_each_chapter">
-        <h2>Duplicates Not Allowed</h2>
-        <p>Sets cannot have two items with the same value.</p>
-        <h3>Example</h3>
-        <ul>
-            <li>Duplicate values will be ignored:</li>
-        </ul>
-        <div class="code_container">
-            <pre>thisset = {<span class="text_code">"apple"</span>, <span class="text_code">"banana"</span>, <span class="text_code">"cherry"</span>, <span class="text_code">"apple"</span>}
-
-<span class="py_code">print</span>(thisset)</pre>
-        </div>
-        <div class="compiler">
-            <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">
-                <button class="try">Try it yourself bro..</button>
-            </a>
-        </div>
-        <p><mark><b>Note:</b> The values <b>True</b> and <b>0</b> are considered the same value in sets, and are treated as duplicates:</mark></p>
-      </div>
+      <h2>Dictionary Items</h2>
+      <p>Dictionary items are ordered, changeable, and do not allow duplicates.</p>
+      <p>Dictionary items are presented in key:value pairs, and can be referred to by using the key name.</p>
       <h3>Example</h3>
       <ul>
-        <li><span class="bool">False</span> and <span class="bool">0</span> is considered the same value:</li>
+        <li>Print the "brand" value of the dictionary:</li>
       </ul>
       <div class="code_container">
-        <pre>thisset = {<span class="text_code">"apple"</span>, <span class="text_code">"banana"</span>, <span class="text_code">"cherry"</span>, <span class="py_code">False</span>, <span class="py_code">True</span>, <span class="py_code">0</span>}
-
-<span class="py_code">print</span>(thisset)</pre>
+        <pre>thisdict = {
+  <span class="text_code">"brand"</span>: <span class="text_code">"Ford"</span>,
+  <span class="text_code">"model"</span>: <span class="text_code">"Mustang"</span>,
+  <span class="text_code">"year"</span>: <span class="text_code">1964</span>
+}
+<span class="py_code">print</span>(thisdict[<span class="text_code">"brand"</span>])</pre>
       </div>
       <div class="compiler">
         <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">
@@ -122,101 +97,121 @@
         </a>
       </div>
       <div class="Ex_each_chapter"></div>
-      <h2>Get the Length of a Set</h2>
-      <p>To determine how many items a set has, use the <span class="bool">len()</span> function.</p>
+      <div class="Ex_each_chapter">
+        <h2>Ordered or Unordered?</h2>
+        <p><mark><b>As of Python version 3.7, dictionaries are ordered. In Python 3.6 and earlier, dictionaries are unordered.</b></mark></p>
+        <p>When we say that dictionaries are ordered, it means that the items have a defined order, and that order will not change.</p>
+        <p>Unordered means that the items do not have a defined order, you cannot refer to an item by using an index.</p>
+      </div>
+      <h2>Changeable</h2>
+      <p>Dictionaries are changeable, meaning that we can change, add or remove items after the dictionary has been created.</p>
+      <div class="Ex_each_chapter"></div>
+      <h2>Duplicates Not Allowed</h2>
+      <p>Dictionaries cannot have two items with the same key:</p>
       <h3>Example</h3>
       <ul>
-        <li>Get the number of items in a set:</li>
+        <li>Duplicate values will overwrite existing values:</li>
       </ul>
       <div class="code_container">
-        <pre>thisset = {<span class="text_code">"apple"</span>, <span class="text_code">"banana"</span>, <span class="text_code">"cherry"</span>}
-
-<span class="py_code">print</span>(<span class="py_code">len</span>(thisset))</pre>
+        <pre>thisdict = {
+  <span class="text_code">"brand"</span>: <span class="text_code">"Ford"</span>,
+  <span class="text_code">"model"</span>: <span class="text_code">"Mustang"</span>,
+  <span class="text_code">"year"</span>: <span class="text_code">1964</span>,
+  <span class="text_code">"year"</span>: <span class="text_code">2020</span>
+}
+<span class="py_code">print</span>(thisdict)</pre>
       </div>
       <div class="compiler">
         <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">
             <button class="try">Try it yourself bro..</button>
         </a>
       </div>
-      <div class="Ex_each_chapter">
-        <h2>Set Items - Data Types</h2>
-        <p>Set items can be of any data type:</p>
+      <div class="Ex_each_chapter"></div>
+        <h2>Dictionary Length</h2>
+        <p>To determine how many items a dictionary has, use the <span class="bool">len()</span> function:</p>
         <h3>Example</h3>
         <ul>
-            <li>String, int and boolean data types:</li>
+            <li>Print the number of items in the dictionary:</li>
         </ul>
         <div class="code_container">
-            <pre>set1 = {<span class="text_code">"apple"</span>, <span class="text_code">"banana"</span>, <span class="text_code">"cherry"</span>}
-set2 = {<span class="text_code">1</span>, <span class="text_code">5</span>, <span class="text_code">7</span>, <span class="text_code">9</span>, <span class="text_code">3</span>}
-set3 = {<span class="py_code">True</span>, <span class="py_code">False</span>, <span class="py_code">False</span>}</pre>
+            <pre><span class="py_code">print</span>(<span class="py_code">len</span>(thisdict))</pre>
         </div>
         <div class="compiler">
             <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">
                 <button class="try">Try it yourself bro..</button>
             </a>
         </div>
-        <p>A set can contain different data types:</p>
+        <div class="Ex_each_chapter"></div>
+        <h2>Dictionary Items - Data Types</h2>
+        <p>The values in dictionary items can be of any data type:</p>
         <h3>Example</h3>
         <ul>
-            <li>A set with strings, integers and boolean values:</li>
+            <li>String, int, boolean, and list data types:</li>
         </ul>
         <div class="code_container">
-            <pre>set1 = {<span class="text_code">"abc"</span>, <span class="text_code">34</span>, <span class="py_code">True</span>, <span class="text_code">40</span>, <span class="text_code">"male"</span>}</pre>
+            <pre>thisdict = {
+  <span class="text_code">"brand"</span>: <span class="text_code">"Ford"</span>,
+  <span class="text_code">"electric"</span>: <span class="py_code">False</span>,
+  <span class="text_code">"year"</span>: <span class="text_code">1964</span>,
+  <span class="text_code">"colors"</span>: [<span class="text_code">"red"</span>, <span class="text_code">"white"</span>, <span class="text_code">"blue"</span>]
+}</pre>
         </div>
         <div class="compiler">
             <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">
                 <button class="try">Try it yourself bro..</button>
             </a>
         </div>
-      </div>
-      <div class="Ex_each_chapter">
-        <h2>Type ()</h2>
-        <p>From Python's perspective, sets are defined as objects with the data type 'set':</p>
+        <div class="Ex_each_chapter"></div>
+        <h2>type()</h2>
+        <p>From Python's perspective, dictionaries are defined as objects with the data type 'dict':</p>
         <div class="code_container">
-            <pre>&lt;class 'tuple'&gt;</pre>
+            <pre>&lt;class 'dict'&gt;</pre>
         </div>
         <h3>Example</h3>
         <ul>
-            <li>What is the data type of a set?</li>
+            <li>Print the data type of a dictionary:</li>
         </ul>
         <div class="code_container">
-            <pre>myset = {<span class="text_code">"apple"</span>, <span class="text_code">"banana"</span>, <span class="text_code">"cherry"</span>}
-<span class="py_code">print</span>(<span class="py_code">type</span>(myset))</pre>
+            <pre>thisdict = {
+  <span class="text_code">"brand"</span>: <span class="text_code">"Ford"</span>,
+  <span class="text_code">"model"</span>: <span class="text_code">"Mustang"</span>,
+  <span class="text_code">"year"</span>: <span class="text_code">1964</span>
+}
+<span class="py_code">print</span>(<span class="py_code">type</span>(thisdict))</pre>
         </div>
         <div class="compiler">
             <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">
                 <button class="try">Try it yourself bro..</button>
             </a>
         </div>
-      </div>
-      <h2>The set() Constructor</h2>
-      <p>It is also possible to use the <span class="bool">set()</span> constructor to make a set.</p>
-      <h3>Example</h3>
-      <ul>
-        <li>Using the set() constructor to make a set:</li>
-      </ul>
-      <div class="code_container">
-        <pre>thisset = set((<span class="text_code">"apple"</span>, <span class="text_code">"banana"</span>, <span class="text_code">"cherry"</span>)) <span class="comment"># note the double round-brackets</span>
-<span class="py_code">print</span>(thisset)</pre>
-      </div>
-      <div class="compiler">
-        <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">
-            <button class="try">Try it yourself bro..</button>
-        </a>
-      </div>
-      <div class="Ex_each_chapter">
+        <div class="Ex_each_chapter"></div>
+        <h2>The dict() Constructor</h2>
+        <p>It is also possible to use the <span class="bool">dict()</span> constructor to make a dictionary.</p>
+        <h3>Example</h3>
+        <ul>
+            <li>Using the dict() method to make a dictionary:</li>
+        </ul>
+        <div class="code_container">
+            <pre>thisdict = dict(name = <span class="text_code">"Dave"</span>, age = <span class="text_code">21</span>, country = <span class="text_code">"philippines"</span>)
+<span class="py_code">print</span>(thisdict)</pre>
+        </div>
+        <div class="compiler">
+            <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">
+                <button class="try">Try it yourself bro..</button>
+            </a>
+        </div>
+        <div class="Ex_each_chapter"></div>
         <h2>Python Collections (Arrays)</h2>
         <p>There are four collection data types in the Python programming language:</p>
         <ul>
             <li><a href="python_list.html">List</a> is a collection which is ordered and changeable. Allows duplicate members.</li>
             <li><a href="python_tuple.html">Tuple</a> is a collection which is ordered and unchangeable. Allows duplicate members.</li>
-            <li><mark><b>Set</b></mark> is a collection which is unordered, unchangeable*, and unindexed. No duplicate members.</li>
-            <li><a href="python_dictionaries.html">Dictionary</a> is a collection which is ordered** and changeable. No duplicate members.</li>
+            <li><a href="python_sets.html">Set</a> is a collection which is unordered, unchangeable*, and unindexed. No duplicate members.</li>
+            <li><mark><b>Dictionary</b></mark> is a collection which is ordered** and changeable. No duplicate members.</li>
         </ul>
-        <p><mark><b>*Set items are unchangeable, but you can remove items and add new items.</b></mark></p>
+        <p><mark><b>*Set items are unchangeable, but you can remove and/or add items whenever you like.</b></mark></p>
         <p><mark><b>**As of Python version 3.7, dictionaries are ordered. In Python 3.6 and earlier, dictionaries are unordered.</b></mark></p>
         <p>When choosing a collection type, it is useful to understand the properties of that type. Choosing the right type for a particular data set could mean retention of meaning, and, it could mean an increase in efficiency or security.</p>
-      </div>
       <br>
     </div>
 

@@ -1,85 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Python Tuple</title>
-    <link rel="stylesheet" href="python_tuple.css">
-    <link rel="icon" href="../TechStack_icon/python_icon.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Python Tuples</title>
+  <link rel="stylesheet" href="py_css/python_tuple.css" />
+  <link rel="icon" href="../TechStack_icon/python_icon.png"/>
 </head>
 <body>
 
-    <header>
-        <div class="container">
-            <div class="logo">
-                <img src="../TechStack_icon/python_icon.png" alt="JPCS Logo" onclick="window.location.href='../page_content.html'" >
-                <h1>Learning Hub</h1>
-            </div>
-            <nav>
-                <div class="nav-buttons">
-                    <button onclick="maincontent('home')">HOME</button>
-                    <button onclick="maincontent('c_lang')">C Language</button>
-                    <button onclick="maincontent('python')">Python</button>
-                    <button onclick="maincontent('html')">HTML</button>
-                    <button onclick="maincontent('js')">JavaScript</button>
-                    <button onclick="maincontent('php')">PHP</button>
-                    <button onclick="maincontent('about')">ABOUT</button>
-                </div>
-            </nav>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="../TechStack_icon/python_icon.png" alt="C Logo" onclick="window.location.href='../page_content.html'" />
+        <h1>Learning Hub</h1>
+      </div>
+      <nav>
+        <div class="nav-buttons">
+          <button onclick="maincontent('home')">HOME</button>
+          <button onclick="maincontent('c_lang')">C Language</button>
+          <button onclick="maincontent('python')">Python</button>
+          <button onclick="maincontent('html')">HTML</button>
+          <button onclick="maincontent('js')">JavaScript</button>
+          <button onclick="maincontent('php')">PHP</button>
+          <button onclick="maincontent('about')">ABOUT</button>
         </div>
-    </header>
+      </nav>
+    </div>
+  </header>
 
-    <div class="page_content">
-        <aside class="sidebar">
-            <h1>Python Language</h1>
-            <button onclick="python_introduction('python_introduction')">Python Introduction</button>
-            <button onclick="python_introduction('python_syntax')">Python Syntax</button>
-            <button onclick="python_introduction('python_data-types')">Python Data Types</button>
-            <button onclick="python_introduction('python_booleans')">Python Booleans</button>
-            <button onclick="python_introduction('python_operators')">Python Operators</button>
-            <button onclick="python_introduction('python_list')">Python List</button>
-            <button onclick="python_introduction('python_tuple')">Python Tuple</button>
-            <button onclick="python_introduction('python_sets')">Python Sets</button>
-            <button onclick="python_introduction('python_if-else')">Python If Else</button>
-            <button onclick="python_introduction('python_while-loop')">Python While Loop</button>
-            <button onclick="python_introduction('python_for-loop')">Python For Loop</button>
-            <button onclick="python_introduction('python_functions')">Python Functions</button>
-            <button onclick="python_introduction('python_user-input')">Python User Input</button>
-        </aside>
+  <div class="main_container">
+    <aside class="sidebar">
+        <h1>Python Language</h1>
+        <button onclick="python_introduction('python_introduction')">Python Introduction</button>
+        <button onclick="python_introduction('python_syntax')">Python Syntax</button>
+        <button onclick="python_introduction('python_data-types')">Python Data Types</button>
+        <button onclick="python_introduction('python_booleans')">Python Booleans</button>
+        <button onclick="python_introduction('python_operators')">Python Operators</button>
+        <button onclick="python_introduction('python_list')">Python List</button>
+        <button onclick="python_introduction('python_tuple')">Python Tuple</button>
+        <button onclick="python_introduction('python_sets')">Python Sets</button>
+        <button onclick="python_introduction('python_dictionaries')">Python Dictionaries</button>
+        <button onclick="python_introduction('python_if-else')">Python If Else</button>
+        <button onclick="python_introduction('python_while-loop')">Python While Loop</button>
+        <button onclick="python_introduction('python_for-loop')">Python For Loop</button>
+        <button onclick="python_introduction('python_functions')">Python Functions</button>
+        <button onclick="python_introduction('python_user-input')">Python User Input</button>
+        <br>
+        <br>
+    </aside>
+
+    <div class="py_intro">
+      <h1>Python Tuples</h1>
+      <div class="py_title">
+        <h2>Tuple</h2>
+        <p>Tuples are used to store multiple items in a single variable.</p>
+        <p>Tuple is one of 4 built-in data types in Python used to store collections of data, the other 3 are <a href="python_list.html">List</a>, <a href="python_sets.html">Set</a>, and <a href="python_dictionaries.html">Dictionary</a>, all with different qualities and usage.</p>
+        <p>A tuple is a collection which is ordered and <b>unchangeable</b>.</p>
+        <p>Tuples are written with round brackets.</p>
+        <h3>Example</h3>
+        <ul>
+            <li>Create a Tuple:</li>
+        </ul>
+        <div class="code_container">
+            <pre>thistuple = (<span class="text_code">"apple"</span>, <span class="text_code">"banana"</span>, <span class="text_code">"cherry"</span>)
+<span class="py_code">print</span>(thistuple)</pre>
+        </div>
+        <div class="compiler">
+            <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">
+                <button class="try">Try it yourself bro..</button>
+            </a>
+        </div>
+      </div>
+
+    <div class="Ex_each_chapter">
+        <h2>Tuple Items</h2>
+        <p>Tuple items are ordered, unchangeable, and allow duplicate values.</p>
+        <p>Tuple items are indexed, the first item has index <span class="bool">[0]</span> , the second item has index <span class="bool">[1]</span> etc.</p>
+      </div>
+      <h2>Ordered</h2>
+      <p>When we say that tuples are ordered, it means that the items have a defined order, and that order will not change.</p>
+      <div class="Ex_each_chapter"></div>
+      <h2>Unchangeable</h2>
+      <p>Tuples are unchangeable, meaning that we cannot change, add or remove items after the tuple has been created.</p>
+      <div class="Ex_each_chapter"></div>
+      <h2>Allow Duplicates</h2>
+      <p>Since tuples are indexed, they can have items with the same value:</p>
+      <h3>Example</h3>
+      <ul>
+        <li>Lists allow duplicate values:</li>
+      </ul>
+      <div class="code_container">
+        <pre>thistuple = (<span class="text_code">"apple"</span>, <span class="text_code">"banana"</span>, <span class="text_code">"cherry"</span>, <span class="text_code">"apple"</span>, <span class="text_code">"cherry"</span>)
+<span class="py_code">print</span>(thistuple)</pre>
+      </div>
+      <div class="compiler">
+        <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+      </div>
+      <div class="Ex_each_chapter"></div>
+      <h2>Tuple Length</h2>
+      <p>To determine how many items a tuple has, use the <span class="bool">len()</span> function:</p>
+      <h3>Example</h3>
+      <ul>
+        <li>Print the number of items in the tuple:</li>
+      </ul>
+      <div class="code_container">
+        <pre>thistuple = (<span class="text_code">"apple"</span>, <span class="text_code">"banana"</span>, <span class="text_code">"cherry"</span>)
+<span class="py_code">print</span>(len(thistuple))</pre>
+      </div>
+      <div class="compiler">
+        <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+      </div>
+      <div class="Ex_each_chapter"></div>
+      <h2>Create Tuple With One Item</h2>
+      <p>To create a tuple with only one item, you have to add a comma after the item, otherwise Python will not recognize it as a tuple.</p>
+      <h3>Example</h3>
+      <ul>
+        <li>One item tuple, remember the comma:</li>
+      </ul>
+      <div class="code_container">
+        <pre>thistuple = (<span class="text_code">"apple"</span>,)
+<span class="py_code">print</span>(<span class="py_code">type</span>(thistuple))
+
+<span class="comment">#NOT a tuple</span>
+thistuple = (<span class="text_code">"apple"</span>)
+<span class="py_code">print</span>(<span class="py_code">type</span>(thistuple))</pre>
+      </div>
+      <div class="compiler">
+        <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+      </div>
+      <div class="Ex_each_chapter"></div>
+      <h2>Tuple Items - Data Types</h2>
+      <p>Tuple items can be of any data type:</p>
+      <h3>Example</h3>
+      <ul>
+        <li>String, int and boolean data types:</li>
+      </ul>
+      <div class="code_container">
+        <pre>tuple1 = (<span class="text_code">"apple"</span>, <span class="text_code">"banana"</span>, <span class="text_code">"cherry"</span>)
+tuple2 = (<span class="text_code">1</span>, <span class="text_code">5</span>, <span class="text_code">7</span>, <span class="text_code">9</span>, <span class="text_code">3</span>)
+tuple3 = (<span class="py_code">True</span>, <span class="py_code">False</span>, <span class="py_code">False</span>)</pre>
+      </div>
+      <div class="compiler">
+        <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+      </div>
+      <p>A tuple can contain different data types:</p>
+      <h3>Example</h3>
+      <ul>
+        <li>A tuple with strings, integers and boolean values:</li>
+      </ul>
+      <div class="code_container">
+        <pre>tuple1 = (<span class="text_code">"abc"</span>, <span class="text_code">34</span>, <span class="py_code">True</span>, <span class="text_code">40</span>, <span class="text_code">"male"</span>)</pre>
+      </div>
+      <div class="compiler">
+        <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+      </div>
+      <div class="Ex_each_chapter"></div>
+      <h2>type()</h2>
+      <p>From Python's perspective, tuples are defined as objects with the data type 'tuple':</p>
+      <div class="code_container">
+        <pre>&lt;class 'tuple'&gt;</pre>
+      </div>
+      <h3>Example</h3>
+      <ul>
+        <li>What is the data type of a tuple?</li>
+      </ul>
+      <div class="code_container">
+        <pre>mytuple = (<span class="text_code">"apple"</span>, <span class="text_code">"banana"</span>, <span class="text_code">"cherry"</span>)
+<span class="py_code">print</span>(<span class="py_code">type</span>(mytuple))</pre>
+      </div>
+      <div class="compiler">
+        <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+      </div>
+      <div class="Ex_each_chapter"></div>
+      <h2>The tuple() Constructor</h2>
+      <p>It is also possible to use the <span class="bool">tuple()</span> constructor to make a tuple.</p>
+      <h3>Example</h3>
+      <ul>
+        <li>Using the tuple() method to make a tuple:</li>
+      </ul>
+      <div class="code_container">
+        <pre>thistuple = tuple((<span class="text_code">"apple"</span>, <span class="text_code">"banana"</span>, <span class="text_code">"cherry"</span>)) <span class="comment"># note the double round-brackets</span>
+<span class="py_code">print</span>(thistuple)</pre>
+      </div>
+      <div class="compiler">
+        <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+      </div>
+      <div class="Ex_each_chapter"></div>
+      <h2>Python Collections (Arrays)</h2>
+      <p>There are four collection data types in the Python programming language:</p>
+      <ul>
+        <li><a href="python_list.html">List</a> is a collection which is ordered and changeable. Allows duplicate members.</li>
+        <li><b><mark>Tuple</mark></b> is a collection which is ordered and unchangeable. Allows duplicate members.</li>
+        <li><a href="python_sets.html">Set</a> is a collection which is unordered, unchangeable*, and unindexed. No duplicate members.</li>
+        <li><b><a href="python_dictionaries.html">Dictionary</a></b> is a collection which is ordered** and changeable. No duplicate members.</li>
+      </ul>
+      <p><mark><b>*Set items are unchangeable, but you can remove and/or add items whenever you like.</b></mark></p>
+      <p><mark><b>**As of Python version 3.7, dictionaries are ordered. In Python 3.6 and earlier, dictionaries are unordered.</b></mark></p>
+      <p>When choosing a collection type, it is useful to understand the properties of that type. Choosing the right type for a particular data set could mean retention of meaning, and, it could mean an increase in efficiency or security.</p>
+      <br>
     </div>
 
-    <div class="activity_content">
-        <aside class="activity_sidebar">
-            <h1>Activity API</h1>
-            <button onclick="dog()">Dog API Generator</button>
-            <button onclick="cat()">Cat API Generator</button>
-            <button onclick="quotes()">Quotes API Generator</button>
-        </aside>
+    <aside class="activity_sidebar">
+      <h1>Activity API</h1>
+      <button onclick="dog()">Dog API Generator</button>
+      <button onclick="cat()">Cat API Generator</button>
+      <button onclick="quotes()">Quotes API Generator</button>
+    </aside>
+  </div>
+
+  <footer>
+    <div class="footer">
+      <p>Learning Hub 2025</p>
+      <p>GMAIL: <a href="mailto:jhinbangcoyo@gmail.com">jhinbangcoyo@gmail.com</a></p>
+      <div class="social-links">
+        <a href="https://www.facebook.com/jhinbangcoyo" target="_blank">
+          <img class="socials" src="../socials/fb.jpg" alt="Facebook" />
+        </a>
+        <a href="https://twitter.com/" target="_blank">
+          <img class="socials" src="../socials/twitter.jpg" alt="Twitter" />
+        </a>
+        <a href="https://www.instagram.com/kryll_dave" target="_blank">
+          <img class="socials" src="../socials/insta.jpg" alt="Instagram" />
+        </a>
+        <a href="https://www.youtube.com/" target="_blank">
+          <img class="socials" src="../socials/yt.png" alt="YouTube" />
+        </a>
+      </div>
     </div>
+  </footer>
 
-
-    <footer>
-        <div class="footer">
-            <p>Learning Hub 2025</p>
-            <p>GMAIL: <a href="mailto:jhinbangcoyo@gmail.com">jhinbangcoyo@gmail.com</a></p>
-            <div class="social-links">
-                <a href="https://www.facebook.com/jhinbangcoyo" target="_blank">
-                    <img class="socials" src="../socials/fb.jpg" alt="Facebook">
-                </a>
-                <a href="https://twitter.com/" target="_blank">
-                    <img class="socials" src="../socials/twitter.jpg" alt="Twitter">
-                </a>
-                <a href="https://www.instagram.com/user.d4veee" target="_blank">
-                    <img class="socials" src="../socials/insta.jpg" alt="Instagram">
-                </a>
-                <a href="https://www.youtube.com/" target="_blank">
-                    <img class="socials" src="../socials/yt.png" alt="YouTube">
-                </a>
-            </div>
-        </div>
-    </footer>
-
-    <script src="control.js"></script>
+  <script src="control.js"></script>
 
 </body>
 </html>
