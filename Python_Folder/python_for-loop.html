@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Python For Loop</title>
-    <link rel="stylesheet" href="python_for_loop.css">
-    <link rel="icon" href="../TechStack_icon/python_icon.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Python For Loops</title>
+  <link rel="stylesheet" href="py_css/python_for_loop.css" />
+  <link rel="icon" href="../TechStack_icon/python_icon.png"/>
 </head>
 <body>
 
-    <header>
-        <div class="container">
-            <div class="logo">
-                <img src="../TechStack_icon/python_icon.png" alt="JPCS Logo" onclick="window.location.href='../page_content.html'" >
-                <h1>Learning Hub</h1>
-            </div>
-            <nav>
-                <div class="nav-buttons">
-                    <button onclick="maincontent('home')">HOME</button>
-                    <button onclick="maincontent('c_lang')">C Language</button>
-                    <button onclick="maincontent('python')">Python</button>
-                    <button onclick="maincontent('html')">HTML</button>
-                    <button onclick="maincontent('js')">JavaScript</button>
-                    <button onclick="maincontent('php')">PHP</button>
-                    <button onclick="maincontent('about')">ABOUT</button>
-                </div>
-            </nav>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="../TechStack_icon/python_icon.png" alt="C Logo" onclick="window.location.href='../page_content.html'" />
+        <h1>Learning Hub</h1>
+      </div>
+      <nav>
+        <div class="nav-buttons">
+          <button onclick="maincontent('home')">HOME</button>
+          <button onclick="maincontent('c_lang')">C Language</button>
+          <button onclick="maincontent('python')">Python</button>
+          <button onclick="maincontent('html')">HTML</button>
+          <button onclick="maincontent('js')">JavaScript</button>
+          <button onclick="maincontent('php')">PHP</button>
+          <button onclick="maincontent('about')">ABOUT</button>
         </div>
-    </header>
+      </nav>
+    </div>
+  </header>
 
   <div class="main_container">
     <aside class="sidebar">
@@ -50,38 +50,230 @@
         <br>
     </aside>
 
-    <div class="activity_content">
-        <aside class="activity_sidebar">
-            <h1>Activity API</h1>
-            <button onclick="dog()">Dog API Generator</button>
-            <button onclick="cat()">Cat API Generator</button>
-            <button onclick="quotes()">Quotes API Generator</button>
-        </aside>
+    <div class="py_intro">
+      <h1>Python For Loops</h1>
+      <div class="py_title">
+      <h2>Python For Loops</h2>
+      <p>A <span class="bool">for</span> loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).</p>
+      <p>This is less like the <span class="bool">for</span> keyword in other programming languages, and works more like an iterator method as found in other object-orientated programming languages.</p>
+      <p>With the <span class="bool">for</span> loop we can execute a set of statements, once for each item in a list, tuple, set etc.</p>
+      <h3>Example</h3>
+      <ul>
+        <li>Print each fruit in a fruit list:</li>
+      </ul>
+      <div class="code_container">
+        <pre>fruits = [<span class="text_code">"apple"</span>, <span class="text_code">"banana"</span>, <span class="text_code">"cherry"</span>]
+<span class="py_code">for</span> x <span class="py_code">in</span> fruits:
+  <span class="py_code">print</span>(x)</pre>
+      </div>
+      <div class="compiler">
+        <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+      </div>
+      </div>
+      <p>The <span class="bool">for</span> loop does not require an indexing variable to set beforehand.</p>
+      <div class="Ex_each_chapter"></div>
+      <h2>Looping Through a String</h2>
+      <p>Even strings are iterable objects, they contain a sequence of characters:</p>
+      <h3>Example</h3>
+      <ul>
+        <li>Loop through the letters in the word "banana":</li>
+      </ul>
+      <div class="code_container">
+        <pre><span class="py_code">for</span> x <span class="py_code">in</span> <span class="text_code">"banana"</span>:
+  <span class="py_code">print</span>(x)</pre>
+      </div>
+      <div class="compiler">
+        <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+      </div>
+      <div class="Ex_each_chapter"></div>
+      <h2>The break Statement</h2>
+      <p>With the <span class="bool">break</span> statement we can stop the loop before it has looped through all the items:</p>
+      <h3>Example</h3>
+      <ul>
+        <li>Exit the loop when <span class="bool">x</span> is "banana":</li>
+      </ul>
+      <div class="code_container">
+        <pre>fruits = [<span class="text_code">"apple"</span>, <span class="text_code">"banana"</span>, <span class="text_code">"cherry"</span>]
+<span class="py_code">for</span> x <span class="py_code">in</span> fruits:
+  <span class="py_code">print</span>(x)
+  <span class="py_code">if</span> x == <span class="text_code">"banana"</span>:
+    <span class="py_code">break</span></pre>
+      </div>
+      <div class="compiler">
+        <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+      </div>
+      <h3>Example</h3>
+      <ul>
+        <li>Exit the loop when <span class="bool">x</span> is "banana", but this time the break comes before the print:</li>
+      </ul>
+      <div class="code_container">
+        <pre>fruits = [<span class="text_code">"apple"</span>, <span class="text_code">"banana"</span>, <span class="text_code">"cherry"</span>]
+<span class="py_code">for</span> x <span class="py_code">in</span> fruits:
+  <span class="py_code">if</span> x == <span class="text_code">"banana"</span>:
+    <span class="py_code">break</span>
+  <span class="py_code">print</span>(x)</pre>
+      </div>
+      <div class="compiler">
+        <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+      </div>
+      <div class="Ex_each_chapter"></div>
+      <h2>The continue Statement</h2>
+      <p>With the <span class="bool">continue</span> statement we can stop the current iteration of the loop, and continue with the next:</p>
+      <h3>Example</h3>
+      <ul>
+        <li>Do not print banana:</li>
+      </ul>
+      <div class="code_container">
+        <pre>fruits = [<span class="text_code">"apple"</span>, <span class="text_code">"banana"</span>, <span class="text_code">"cherry"</span>]
+<span class="py_code">for</span> x <span class="py_code">in</span> fruits:
+  <span class="py_code">if</span> x == <span class="text_code">"banana"</span>:
+    <span class="py_code">continue</span>
+  <span class="py_code">print</span>(x)</pre>
+      </div>
+      <div class="compiler">
+        <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+      </div>
+      <div class="Ex_each_chapter"></div>
+      <h2>The range() Function</h2>
+      <p>To loop through a set of code a specified number of times, we can use the <span class="bool">range()</span> function,</p>
+      <p>The <span class="bool">range()</span> function returns a sequence of numbers, starting from 0 by default, and increments by 1 (by default), and ends at a specified number.</p>
+      <h3>Example</h3>
+      <ul>
+        <li>Using the range() function:</li>
+      </ul>
+      <div class="code_container">
+        <pre><span class="py_code">for</span> x <span class="py_code">in</span> <span class="py_code">range</span>(<span class="text_code">6</span>):
+  <span class="py_code">print</span>(x)</pre>
+      </div>
+      <div class="compiler">
+        <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+      </div>
+      <p><mark>Note that <span class="bool">range(6)</span> is not the values of 0 to 6, but the values 0 to 5.</mark></p>
+      <p>The <span class="bool">range()</span> function defaults to 0 as a starting value, however it is possible to specify the starting value by adding a parameter: <span class="bool">range(2, 6)</span>, which means values from 2 to 6 (but not including 6):</p>
+      <h3>Example</h3>
+      <ul>
+        <li>Using the start parameter:</li>
+      </ul>
+      <div class="code_container">
+        <pre><span class="py_code">for</span> x <span class="py_code">in</span> <span class="py_code">range</span>(<span class="text_code">2</span>, <span class="text_code">6</span>):
+  <span class="py_code">print</span>(x)</pre>
+      </div>
+      <div class="compiler">
+        <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+      </div>
+      <p>The <span class="bool">range()</span> function defaults to increment the sequence by 1, however it is possible to specify the increment value by adding a third parameter: <span class="bool">range(2, 30, 3)</span>:</p>
+      <h3>Example</h3>
+      <ul>
+        <li>Increment the sequence with 3 (default is 1):</li>
+      </ul>
+      <div class="code_container">
+        <pre><span class="py_code">for</span> x <span class="py_code">in</span> <span class="py_code">range</span>(<span class="text_code">2</span>, <span class="text_code">30</span>, <span class="text_code">3</span>):
+  <span class="py_code">print</span>(x)</pre>
+      </div>
+      <div class="compiler">
+        <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+      </div>
+      <div class="Ex_each_chapter"></div>
+      <h2>Else in For Loop</h2>
+      <p>The <span class="bool">else</span> keyword in a <span class="bool">for</span> loop specifies a block of code to be executed when the loop is finished:</p>
+      <h3>Example</h3>
+      <ul>
+        <li>Print all numbers from 0 to 5, and print a message when the loop has ended:</li>
+      </ul>
+      <div class="code_container">
+        <pre><span class="py_code">for</span> x <span class="py_code">in</span> <span class="py_code">range</span>(<span class="text_code">6</span>):
+  <span class="py_code">print</span>(x)
+<span class="py_code">else</span>:
+  <span class="py_code">print</span>(<span class="text_code">"Finally finished!"</span>)</pre>
+      </div>
+      <div class="compiler">
+        <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+      </div>
+      <p><mark><b>Note</b>: The <b>else</b> block will NOT be executed if the loop is stopped by a <b>break</b> statement.</mark></p>
+      <h3>Nested Loop</h3>
+      <p>A nested loop is a loop inside a loop.</p>
+      <p>The "inner loop" will be executed one time for each iteration of the "outer loop":</p>
+      <h3>Example</h3>
+      <ul>
+        <li>Print each adjective for every fruit:</li>
+      </ul>
+      <div class="code_container">
+        <pre>adj = [<span class="text_code">"red"</span>, <span class="text_code">"big"</span>, <span class="text_code">"tasty"</span>]
+fruits = [<span class="text_code">"apple"</span>, <span class="text_code">"banana"</span>, <span class="text_code">"cherry"</span>]
+
+<span class="py_code">for</span> x <span class="py_code">in</span> adj:
+  <span class="py_code">for</span> y <span class="py_code">in</span> fruits:
+    <span class="py_code">print</span>(x, y)</pre>
+      </div>
+      <div class="compiler">
+        <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+      </div>
+      <div class="Ex_each_chapter"></div>
+      <h2>The pass Statement</h2>
+      <p><span class="bool">for</span> loops cannot be empty, but if you for some reason have a <span class="bool">for</span> loop with no content, put in the <span class="bool">pass</span> statement to avoid getting an error.</p>
+      <h3>Example</h3>
+      <div class="code_container">
+        <pre><span class="py_code">for</span> x <span class="py_code">in</span> [<span class="text_code">0</span>, <span class="text_code">1</span>, <span class="text_code">2</span>]:
+  <span class="py_code">pass</span></pre>
+      </div>
+      <div class="compiler">
+        <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+      </div>
+    <br>
     </div>
 
+    <aside class="activity_sidebar">
+      <h1>Activity API</h1>
+      <button onclick="dog()">Dog API Generator</button>
+      <button onclick="cat()">Cat API Generator</button>
+      <button onclick="quotes()">Quotes API Generator</button>
+    </aside>
+  </div>
 
-    <footer>
-        <div class="footer">
-            <p>Learning Hub 2025</p>
-            <p>GMAIL: <a href="mailto:jhinbangcoyo@gmail.com">jhinbangcoyo@gmail.com</a></p>
-            <div class="social-links">
-                <a href="https://www.facebook.com/jhinbangcoyo" target="_blank">
-                    <img class="socials" src="../socials/fb.jpg" alt="Facebook">
-                </a>
-                <a href="https://twitter.com/" target="_blank">
-                    <img class="socials" src="../socials/twitter.jpg" alt="Twitter">
-                </a>
-                <a href="https://www.instagram.com/user.d4veee" target="_blank">
-                    <img class="socials" src="../socials/insta.jpg" alt="Instagram">
-                </a>
-                <a href="https://www.youtube.com/" target="_blank">
-                    <img class="socials" src="../socials/yt.png" alt="YouTube">
-                </a>
-            </div>
-        </div>
-    </footer>
+  <footer>
+    <div class="footer">
+      <p>Learning Hub 2025</p>
+      <p>GMAIL: <a href="mailto:jhinbangcoyo@gmail.com">jhinbangcoyo@gmail.com</a></p>
+      <div class="social-links">
+        <a href="https://www.facebook.com/jhinbangcoyo" target="_blank">
+          <img class="socials" src="../socials/fb.jpg" alt="Facebook" />
+        </a>
+        <a href="https://twitter.com/" target="_blank">
+          <img class="socials" src="../socials/twitter.jpg" alt="Twitter" />
+        </a>
+        <a href="https://www.instagram.com/kryll_dave" target="_blank">
+          <img class="socials" src="../socials/insta.jpg" alt="Instagram" />
+        </a>
+        <a href="https://www.youtube.com/" target="_blank">
+          <img class="socials" src="../socials/yt.png" alt="YouTube" />
+        </a>
+      </div>
+    </div>
+  </footer>
 
-    <script src="control.js"></script>
+  <script src="control.js"></script>
 
 </body>
 </html>

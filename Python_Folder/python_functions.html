@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Python Functions</title>
-    <link rel="stylesheet" href="python_function.css">
-    <link rel="icon" href="../TechStack_icon/python_icon.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Python Functions</title>
+  <link rel="stylesheet" href="py_css/python_function.css" />
+  <link rel="icon" href="../TechStack_icon/python_icon.png"/>
 </head>
 <body>
 
-    <header>
-        <div class="container">
-            <div class="logo">
-                <img src="../TechStack_icon/python_icon.png" alt="JPCS Logo" onclick="window.location.href='../page_content.html'" >
-                <h1>Learning Hub</h1>
-            </div>
-            <nav>
-                <div class="nav-buttons">
-                    <button onclick="maincontent('home')">HOME</button>
-                    <button onclick="maincontent('c_lang')">C Language</button>
-                    <button onclick="maincontent('python')">Python</button>
-                    <button onclick="maincontent('html')">HTML</button>
-                    <button onclick="maincontent('js')">JavaScript</button>
-                    <button onclick="maincontent('php')">PHP</button>
-                    <button onclick="maincontent('about')">ABOUT</button>
-                </div>
-            </nav>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="../TechStack_icon/python_icon.png" alt="C Logo" onclick="window.location.href='../page_content.html'" />
+        <h1>Learning Hub</h1>
+      </div>
+      <nav>
+        <div class="nav-buttons">
+          <button onclick="maincontent('home')">HOME</button>
+          <button onclick="maincontent('c_lang')">C Language</button>
+          <button onclick="maincontent('python')">Python</button>
+          <button onclick="maincontent('html')">HTML</button>
+          <button onclick="maincontent('js')">JavaScript</button>
+          <button onclick="maincontent('php')">PHP</button>
+          <button onclick="maincontent('about')">ABOUT</button>
         </div>
-    </header>
+      </nav>
+    </div>
+  </header>
 
   <div class="main_container">
     <aside class="sidebar">
@@ -50,38 +50,385 @@
         <br>
     </aside>
 
-    <div class="activity_content">
-        <aside class="activity_sidebar">
-            <h1>Activity API</h1>
-            <button onclick="dog()">Dog API Generator</button>
-            <button onclick="cat()">Cat API Generator</button>
-            <button onclick="quotes()">Quotes API Generator</button>
-        </aside>
-    </div>
+    <div class="py_intro">
+      <h1>Python Functions</h1>
+      <div class="py_title">
+        <p><b>A function is a block of code which only runs when it is called.</b></p>
+        <p><b>You can pass data, known as parameters, into a function.</b></p>
+        <p><b>A function can return data as a result.</b></p>
+      </div>
+      <h2>Creating a Function</h2>
+      <ul>
+        <li>In Python a function is defined using the <span class="bool">def</span> keyword:</li>
+      </ul>
+      <h3>Example</h3>
+      <div class="code_container">
+        <pre><span class="py_code">def</span> my_function():
+  <span class="py_code">print</span>(<span class="text_code">"Hello from a function"</span>)</pre>
+      </div>
+      <div class="Ex_each_chapter"></div>
+      <h2>Calling a Function</h2>
+      <p>To call a function, use the function name followed by parenthesis:</p>
+      <h3>Example</h3>
+      <div class="code_container">
+        <pre><span class="py_code">def</span> my_function():
+  <span class="py_code">print</span>(<span class="text_code">"Hello from a function"</span>)
 
+my_function()</pre>
+      </div>
+      <div class="compiler">
+        <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+      </div>
+      <div class="Ex_each_chapter"></div>
+      <h2>Arguments</h2>
+      <p>Information can be passed into functions as arguments.</p>
+      <p>Arguments are specified after the function name, inside the parentheses. You can add as many arguments as you want, just separate them with a comma.</p>
+      <p>The following example has a function with one argument (fname). When the function is called, we pass along a first name, which is used inside the function to print the full name:</p>
+      <h3>Example</h3>
+      <div class="code_container">
+        <pre><span class="py_code">def</span> my_function(fname):
+  <span class="py_code">print</span>(fname + <span class="text_code">" Refsnes"</span>)
 
-    <footer>
-        <div class="footer">
-            <p>Learning Hub 2025</p>
-            <p>GMAIL: <a href="mailto:jhinbangcoyo@gmail.com">jhinbangcoyo@gmail.com</a></p>
-            <div class="social-links">
-                <a href="https://www.facebook.com/jhinbangcoyo" target="_blank">
-                    <img class="socials" src="../socials/fb.jpg" alt="Facebook">
-                </a>
-                <a href="https://twitter.com/" target="_blank">
-                    <img class="socials" src="../socials/twitter.jpg" alt="Twitter">
-                </a>
-                <a href="https://www.instagram.com/user.d4veee" target="_blank">
-                    <img class="socials" src="../socials/insta.jpg" alt="Instagram">
-                </a>
-                <a href="https://www.youtube.com/" target="_blank">
-                    <img class="socials" src="../socials/yt.png" alt="YouTube">
+my_function(<span class="text_code">"Emil"</span>)
+my_function(<span class="text_code">"Tobias"</span>)
+my_function(<span class="text_code">"Linus"</span>)</pre>
+      </div>
+      <div class="compiler">
+        <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+      </div>
+      <p><mark>Arguments are often shortened to args in Python documentations.</mark></p>
+      <div class="Ex_each_chapter"></div>
+      <h2>Parameters or Arguments?</h2>
+      <p>The terms parameter and argument can be used for the same thing: information that are passed into a function.</p>
+      <p><mark>From a function's perspective:</mark></p>
+      <p><mark>A parameter is the variable listed inside the parentheses in the function definition.</mark></p>
+      <p><mark>An argument is the value that is sent to the function when it is called.</mark></p>
+      <div class="Ex_each_chapter"></div>
+      <h2>Number of Arguments</h2>
+      <p>By default, a function must be called with the correct number of arguments. Meaning that if your function expects 2 arguments, you have to call the function with 2 arguments, not more, and not less.</p>
+      <h3>Example</h3>
+      <ul>
+        <li>This function expects 2 arguments, and gets 2 arguments:</li>
+      </ul>
+      <div class="code_container">
+        <pre><span class="py_code">def</span> my_function(fname, lname):
+  <span class="py_code">print</span>(fname + <span class="text_code">" "</span> + lname)
+
+my_function(<span class="text_code">"Emil"</span>, <span class="text_code">"Refsnes"</span>)</pre>
+      </div>
+      <div class="compiler">
+        <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+      </div>
+      <p>If you try to call the function with 1 or 3 arguments, you will get an error:</p>
+      <h3>Example</h3>
+      <div class="code_container1">
+        <ul>
+            <li class="p_error">This function expects 2 arguments, but gets only 1:</li>
+        </ul>
+        <div class="code_container">
+            <pre><span class="py_code">def</span> my_function(fname, lname):
+  <span class="py_code">print</span>(fname + <span class="py_code">" "</span> + lname)
+
+my_function(<span class="text_code">"Emil"</span>)</pre>
+        </div>
+        <div class="compiler">
+            <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">
+                <button class="try">Try it yourself bro..</button>
+            </a>
+        </div>
+      </div>
+      <div class="Ex_each_chapter"></div>
+      <h2>Arbitrary Arguments, *args</h2>
+      <p>If you do not know how many arguments that will be passed into your function, add a <span class="bool">*</span> before the parameter name in the function definition.</p>
+      <p>This way the function will receive a tuple of arguments, and can access the items accordingly:</p>
+      <h3>Example</h3>
+      <ul>
+        <li>If the number of arguments is unknown, add a <span class="bool">*</span> before the parameter name:</li>
+      </ul>
+      <div class="code_container">
+        <pre><span class="py_code">def</span> my_function(*kids):
+  <span class="py_code">print</span>(<span class="text_code">"The youngest child is "</span> + kids[2])
+
+my_function(<span class="text_code">"Emil"</span>, <span class="text_code">"Tobias"</span>, <span class="text_code">"Linus"</span>)</pre>
+      </div>
+        <div class="compiler">
+            <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">
+                <button class="try">Try it yourself bro..</button>
+            </a>
+        </div>
+        <p><mark>Arbitrary Arguments are often shortened to *args in Python documentations.</mark></p>
+        <div class="Ex_each_chapter"></div>
+        <h2>Keyword Arguments</h2>
+        <p>You can also send arguments with the key = value syntax.</p>
+        <p>This way the order of the arguments does not matter.</p>
+        <h3>Example</h3>
+        <div class="code_container">
+            <pre><span class="py_code">def</span> my_function(child3, child2, child1):
+  <span class="py_code">print</span>(<span class="text_code">"The youngest child is "</span> + child3)
+
+my_function(child1 = <span class="text_code">"Emil"</span>, child2 = <span class="text_code">"Tobias"</span>, child3 = <span class="text_code">"Linus"</span>)</pre>
+        </div>
+        <div class="compiler">
+            <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">
+                <button class="try">Try it yourself bro..</button>
+            </a>
+        </div>
+        <p><mark>The phrase Keyword Arguments are often shortened to kwargs in Python documentations.</mark></p>
+        <div class="Ex_each_chapter"></div>
+        <h2>Arbitrary Keyword Arguments, **kwargs</h2>
+        <p>If you do not know how many keyword arguments that will be passed into your function, add two asterisk: <span class="bool">**</span> before the parameter name in the function definition.</p>
+        <p>This way the function will receive a dictionary of arguments, and can access the items accordingly:</p>
+        <h3>Example</h3>
+        <ul>
+            <li>If the number of keyword arguments is unknown, add a double <span class="bool">**</span> before the parameter name:</li>
+        </ul>
+        <div class="code_container">
+            <pre><span class="py_code">def</span> my_function(**kid):
+  <span class="py_code">print</span>(<span class="text_code">"His last name is "</span> + kid[<span class="text_code">"lname"</span>])
+
+my_function(fname = <span class="text_code">"Tobias"</span>, lname = <span class="text_code">"Refsnes"</span>)</pre>
+        </div>
+        <div class="compiler">
+            <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">
+                <button class="try">Try it yourself bro..</button>
+            </a>
+        </div>
+        <p><mark>Arbitrary Kword Arguments are often shortened to **kwargs in Python documentations.</mark></p>
+        <div class="Ex_each_chapter"></div>
+        <h2>Default Parameter Value</h2>
+        <p>The following example shows how to use a default parameter value.</p>
+        <p>If we call the function without argument, it uses the default value:</p>
+        <h3>Example</h3>
+        <div class="code_container">
+            <pre><span class="py_code">def</span> my_function(country = <span class="text_code">"Norway"</span>):
+  <span class="py_code">print</span>(<span class="text_code">"I am from "</span> + country)
+
+my_function(<span class="text_code">"Sweden"</span>)
+my_function(<span class="text_code">"India"</span>)
+my_function()
+my_function(<span class="text_code">"Philippines"</span>)</pre>
+        </div>
+        <div class="compiler">
+            <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">
+                <button class="try">Try it yourself bro..</button>
+            </a>
+        </div>
+        <div class="Ex_each_chapter"></div>
+        <h2>Passing a List as an Argument</h2>
+        <p>You can send any data types of argument to a function (string, number, list, dictionary etc.), and it will be treated as the same data type inside the function.</p>
+        <p>E.g. if you send a List as an argument, it will still be a List when it reaches the function:</p>
+        <h3>Example</h3>
+        <div class="code_container">
+            <pre><span class="py_code">def</span> my_function(food):
+  <span class="py_code">for</span> x <span class="py_code">in</span> food:
+    print(x)
+
+fruits = [<span class="text_code">"apple"</span>, <span class="text_code">"banana"</span>, <span class="text_code">"cherry"</span>]
+
+my_function(fruits)</pre>
+        </div>
+        <div class="compiler">
+            <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">
+                <button class="try">Try it yourself bro..</button>
+            </a>
+        </div>
+        <div class="Ex_each_chapter"></div>
+        <h2>Return Values</h2>
+        <p>To let a function return a value, use the <span class="bool">return</span> statement:</p>
+        <h3>Example</h3>
+        <div class="code_container">
+            <pre><span class="py_code">def</span> my_function(x):
+  <span class="py_code">return</span> <span class="text_code">5</span> * x
+
+<span class="py_code">print</span>(my_function(3))
+<span class="py_code">print</span>(my_function(5))
+<span class="py_code">print</span>(my_function(9))</pre>
+        </div>
+        <div class="compiler">
+            <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">
+                <button class="try">Try it yourself bro..</button>
+            </a>
+        </div>
+        <div class="Ex_each_chapter"></div>
+        <h2>The pass Statement</h2>
+        <p><span class="bool">function</span> definitions cannot be empty, but if you for some reason have a <span class="bool">function</span> definition with no content, put in the <span class="bool">pass</span> statement to avoid getting an error.</p>
+        <h3>Example</h3>
+        <div class="code_container">
+            <pre><span class="py_code">def</span> myfunction():
+  <span class="py_code">pass</span></pre>
+        </div>
+        <div class="compiler">
+            <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">
+                <button class="try">Try it yourself bro..</button>
+            </a>
+        </div>
+        <div class="Ex_each_chapter"></div>
+        <h2>Positional-Only Arguments</h2>
+        <p>You can specify that a function can have ONLY positional arguments, or ONLY keyword arguments.</p>
+        <p>To specify that a function can have only positional arguments, add <span class="bool">, /</span> after the arguments:</p>
+        <h3>Example</h3>
+        <div class="code_container">
+            <pre><span class="py_code">def</span> my_function(x, /):
+  <span class="py_code">print</span>(x)
+
+my_function(<span class="text_code">3</span>)</pre>
+        </div>
+        <div class="compiler">
+            <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">
+                <button class="try">Try it yourself bro..</button>
+            </a>
+        </div>
+        <p>Without the <span class="bool">, /</span> you are actually allowed to use keyword arguments even if the function expects positional arguments:</p>
+        <h3>Example</h3>
+        <div class="code_container">
+            <pre><span class="py_code">def</span> my_function(x):
+  <span class="py_code">print</span>(x)
+
+my_function(x = <span class="text_code">3</span>)</pre>
+        </div>
+        <div class="compiler">
+            <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">
+                <button class="try">Try it yourself bro..</button>
+            </a>
+        </div>
+        <p>But when adding the <span class="bool">, /</span> you will get an error if you try to send a keyword argument:</p>
+        <h3>Example</h3>
+        <div class="code_container1">
+            <div class="code_container">
+                <pre><span class="py_code">def</span> my_function(x, /):
+  <span class="py_code">print</span>(x)
+
+my_function(x = <span class="text_code">3</span>)</pre>
+            </div>
+        <div class="compiler">
+            <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">
+                <button class="try">Try it yourself bro..</button>
+            </a>
+        </div>
+        </div>
+        <div class="Ex_each_chapter"></div>
+        <h2>Keyword-Only Arguments</h2>
+        <p>To specify that a function can have only keyword arguments, add <span class="bool">*,</span> before the arguments:</p>
+        <h3>Example</h3>
+        <div class="code_container">
+            <pre><span class="py_code">def</span> my_function(*, x):
+  <span class="py_code">print</span>(x)
+
+my_function(x = <span class="text_code">3</span>)</pre>
+        </div>
+        <div class="compiler">
+            <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">
+                <button class="try">Try it yourself bro..</button>
+            </a>
+        </div>
+        <p>Without the <span class="bool">*,</span> you are allowed to use positional arguments even if the function expects keyword arguments:</p>
+        <h3>Example</h3>
+        <div class="code_container">
+            <pre><span class="py_code">def</span> my_function(x):
+  <span class="py_code">print</span>(x)
+
+my_function(<span class="text_code">3</span>)</pre>
+        </div>
+        <div class="compiler">
+            <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">
+                <button class="try">Try it yourself bro..</button>
+            </a>
+        </div>
+        <p>But with the <span class="bool">*,</span> you will get an error if you try to send a positional argument:</p>
+        <h3>Example</h3>
+        <div class="code_container1">
+            <div class="code_container">
+                <pre><span class="py_code">def</span> my_function(*, x):
+  <span class="py_code">print</span>(x)
+
+my_function(<span class="text_code">3</span>)</pre>
+            </div>
+            <div class="compiler">
+                <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">
+                    <button class="try">Try it yourself bro..</button>
                 </a>
             </div>
         </div>
-    </footer>
+        <div class="Ex_each_chapter"></div>
+        <h2>Combine Positional-Only and Keyword-Only</h2>
+        <p>You can combine the two argument types in the same function.</p>
+        <p>Any argument before the <span class="bool">/ ,</span> are positional-only, and any argument after the <span class="bool">*,</span> are keyword-only.</p>
+        <h3>Example</h3>
+        <div class="code_container">
+            <pre><span class="py_code">def</span> my_function(a, b, /, *, c, d):
+  <span class="py_code">print</span>(a + b + c + d)
 
-    <script src="control.js"></script>
+my_function(<span class="text_code">5</span>, <span class="text_code">6</span>, c = <span class="text_code">7</span>, d = 8)</pre>
+        </div>
+        <div class="compiler">
+            <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">
+                <button class="try">Try it yourself bro..</button>
+            </a>
+        </div>
+        <div class="Ex_each_chapter"></div>
+        <h2>Recursion</h2>
+        <p>Python also accepts function recursion, which means a defined function can call itself.</p>
+        <p>Recursion is a common mathematical and programming concept. It means that a function calls itself. This has the benefit of meaning that you can loop through data to reach a result.</p>
+        <p>The developer should be very careful with recursion as it can be quite easy to slip into writing a function which never terminates, or one that uses excess amounts of memory or processor power. However, when written correctly recursion can be a very efficient and mathematically-elegant approach to programming.</p>
+        <p>In this example, <span class="bool">tri_recursion()</span> is a function that we have defined to call itself ("recurse"). We use the k variable as the data, which decrements <span class="bool">(-1)</span> every time we recurse. The recursion ends when the condition is not greater than 0 (i.e. when it is 0).</p>
+        <p>To a new developer it can take some time to work out how exactly this works, best way to find out is by testing and modifying it.</p>
+        <h3>Example</h3>
+        <div class="code_container">
+            <pre><span class="py_code">def</span> tri_recursion(k):
+  <span class="py_code">if</span>(k > <span class="text_code">0</span>):
+    result = k + tri_recursion(k - <span class="text_code">1</span>)
+    <span class="py_code">print</span>(result)
+  <span class="py_code">else</span>:
+    result = <span class="text_code">0</span> 
+  <span class="py_code">return</span> result
+
+<span class="py_code">print</span>(<span class="text_code">"Recursion Example Results:"</span>)
+tri_recursion(6)</pre>
+        </div>
+        <div class="compiler">
+            <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">
+                <button class="try">Try it yourself bro..</button>
+            </a>
+        </div>
+      <br>
+    </div>
+
+    <aside class="activity_sidebar">
+      <h1>Activity API</h1>
+      <button onclick="dog()">Dog API Generator</button>
+      <button onclick="cat()">Cat API Generator</button>
+      <button onclick="quotes()">Quotes API Generator</button>
+    </aside>
+  </div>
+
+  <footer>
+    <div class="footer">
+      <p>Learning Hub 2025</p>
+      <p>GMAIL: <a href="mailto:jhinbangcoyo@gmail.com">jhinbangcoyo@gmail.com</a></p>
+      <div class="social-links">
+        <a href="https://www.facebook.com/jhinbangcoyo" target="_blank">
+          <img class="socials" src="../socials/fb.jpg" alt="Facebook" />
+        </a>
+        <a href="https://twitter.com/" target="_blank">
+          <img class="socials" src="../socials/twitter.jpg" alt="Twitter" />
+        </a>
+        <a href="https://www.instagram.com/kryll_dave" target="_blank">
+          <img class="socials" src="../socials/insta.jpg" alt="Instagram" />
+        </a>
+        <a href="https://www.youtube.com/" target="_blank">
+          <img class="socials" src="../socials/yt.png" alt="YouTube" />
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="control.js"></script>
 
 </body>
 </html>

@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Python If Else</title>
-    <link rel="stylesheet" href="python_if_else.css">
-    <link rel="icon" href="../TechStack_icon/python_icon.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Python Conditions</title>
+  <link rel="stylesheet" href="py_css/python_if_else.css" />
+  <link rel="icon" href="../TechStack_icon/python_icon.png"/>
 </head>
 <body>
 
-    <header>
-        <div class="container">
-            <div class="logo">
-                <img src="../TechStack_icon/python_icon.png" alt="JPCS Logo" onclick="window.location.href='../page_content.html'" >
-                <h1>Learning Hub</h1>
-            </div>
-            <nav>
-                <div class="nav-buttons">
-                    <button onclick="maincontent('home')">HOME</button>
-                    <button onclick="maincontent('c_lang')">C Language</button>
-                    <button onclick="maincontent('python')">Python</button>
-                    <button onclick="maincontent('html')">HTML</button>
-                    <button onclick="maincontent('js')">JavaScript</button>
-                    <button onclick="maincontent('php')">PHP</button>
-                    <button onclick="maincontent('about')">ABOUT</button>
-                </div>
-            </nav>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="../TechStack_icon/python_icon.png" alt="C Logo" onclick="window.location.href='../page_content.html'" />
+        <h1>Learning Hub</h1>
+      </div>
+      <nav>
+        <div class="nav-buttons">
+          <button onclick="maincontent('home')">HOME</button>
+          <button onclick="maincontent('c_lang')">C Language</button>
+          <button onclick="maincontent('python')">Python</button>
+          <button onclick="maincontent('html')">HTML</button>
+          <button onclick="maincontent('js')">JavaScript</button>
+          <button onclick="maincontent('php')">PHP</button>
+          <button onclick="maincontent('about')">ABOUT</button>
         </div>
-    </header>
+      </nav>
+    </div>
+  </header>
 
   <div class="main_container">
     <aside class="sidebar">
@@ -50,38 +50,264 @@
         <br>
     </aside>
 
-    <div class="activity_content">
-        <aside class="activity_sidebar">
-            <h1>Activity API</h1>
-            <button onclick="dog()">Dog API Generator</button>
-            <button onclick="cat()">Cat API Generator</button>
-            <button onclick="quotes()">Quotes API Generator</button>
-        </aside>
+    <div class="py_intro">
+      <h1>Python If ... Else</h1>
+      <div class="py_title">
+        <h2>Python Conditions and If statements</h2>
+        <p>Python supports the usual logical conditions from mathematics:</p>
+        <ul>
+            <li>Equals: <span class="bool">a == b</span></li>
+            <li>Not Equals: <span class="bool">a != b</span></li>
+            <li>Less than: <span class="bool">a < b</span></li>
+            <li>Less than or equal to: <span class="bool">a <= b</span></li>
+            <li>Greater than: <span class="bool">a > b</span></li>
+            <li>Greater than or equal to: <span class="bool">a >= b</span></li>
+        </ul>
+        <p>These conditions can be used in several ways, most commonly in "if statements" and loops.</p>
+        <p>An "if statement" is written by using the <span class="bool">if</span> keyword.</p>
+        <h3>Example</h3>
+        <ul>
+            <li>If statement:</li>
+        </ul>
+        <div class="code_container">
+            <pre>a = <span class="text_code">33</span>
+b = <span class="text_code">200</span>
+<span class="py_code">if</span> b > a:
+  <span class="py_code">print</span>(<span class="text_code">"b is greater than a"</span>)</pre>
+        </div>
+        <div class="compiler">
+            <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">
+                <button class="try">Try it yourself bro..</button>
+            </a>
+        </div>
+        <p>In this example we use two variables, <span class="bool">a</span> and <span class="bool">b</span>, which are used as part of the if statement to test whether <span class="bool">b</span> is greater than <span class="bool">a</span>. As <span class="bool">a</span> is <span class="bool">33</span>, and <span class="bool">b</span> is <span class="bool">200</span>, we know that 200 is greater than 33, and so we print to screen that "b is greater than a".</p>
+        <h2>Indentation</h2>
+        <p>Python relies on indentation (whitespace at the beginning of a line) to define scope in the code. Other programming languages often use curly-brackets for this purpose.</p>
+        <h3>Example</h3>
+        <div class="code_container1">
+            <ul>
+                <li class="p_error">If statement, without indentation (will raise an error):</li>
+            </ul>
+        <div class="code_container">
+            <pre>a = <span class="text_code">33</span>
+b = <span class="text_code">200</span>
+<span class="py_code">if</span> b > a:
+<span class="py_code">print</span>(<span class="text_code">"b is greater than a"</span>) <span class="comment"># you will get an error</span></pre>
+        </div>
+        <div class="compiler">
+        <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+          </a>
+        </div>
+      </div>
+    </div>
+    <h2>Elif</h2>
+    <p>The <span class="bool">elif</span> keyword is Python's way of saying "if the previous conditions were not true, then try this condition".</p>
+    <h3>Example</h3>
+    <div class="code_container">
+        <pre>a = <span class="text_code">200</span>
+b = <span class="text_code">33</span>
+<span class="py_code">if</span> b > a:
+  <span class="py_code">print</span>(<span class="text_code">"b is greater than a"</span>)
+<span class="py_code">elif</span> a == b:
+  <span class="py_code">print</span>(<span class="text_code">"a and b are equal"</span>)
+<span class="py_code">else</span>:
+  <span class="py_code">print</span>(<span class="text_code">"a is greater than b"</span>)</pre>
+    </div>
+    <div class="compiler">
+        <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+    </div>
+    <p>In this example <span class="bool">a</span> is greater than <span class="bool">b</span>, so the first condition is not true, also the <span class="bool">elif</span> condition is not true, so we go to the <span class="bool">else</span> condition and print to screen that "a is greater than b".</p>
+    <p>You can also have an <span class="bool">else</span> without the <span class="bool">elif</span>:</p>
+    <h3>Example</h3>
+    <div class="code_container">
+        <pre>a = <span class="text_code">200</span>
+b = <span class="text_code">33</span>
+<span class="py_code">if</span> b > a:
+  <span class="py_code">print</span>(<span class="text_code">"b is greater than a"</span>)
+<span class="py_code">else</span>:
+  <span class="py_code">print</span>(<span class="text_code">"b is not greater than a"</span>)</pre>
+    </div>
+    <div class="compiler">
+        <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+    </div>
+    <div class="Ex_each_chapter"></div>
+    <h2>Short Hand If</h2>
+    <p>If you have only one statement to execute, you can put it on the same line as the if statement.</p>
+    <h3>Example</h3>
+    <ul>
+        <li>One line if statement:</li>
+    </ul>
+    <div class="code_container">
+        <pre><span class="py_code">if</span> a > b: <span class="py_code">print</span>(<span class="text_code">"a is greater than b"</span>)</pre>
+    </div>
+    <div class="compiler">
+        <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+    </div>
+    <div class="Ex_each_chapter"></div>
+    <h2>Short Hand If ... Else</h2>
+    <p>If you have only one statement to execute, one for if, and one for else, you can put it all on the same line:</p>
+    <h3>Example</h3>
+    <ul>
+        <li>One line if else statement:</li>
+    </ul>
+    <div class="code_container">
+        <pre>a = <span class="text_code">2</span>
+b = <span class="text_code">330</span>
+<span class="py_code">print</span>(<span class="text_code">"A"</span>) if a > b <span class="py_code">else print</span>(<span class="text_code">"B"</span>)</pre>
+    </div>
+    <div class="code_container">
+        <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+    </div>
+    <p><mark>This technique is known as <b>Ternary Operators</b>, or <b>Conditional Expressions</b>.</mark></p>
+    <p>You can also have multiple else statements on the same line:</p>
+    <h3>Example</h3>
+    <ul>
+        <li>One line if else statement, with 3 conditions:</li>
+    </ul>
+    <div class="code_container">
+        <pre>a = <span class="text_code">330</span>
+b = <span class="text_code">330</span>
+<span class="py_code">print</span>(<span class="text_code">"A"</span>) <span class="py_code">if</span> a > b <span class="py_code">else print</span>(<span class="text_code">"="</span>) <span class="py_code">if</span> a == b <span class="py_code">else print</span>(<span class="text_code">"B"</span>)</pre>
+    </div>
+    <div class="compiler">
+        <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+    </div>
+    <div class="Ex_each_chapter"></div>
+    <h2>And</h2>
+    <p>The <span class="bool">and</span> keyword is a logical operator, and is used to combine conditional statements:</p>
+    <h3>Example</h3>
+    <ul>
+        <li>Test if <span class="bool">a</span> is greater than <span class="bool">b</span>, AND if <span class="bool">c</span> is greater than <span class="bool">a</span>:</li>
+    </ul>
+    <div class="code_container">
+        <pre>a = <span class="text_code">200</span>
+b = <span class="text_code">33</span>
+c = <span class="text_code">500</span>
+<span class="py_code">if</span> a > b and c > a:
+  <span class="py_code">print</span>(<span class="text_code">"Both conditions are True"</span>)</pre>
+    </div>
+    <div class="compiler">
+        <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+    </div>
+    <div class="Ex_each_chapter"></div>
+    <h2>Or</h2>
+    <p>The <span class="bool">or</span> keyword is a logical operator, and is used to combine conditional statements:</p>
+    <h3>Example</h3>
+    <ul>
+        <li>Test if <span class="bool">a</span> is greater than <span class="bool">b</span>, OR if <span class="bool">a</span> is greater than <span class="bool">c</span>:</li>
+    </ul>
+    <div class="code_container">
+        <pre>a = <span class="text_code">200</span>
+b = <span class="text_code">33</span>
+c = <span class="text_code">500</span>
+<span class="py_code">if</span> a > b or a > c:
+  <span class="py_code">print</span>(<span class="text_code">"At least one of the conditions is True"</span>)</pre>
+    </div>
+    <div class="compiler">
+        <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+    </div>
+    <div class="Ex_each_chapter"></div>
+    <h2>Not</h2>
+    <p>The <span class="bool">not</span>  keyword is a logical operator, and is used to reverse the result of the conditional statement:</p>
+    <h3>Example</h3>
+    <ul>
+        <li>Test if <span class="bool">a</span> is NOT greater than <span class="bool">b</span>:</li>
+    </ul>
+    <div class="code_container">
+        <pre>a = <span class="text_code">33</span>
+b = <span class="text_code">200</span>
+<span class="py_code">if</span> not a > b:
+  <span class="py_code">print</span>(<span class="text_code">"a is NOT greater than b"</span>)</pre>
+    </div>
+    <div class="compiler">
+        <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+    </div>
+    <div class="Ex_each_chapter"></div>
+    <h2>Nested If</h2>
+    <p>You can have <span class="bool">if</span> statements inside <span class="bool">if</span> statements, this is called nested <span class="bool">if</span> statements.</p>
+    <h3>Example</h3>
+    <div class="code_container">
+        <pre>x = <span class="text_code">41</span>
+
+<span class="py_code">if</span> x > <span class="text_code">10</span>:
+  <span class="py_code">print</span>(<span class="text_code">"Above ten,"</span>)
+  <span class="py_code">if</span> x > <span class="text_code">20</span>:
+    <span class="py_code">print</span>(<span class="text_code">"and also above 20!"</span>)
+  <span class="py_code">else</span>:
+    <span class="py_code">print</span>(<span class="text_code">"but not above 20."</span>)</pre>
+    </div>
+    <div class="compiler">
+        <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+    </div>
+    <div class="Ex_each_chapter"></div>
+    <h2>The pass Statement</h2>
+    <p><span class="bool">if</span> statements cannot be empty, but if you for some reason have an <span class="bool">if</span> statement with no content, put in the <span class="bool">pass</span> statement to avoid getting an error.</p>
+    <h3>Example</h3>
+    <div class="code_container">
+        <pre>a = <span class="text_code">33</span>
+b = <span class="text_code">200</span>
+
+<span class="py_code">if</span> b > a:
+  <span class="py_code">pass</span>
+</pre>
+    </div>
+    <div class="compiler">
+        <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+    </div>
+    <br>
     </div>
 
+    <aside class="activity_sidebar">
+      <h1>Activity API</h1>
+      <button onclick="dog()">Dog API Generator</button>
+      <button onclick="cat()">Cat API Generator</button>
+      <button onclick="quotes()">Quotes API Generator</button>
+    </aside>
+  </div>
 
-    <footer>
-        <div class="footer">
-            <p>Learning Hub 2025</p>
-            <p>GMAIL: <a href="mailto:jhinbangcoyo@gmail.com">jhinbangcoyo@gmail.com</a></p>
-            <div class="social-links">
-                <a href="https://www.facebook.com/jhinbangcoyo" target="_blank">
-                    <img class="socials" src="../socials/fb.jpg" alt="Facebook">
-                </a>
-                <a href="https://twitter.com/" target="_blank">
-                    <img class="socials" src="../socials/twitter.jpg" alt="Twitter">
-                </a>
-                <a href="https://www.instagram.com/user.d4veee" target="_blank">
-                    <img class="socials" src="../socials/insta.jpg" alt="Instagram">
-                </a>
-                <a href="https://www.youtube.com/" target="_blank">
-                    <img class="socials" src="../socials/yt.png" alt="YouTube">
-                </a>
-            </div>
-        </div>
-    </footer>
+  <footer>
+    <div class="footer">
+      <p>Learning Hub 2025</p>
+      <p>GMAIL: <a href="mailto:jhinbangcoyo@gmail.com">jhinbangcoyo@gmail.com</a></p>
+      <div class="social-links">
+        <a href="https://www.facebook.com/jhinbangcoyo" target="_blank">
+          <img class="socials" src="../socials/fb.jpg" alt="Facebook" />
+        </a>
+        <a href="https://twitter.com/" target="_blank">
+          <img class="socials" src="../socials/twitter.jpg" alt="Twitter" />
+        </a>
+        <a href="https://www.instagram.com/kryll_dave" target="_blank">
+          <img class="socials" src="../socials/insta.jpg" alt="Instagram" />
+        </a>
+        <a href="https://www.youtube.com/" target="_blank">
+          <img class="socials" src="../socials/yt.png" alt="YouTube" />
+        </a>
+      </div>
+    </div>
+  </footer>
 
-    <script src="control.js"></script>
+  <script src="control.js"></script>
 
 </body>
 </html>

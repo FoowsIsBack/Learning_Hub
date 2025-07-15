@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Python While Loop</title>
-    <link rel="stylesheet" href="python_while-loop.css">
-    <link rel="icon" href="../TechStack_icon/python_icon.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Python While Loops</title>
+  <link rel="stylesheet" href="py_css/python_while-loop.css" />
+  <link rel="icon" href="../TechStack_icon/python_icon.png"/>
 </head>
 <body>
 
-    <header>
-        <div class="container">
-            <div class="logo">
-                <img src="../TechStack_icon/python_icon.png" alt="JPCS Logo" onclick="window.location.href='../page_content.html'" >
-                <h1>Learning Hub</h1>
-            </div>
-            <nav>
-                <div class="nav-buttons">
-                    <button onclick="maincontent('home')">HOME</button>
-                    <button onclick="maincontent('c_lang')">C Language</button>
-                    <button onclick="maincontent('python')">Python</button>
-                    <button onclick="maincontent('html')">HTML</button>
-                    <button onclick="maincontent('js')">JavaScript</button>
-                    <button onclick="maincontent('php')">PHP</button>
-                    <button onclick="maincontent('about')">ABOUT</button>
-                </div>
-            </nav>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="../TechStack_icon/python_icon.png" alt="C Logo" onclick="window.location.href='../page_content.html'" />
+        <h1>Learning Hub</h1>
+      </div>
+      <nav>
+        <div class="nav-buttons">
+          <button onclick="maincontent('home')">HOME</button>
+          <button onclick="maincontent('c_lang')">C Language</button>
+          <button onclick="maincontent('python')">Python</button>
+          <button onclick="maincontent('html')">HTML</button>
+          <button onclick="maincontent('js')">JavaScript</button>
+          <button onclick="maincontent('php')">PHP</button>
+          <button onclick="maincontent('about')">ABOUT</button>
         </div>
-    </header>
+      </nav>
+    </div>
+  </header>
 
   <div class="main_container">
     <aside class="sidebar">
@@ -50,38 +50,131 @@
         <br>
     </aside>
 
-    <div class="activity_content">
-        <aside class="activity_sidebar">
-            <h1>Activity API</h1>
-            <button onclick="dog()">Dog API Generator</button>
-            <button onclick="cat()">Cat API Generator</button>
-            <button onclick="quotes()">Quotes API Generator</button>
-        </aside>
+    <div class="py_intro">
+      <h1>Python While Loops</h1>
+      <div class="Ex_each_chapter"></div>
+      <h2>Python Loops</h2>
+      <p>Python has two primitive loop commands:</p>
+      <ul>
+        <li><span class="bool">while</span> loops</li>
+        <li><span class="bool">for</span> loops</li>
+      </ul>
+      <div class="Ex_each_chapter"></div>
+      <h2>The while Loop</h2>
+      <p>With the <span class="bool">while</span> loop we can execute a set of statements as long as a condition is true.</p>
+      <h3>Example</h3>
+      <ul>
+        <li>Print i as long as i is less than 6:</li>
+      </ul>
+      <div class="code_container">
+        <pre>i = 1
+<span class="py_code">while</span> i < <span class="py_code">6</span>:
+  <span class="py_code">print</span>(i)
+  i += <span class="py_code">1</span></pre>
+      </div>
+      <div class="compiler">
+        <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+      </div>
+      <p><mark><b>Note:</b> remember to increment i, or else the loop will continue forever.</mark></p>
+      <p>The <span class="bool">while</span> loop requires relevant variables to be ready, in this example we need to define an indexing variable, <span class="bool">i</span>, which we set to 1.</p>
+    <br>
+    <div class="code_container"></div>
+    <h2>The break Statement</h2>
+    <ul>
+        <li>With the <span class="bool">break</span> statement we can stop the loop even if the while condition is true:</li>
+    </ul>
+    <h3>Example</h3>
+    <ul>
+        <li>Exit the loop when i is 3:</li>
+    </ul>
+    <div class="code_container">
+        <pre>i = <span class="text_code">1</span>
+<span class="py_code">while</span> i < <span class="text_code">6</span>:
+  <span class="py_code">print</span>(i)
+  <span class="py_code">if</span> i == <span class="text_code">3</span>:
+    <span class="py_code">break</span>
+  i += <span class="text_code">1</span></pre>
+    </div>
+    <div class="compiler">
+        <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+    </div>
+    <div class="Ex_each_chapter"></div>
+    <h2>The continue Statement</h2>
+    <p>With the <span class="bool">continue</span> statement we can stop the current iteration, and continue with the next:</p>
+    <h3>Example</h3>
+    <ul>
+        <li>Continue to the next iteration if i is 3:</li>
+    </ul>
+    <div class="code_container">
+        <pre>i = <span class="text_code">0</span>
+<span class="py_code">while</span> i < <span class="text_code">6</span>:
+  i += <span class="text_code">1</span>
+  <span class="py_code">if</span> i == <span class="text_code">3</span>:
+    <span class="py_code">continue</span>
+  <span class="py_code">print</span>(i)</pre>
+    </div>
+    <div class="compiler">
+        <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+    </div>
+    <div class="Ex_each_chapter"></div>
+    <h2>The else Statement</h2>
+    <p>With the <span class="bool">else</span> statement we can run a block of code once when the condition no longer is true:</p>
+    <h3>Example</h3>
+    <ul>
+        <li>Print a message once the condition is false:</li>
+    </ul>
+    <div class="code_container">
+        <pre>i = <span class="text_code">1</span>
+<span class="py_code">while</span> i < <span class="text_code">6</span>:
+  <span class="py_code">print</span>(i)
+  i += <span class="text_code">1</span>
+<span class="py_code">else</span>:
+  <span class="py_code">print</span>(<span class="text_code">"i is no longer less than 6"</span>)</pre>
+    </div>
+    <div class="compiler">
+        <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+    </div>
+    <br>
     </div>
 
+    <aside class="activity_sidebar">
+      <h1>Activity API</h1>
+      <button onclick="dog()">Dog API Generator</button>
+      <button onclick="cat()">Cat API Generator</button>
+      <button onclick="quotes()">Quotes API Generator</button>
+    </aside>
+  </div>
 
-    <footer>
-        <div class="footer">
-            <p>Learning Hub 2025</p>
-            <p>GMAIL: <a href="mailto:jhinbangcoyo@gmail.com">jhinbangcoyo@gmail.com</a></p>
-            <div class="social-links">
-                <a href="https://www.facebook.com/jhinbangcoyo" target="_blank">
-                    <img class="socials" src="../socials/fb.jpg" alt="Facebook">
-                </a>
-                <a href="https://twitter.com/" target="_blank">
-                    <img class="socials" src="../socials/twitter.jpg" alt="Twitter">
-                </a>
-                <a href="https://www.instagram.com/user.d4veee" target="_blank">
-                    <img class="socials" src="../socials/insta.jpg" alt="Instagram">
-                </a>
-                <a href="https://www.youtube.com/" target="_blank">
-                    <img class="socials" src="../socials/yt.png" alt="YouTube">
-                </a>
-            </div>
-        </div>
-    </footer>
+  <footer>
+    <div class="footer">
+      <p>Learning Hub 2025</p>
+      <p>GMAIL: <a href="mailto:jhinbangcoyo@gmail.com">jhinbangcoyo@gmail.com</a></p>
+      <div class="social-links">
+        <a href="https://www.facebook.com/jhinbangcoyo" target="_blank">
+          <img class="socials" src="../socials/fb.jpg" alt="Facebook" />
+        </a>
+        <a href="https://twitter.com/" target="_blank">
+          <img class="socials" src="../socials/twitter.jpg" alt="Twitter" />
+        </a>
+        <a href="https://www.instagram.com/kryll_dave" target="_blank">
+          <img class="socials" src="../socials/insta.jpg" alt="Instagram" />
+        </a>
+        <a href="https://www.youtube.com/" target="_blank">
+          <img class="socials" src="../socials/yt.png" alt="YouTube" />
+        </a>
+      </div>
+    </div>
+  </footer>
 
-    <script src="control.js"></script>
+  <script src="control.js"></script>
 
 </body>
 </html>
