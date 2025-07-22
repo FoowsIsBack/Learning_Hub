@@ -1,81 +1,281 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript Statements</title>
-    <link rel="stylesheet" href="js_statements.css">
-    <link rel="icon" href="../TechStack_icon/Js_icon.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JavaScript Statements</title>
+  <link rel="stylesheet" href="js_css/js_statements.css" />
+  <link rel="icon" href="../TechStack_icon/Js_icon.png"/>
 </head>
 <body>
 
-    <header>
-        <div class="container">
-            <div class="logo">
-                <img src="../TechStack_icon/Js_icon.png" alt="JPCS Logo" onclick="window.location.href='../page_content.html'" >
-                <h1>Learning Hub</h1>
-            </div>
-            <nav>
-                <div class="nav-buttons">
-                    <button onclick="maincontent('home')">HOME</button>
-                    <button onclick="maincontent('c_lang')">C Language</button>
-                    <button onclick="maincontent('python')">Python</button>
-                    <button onclick="maincontent('html')">HTML</button>
-                    <button onclick="maincontent('js')">JavaScript</button>
-                    <button onclick="maincontent('php')">PHP</button>
-                    <button onclick="maincontent('about')">ABOUT</button>
-                </div>
-            </nav>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="../TechStack_icon/Js_icon.png" alt="C Logo" onclick="window.location.href='../page_content.html'" />
+        <h1>Learning Hub</h1>
+      </div>
+      <nav>
+        <div class="nav-buttons">
+          <button onclick="maincontent('home')">HOME</button>
+          <button onclick="maincontent('c_lang')">C Language</button>
+          <button onclick="maincontent('python')">Python</button>
+          <button onclick="maincontent('html')">HTML</button>
+          <button onclick="maincontent('js')">JavaScript</button>
+          <button onclick="maincontent('php')">PHP</button>
+          <button onclick="maincontent('about')">ABOUT</button>
         </div>
-    </header>
+      </nav>
+    </div>
+  </header>
 
-    <div class="page_content">
-        <aside class="sidebar">
-            <h1>JavaScript</h1>
-            <button onclick="js_introduction('js_introduction')">JavaScript Introduction</button>
-            <button onclick="js_introduction('js_syntax')">JavaScript Syntax</button>
-            <button onclick="js_introduction('js_statements')">JavaScript Statements</button>
-            <button onclick="js_introduction('js_variables')">JavaScript Variables</button>
-            <button onclick="js_introduction('js_let')">JavaScript Let</button>
-            <button onclick="js_introduction('js_const')">JavaScript Const</button>
-            <button onclick="js_introduction('js_operators')">JavaScript Operators</button>
-            <button onclick="js_introduction('js_arithmetic')">JavaScript Arithmetic</button>
-            <button onclick="js_introduction('js_data-types')">JavaScript Data Types</button>
-            <button onclick="js_introduction('js_functions')">JavaScript Functions</button>
-        </aside>
+  <div class="main_container">
+    <aside class="sidebar">
+        <h1>JavaScript</h1>
+        <button onclick="js_introduction('js_introduction')">JavaScript Introduction</button>
+        <button onclick="js_introduction('js_syntax')">JavaScript Syntax</button>
+        <button onclick="js_introduction('js_statements')">JavaScript Statements</button>
+        <button onclick="js_introduction('js_variables')">JavaScript Variables</button>
+        <button onclick="js_introduction('js_let')">JavaScript Let</button>
+        <button onclick="js_introduction('js_const')">JavaScript Const</button>
+        <button onclick="js_introduction('js_operators')">JavaScript Operators</button>
+        <button onclick="js_introduction('js_arithmetic')">JavaScript Arithmetic</button>
+        <button onclick="js_introduction('js_data-types')">JavaScript Data Types</button>
+        <button onclick="js_introduction('js_functions')">JavaScript Functions</button>
+        <br>
+        <br>
+      </aside>
+
+    <div class="js_intro">
+      <h1>JavaScript Statements</h1>
+      <div class="js_title">
+        <h2>Statements</h2>
+        <h3>Example</h3>
+        <div class="code_container">
+            <pre><span class="js_var">let</span> x, y, z;    <span class="comment">// Statement 1</span>
+x = <span class="js_num">5</span>;          <span class="comment">// Statement 2</span>
+y = <span class="js_num">6</span>;          <span class="comment">// Statement 3</span>
+z = x + y;      <span class="comment">// Statement 4</span></pre>
+        </div>
+      <div class="compiler">
+        <a href="https://www.programiz.com/javascript/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+      </div>
+      </div>
+      <h2>JavaScript Programs</h2>
+      <p>A <b>computer program</b> is a list of "instructions" to be "executed" by a computer.</p>
+      <p>In a programming language, these programming instructions are called <b>statements</b>.</p>
+      <p>A <b>JavaScript program</b> is a list of programming <b>statements</b>.</p>
+      <div class="note">
+        <div class="test">
+            <p>In HTML, JavaScript programs are executed by the web browser.</p>
+        </div>
+      </div>
+      <div class="Ex_each_chapter"></div>
+      <h2>JavaScript Statements</h2>
+      <p>JavaScript statements are composed of:</p>
+      <p>Values, Operators, Expressions, Keywords, and Comments.</p>
+      <p>This statement tells the browser to write "Hello Dolly." inside an HTML element with id="demo":</p>
+      <h3>Example</h3>
+      <div class="code_container">
+        <pre>document.getElementById(<span class="text_code">"demo"</span>).innerHTML = <span class="text_code">"Hello Dolly."</span>;</pre>
+      </div>
+      <div class="compiler">
+        <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_statement" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+      </div>
+      <p>Most JavaScript programs contain many JavaScript statements.</p>
+      <p>The statements are executed, one by one, in the same order as they are written.</p>
+      <div class="note">
+        <div class="test">
+            <p>JavaScript programs (and JavaScript statements) are often called JavaScript code.</p>
+        </div>
+      </div>
+      <div class="Ex_each_chapter"></div>
+      <h2>Semicolons ;</h2>
+      <p>Semicolons separate JavaScript statements.</p>
+      <p>Add a semicolon at the end of each executable statement:</p>
+      <div class="code_container">
+        <pre><span class="js_var">let</span> a, b, c;  <span class="comment">// Declare 3 variables</span>
+a = <span class="js_num">5</span>;        <span class="comment">// Assign the value 5 to a</span>
+b = <span class="js_num">6</span>;        <span class="comment">// Assign the value 6 to b</span>
+c = a + b;    <span class="comment">// Assign the sum of a and b to c</span>
+
+<span class="js_console">console.log</span>(c)</pre>
+      </div>
+      <div class="compiler">
+        <a href="https://www.programiz.com/javascript/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+      </div>
+      <p>When separated by semicolons, multiple statements on one line are allowed:</p>
+      <div class="code_container">
+        <pre>a = <span class="js_num">5</span>; b = <span class="js_num">6</span>; c = a + b;</pre>
+      </div>
+      <div class="compiler">
+        <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_syntax_numbers" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+      </div>
+      <br>
+      <div class="note">
+        <div class="test">
+            <p>On the web, you might see examples without semicolons.</p>
+            <p>Ending statements with semicolon is not required, but highly recommended.</p>
+        </div>
+      </div>
+      <div class="Ex_each_chapter"></div>
+      <h2>JavaScript White Space</h2>
+      <p>JavaScript ignores multiple spaces. You can add white space to your script to make it more readable.</p>
+      <p>The following lines are equivalent:</p>
+      <div class="code_container">
+        <pre><span class="js_var">let</span> person = <span class="text_code">"Mikasa"</span>;
+<span class="js_var">let</span> person=<span class="text_code">"Mikasa"</span>;</pre>
+      </div>
+      <p>A good practice is to put spaces around operators ( = + - * / ):</p>
+      <div class="code_container">
+        <pre><span class="js_var">let</span> x = y + z;</pre>
+      </div>
+      <div class="Ex_each_chapter"></div>
+      <h2>JavaScript Line Length and Line Breaks</h2>
+      <p>For best readability, programmers often like to avoid code lines longer than 80 characters.</p>
+      <p>If a JavaScript statement does not fit on one line, the best place to break it is after an operator:</p>
+      <h3>Example</h3>
+      <div class="code_container">
+        <pre>document.getElementById(<span class="text_code">"demo"</span>).innerHTML =
+<span class="text_code">"Hello Dolly!"</span>;</pre>
+      <div class="compiler">
+        <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_statements_linebreak" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+      </div>
+      </div>
+      <h2>JavaScript Code Blocks</h2>
+      <p>JavaScript statements can be grouped together in code blocks, inside curly brackets {...}.</p>
+      <p>The purpose of code blocks is to define statements to be executed together.</p>
+      <p>One place you will find statements grouped together in blocks, is in JavaScript functions:</p>
+      <h3>Example</h3>
+      <div class="code_container">
+        <pre><span class="js_var">function</span> myFunction() {
+  document.getElementById(<span class="text_code">"demo1"</span>).innerHTML = <span class="text_code">"Hello Dolly!"</span>;
+  document.getElementById(<span class="text_code">"demo2"</span>).innerHTML = <span class="text_code">"How are you?"</span>;
+}</pre>
+      <div class="compiler">
+        <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_statements_blocks" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+      </div>
+      </div>
+      <br>
+      <div class="note">
+        <div class="test">
+            <p>In this tutorial we use 2 spaces of indentation for code blocks.</p>
+            <p>You will learn more about functions later in this tutorial.</p>
+        </div>
+      </div>
+      <div class="Ex_each_chapter"></div>
+      <h2>JavaScript Keywords</h2>
+      <p>JavaScript statements often start with a keyword to identify the JavaScript action to be performed.</p>
+      <p>Our <a href="https://www.w3schools.com/js/js_reserved.asp" target="_blank">Reserved Words Reference</a> lists all JavaScript keywords.</p>
+      <p>Here is a list of some of the keywords you will learn about in this tutorial:</p>
+              <div class="cover">
+              <div class="list_reserved_words">
+              <table>
+                <tr>
+                  <th>KEYWORD</th>
+                  <th>DESCRIPTION</th>
+
+                  <tr>
+                    <td class="tab">var</td>
+                    <td class="tab">Declares a variable</td>
+                  </tr>
+
+                  <tr>
+                    <td>let</td>
+                    <td>Declares a block variable</td>
+                  </tr>
+
+                  <tr>
+                    <td class="class">const</td>
+                    <td class="class">Declares a block constant</td>
+                  </tr>
+
+                  <tr>
+                    <td>if</td>
+                    <td>Marks a block of statements to be executed on a condition</td>
+                  </tr>
+
+                  <tr>
+                    <td class="tab">switch</td>
+                    <td class="tab">Marks a block of statements to be executed in different cases</td>
+                  </tr>
+
+                  <tr>
+                    <td>for</td>
+                    <td>Marks a block of statements to be executed in a loop</td>
+                  </tr>
+
+                  <tr>
+                    <td class="tab">function</td>
+                    <td class="tab">Declares a function</td>
+                  </tr>
+
+                  <tr>
+                    <td>return</td>
+                    <td>Exits a function</td>
+                  </tr>
+
+                  <tr>
+                    <td class="tab">try</td>
+                    <td class="tab">Implements error handling to a block of statements</td>
+                  </tr>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <br>
+        <div class="note">
+            <div class="test">
+                <center>
+                <p>JavaScript keywords are reserved words. Reserved words cannot be used as names for variables.</p>
+                </center>
+            </div>
+        </div>
+      <br>
     </div>
 
-    <div class="activity_content">
-        <aside class="activity_sidebar">
-            <h1>Activity API</h1>
-            <button onclick="dog()">Dog API Generator</button>
-            <button onclick="cat()">Cat API Generator</button>
-            <button onclick="quotes()">Quotes API Generator</button>
-        </aside>
+    <aside class="activity_sidebar">
+      <h1>Activity API</h1>
+      <button onclick="dog()">Dog API Generator</button>
+      <button onclick="cat()">Cat API Generator</button>
+      <button onclick="quotes()">Quotes API Generator</button>
+    </aside>
+  </div>
+
+  <footer>
+    <div class="footer">
+      <p>Learning Hub 2025</p>
+      <p>GMAIL: <a href="mailto:jhinbangcoyo@gmail.com">jhinbangcoyo@gmail.com</a></p>
+      <div class="social-links">
+        <a href="https://www.facebook.com/jhinbangcoyo" target="_blank">
+          <img class="socials" src="../socials/fb.jpg" alt="Facebook" />
+        </a>
+        <a href="https://twitter.com/" target="_blank">
+          <img class="socials" src="../socials/twitter.jpg" alt="Twitter" />
+        </a>
+        <a href="https://www.instagram.com/kryll_dave/" target="_blank">
+          <img class="socials" src="../socials/insta.jpg" alt="Instagram" />
+        </a>
+        <a href="https://www.youtube.com/" target="_blank">
+          <img class="socials" src="../socials/yt.png" alt="YouTube" />
+        </a>
+      </div>
     </div>
+  </footer>
 
-    <footer>
-        <div class="footer">
-            <p>Learning Hub 2025</p>
-            <p>GMAIL: <a href="mailto:jhinbangcoyo@gmail.com">jhinbangcoyo@gmail.com</a></p>
-            <div class="social-links">
-                <a href="https://www.facebook.com/jhinbangcoyo" target="_blank">
-                    <img class="socials" src="../socials/fb.jpg" alt="Facebook">
-                </a>
-                <a href="https://twitter.com/" target="_blank">
-                    <img class="socials" src="../socials/twitter.jpg" alt="Twitter">
-                </a>
-                <a href="https://www.instagram.com/user.d4veee" target="_blank">
-                    <img class="socials" src="../socials/insta.jpg" alt="Instagram">
-                </a>
-                <a href="https://www.youtube.com/" target="_blank">
-                    <img class="socials" src="../socials/yt.png" alt="YouTube">
-                </a>
-            </div>
-        </div>
-    </footer>
-
-    <script src="control.js"></script>
+  <script src="control.js"></script>
 
 </body>
 </html>

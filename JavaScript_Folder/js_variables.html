@@ -1,81 +1,487 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript Variables</title>
-    <link rel="stylesheet" href="js_variables.css">
-    <link rel="icon" href="../TechStack_icon/Js_icon.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JavaScript Variables</title>
+  <link rel="stylesheet" href="js_css/js_variables.css" />
+  <link rel="icon" href="../TechStack_icon/Js_icon.png"/>
 </head>
 <body>
 
-    <header>
-        <div class="container">
-            <div class="logo">
-                <img src="../TechStack_icon/Js_icon.png" alt="JPCS Logo" onclick="window.location.href='../page_content.html'" >
-                <h1>Learning Hub</h1>
-            </div>
-            <nav>
-                <div class="nav-buttons">
-                    <button onclick="maincontent('home')">HOME</button>
-                    <button onclick="maincontent('c_lang')">C Language</button>
-                    <button onclick="maincontent('python')">Python</button>
-                    <button onclick="maincontent('html')">HTML</button>
-                    <button onclick="maincontent('js')">JavaScript</button>
-                    <button onclick="maincontent('php')">PHP</button>
-                    <button onclick="maincontent('about')">ABOUT</button>
-                </div>
-            </nav>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="../TechStack_icon/Js_icon.png" alt="C Logo" onclick="window.location.href='../page_content.html'" />
+        <h1>Learning Hub</h1>
+      </div>
+      <nav>
+        <div class="nav-buttons">
+          <button onclick="maincontent('home')">HOME</button>
+          <button onclick="maincontent('c_lang')">C Language</button>
+          <button onclick="maincontent('python')">Python</button>
+          <button onclick="maincontent('html')">HTML</button>
+          <button onclick="maincontent('js')">JavaScript</button>
+          <button onclick="maincontent('php')">PHP</button>
+          <button onclick="maincontent('about')">ABOUT</button>
         </div>
-    </header>
-
-    <div class="page_content">
-        <aside class="sidebar">
-            <h1>JavaScript</h1>
-            <button onclick="js_introduction('js_introduction')">JavaScript Introduction</button>
-            <button onclick="js_introduction('js_syntax')">JavaScript Syntax</button>
-            <button onclick="js_introduction('js_statements')">JavaScript Statements</button>
-            <button onclick="js_introduction('js_variables')">JavaScript Variables</button>
-            <button onclick="js_introduction('js_let')">JavaScript Let</button>
-            <button onclick="js_introduction('js_const')">JavaScript Const</button>
-            <button onclick="js_introduction('js_operators')">JavaScript Operators</button>
-            <button onclick="js_introduction('js_arithmetic')">JavaScript Arithmetic</button>
-            <button onclick="js_introduction('js_data-types')">JavaScript Data Types</button>
-            <button onclick="js_introduction('js_functions')">JavaScript Functions</button>
-        </aside>
+      </nav>
     </div>
+  </header>
 
-    <div class="activity_content">
-        <aside class="activity_sidebar">
-            <h1>Activity API</h1>
-            <button onclick="dog()">Dog API Generator</button>
-            <button onclick="cat()">Cat API Generator</button>
-            <button onclick="quotes()">Quotes API Generator</button>
-        </aside>
-    </div>
+  <div class="main_container">
+    <aside class="sidebar">
+        <h1>JavaScript</h1>
+        <button onclick="js_introduction('js_introduction')">JavaScript Introduction</button>
+        <button onclick="js_introduction('js_syntax')">JavaScript Syntax</button>
+        <button onclick="js_introduction('js_statements')">JavaScript Statements</button>
+        <button onclick="js_introduction('js_variables')">JavaScript Variables</button>
+        <button onclick="js_introduction('js_let')">JavaScript Let</button>
+        <button onclick="js_introduction('js_const')">JavaScript Const</button>
+        <button onclick="js_introduction('js_operators')">JavaScript Operators</button>
+        <button onclick="js_introduction('js_arithmetic')">JavaScript Arithmetic</button>
+        <button onclick="js_introduction('js_data-types')">JavaScript Data Types</button>
+        <button onclick="js_introduction('js_functions')">JavaScript Functions</button>
+        <br>
+        <br>
+      </aside>
 
-    <footer>
-        <div class="footer">
-            <p>Learning Hub 2025</p>
-            <p>GMAIL: <a href="mailto:jhinbangcoyo@gmail.com">jhinbangcoyo@gmail.com</a></p>
-            <div class="social-links">
-                <a href="https://www.facebook.com/jhinbangcoyo" target="_blank">
-                    <img class="socials" src="../socials/fb.jpg" alt="Facebook">
-                </a>
-                <a href="https://twitter.com/" target="_blank">
-                    <img class="socials" src="../socials/twitter.jpg" alt="Twitter">
-                </a>
-                <a href="https://www.instagram.com/user.d4veee" target="_blank">
-                    <img class="socials" src="../socials/insta.jpg" alt="Instagram">
-                </a>
-                <a href="https://www.youtube.com/" target="_blank">
-                    <img class="socials" src="../socials/yt.png" alt="YouTube">
-                </a>
+    <div class="js_intro">
+      <h1>JavaScript Variables</h1>
+      <div class="js_title">
+        <br>
+        <div class="note">
+            <div class="test">
+                <h2>Variables are Containers for Storing Data</h2>
+                <p>JavaScript Variables can be declared in 4 ways:</p>
+                <ul>
+                    <li>Automatically</li>
+                    <li>Using <span class="bool">var</span></li>
+                    <li>Using <span class="bool">let</span></li>
+                    <li>Using <span class="bool">const</span></li>
+                </ul>
             </div>
         </div>
-    </footer>
+      </div>
+        <p>In this first example, <span class="bool">x</span>, <span class="bool">y</span>, and <span class="bool">z</span> are undeclared variables.</p>
+        <p>They are automatically declared when first used:</p>
+      <div class="code_container">
+        <pre>x = <span class="js_num">5</span>;
+y = <span class="js_num">5</span>;
+z = x + y;
 
-    <script src="control.js"></script>
+<span class="js_conole">console.log</span>(z)</pre>
+        </div>
+      <div class="compiler">
+        <a href="https://www.programiz.com/javascript/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+      </div>
+      <br>
+      <div class="note">
+        <div class="test">
+            <h2>Note</h2>
+            <p>It is considered good programming practice to always declare variables before use.</p>
+        </div>
+      </div>
+      <p>From the examples you can guess:</p>
+      <ul>
+        <li>x stores the value 5</li>
+        <li>y stores the value 6</li>
+        <li>z stores the value 11</li>
+      </ul>
+      <h2>Example using var</h2>
+      <div class="code_container">
+        <pre><span class="js_var">var</span> x = <span class="js_num">5</span>;
+<span class="js_var">var</span> y = <span class="js_num">6</span>;
+<span class="js_var">var</span> z = x + y;
+
+<span class="js_console">console.log</span>(z)</pre>
+      </div>
+      <div class="compiler">
+        <a href="https://www.programiz.com/javascript/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+      </div>
+      <br>
+      <div class="note">
+        <div class="test">
+            <h2>Note</h2>
+            <p>The <span class="bool">var</span> keyword was used in all JavaScript code from 1995 to 2015.</p>
+            <p>The <span class="bool">let</span> and <span class="bool">const</span> keywords were added to JavaScript in 2015.</p>
+            <p>The <span class="bool">var</span> keyword should only be used in code written for older browsers.</p>
+        </div>
+      </div>
+      <h2>Example using let</h2>
+      <div class="code_container">
+        <pre><span class="js_var">let</span> x = <span class="js_num">5</span>;
+<span class="js_var">let</span> y = <span class="js_num">6</span>;
+<span class="js_var">let</span> z = x + y;
+
+<span class="js_console">comsole.log</span>(z)</pre>
+      </div>
+      <div class="compiler">
+        <a href="https://www.programiz.com/javascript/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+      </div>
+      <h2>Example using const</h2>
+      <div class="code_container">
+        <pre><span class="js_var">const</span> x = <span class="js_num">5</span>;
+<span class="js_var">const</span> y = <span class="js_num">6</span>;
+<span class="js_var">const</span> z = x + y;
+
+<span class="js_console">comsole.log</span>(z)</pre>
+      </div>
+      <div class="compiler">
+        <a href="https://www.programiz.com/javascript/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+      </div>
+      <h2>Mixed Example</h2>
+      <div class="code_container">
+        <pre><span class="js_var">const</span> price1 = <span class="js_num">50</span>;
+<span class="js_var">const</span> price2 = <span class="js_num">50</span>;
+<span class="js_var">let</span> total = price1 + price2;
+
+<span class="js_console">console.log</span>(total)</pre>
+      </div>
+      <div class="compiler">
+        <a href="https://www.programiz.com/javascript/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+      </div>
+      <p>The two variables <span class="bool">price1</span> and <span class="bool">price2</span> are declared with the <span class="bool">const</span> keyword.</p>
+      <p>These are constant values and cannot be changed.</p>
+      <p>The variable <span class="bool">total</span> is declared with the <span class="bool">let</span> keyword.</p>
+      <p>The value <span class="bool">total</span> can be changed.</p>
+      <div class="note">
+        <div class="test">
+          <h2>When to Use var, let, or const?</h2>
+          <p>1. Always declare variables</p>
+          <p>2. Always use <span class="bool">const</span> if the value should not be changed</p>
+          <p>3. Always use <span class="bool">const</span> if the type should not be changed (Arrays and Objects)</p>
+          <p>4. Only use <span class="bool">le</span>t if you can't use <span class="bool">const</span></p>
+          <p>5. Only use <span class="bool">var</span> if you MUST support old browsers.</p>
+        </div>
+      </div>
+      <div class="Ex_each_chapter"></div>
+      <h2>Just Like Algebra</h2>
+      <p>Just like in algebra, variables hold values:</p>
+      <div class="code_container">
+        <pre><span class="js_var">let</span> x = <span class="js_num">5</span>;
+<span class="js_var">let</span> y = <span class="js_num">6</span>;</pre>
+      </div>
+      <p>Just like in algebra, variables are used in expressions:</p>
+      <div class="code_container">
+        <pre><span class="js_var">let</span> z = x + y;</pre>
+      </div>
+      <p><mark>From the example above, you can guess that the total is calculated to be 11.</mark></p>
+      <br>
+      <div class="note">
+        <div class="test">
+          <h2>Note</h2>
+          <p>Variables are containers for storing values.</p>
+        </div>
+      </div>
+      <div class="Ex_each_chapter"></div>
+      <h2>JavaScript Identifiers</h2>
+      <p>All JavaScript <b>variables</b> must be identified with <b>unique names</b>.</p>
+      <p>These unique names are called <b>identifiers</b>.</p>
+      <p>Identifiers can be short names (like x and y) or more descriptive names (age, sum, totalVolume).</p>
+      <p>The general rules for constructing names for variables (unique identifiers) are:</p>
+      <ul>
+        <li>Names can contain letters, digits, underscores, and dollar signs.</li>
+        <li>Names must begin with a letter.</li>
+        <li>Names can also begin with $ and _ (but we will not use it in this tutorial).</li>
+        <li>Names are case sensitive (y and Y are different variables).</li>
+        <li>Reserved words (like JavaScript keywords) cannot be used as names.</li>
+      </ul>
+      <div class="note">
+        <div class="test">
+          <h2>Note</h2>
+          <p>JavaScript identifiers are case-sensitive.</p>
+        </div>
+      </div>
+      <div class="Ex_each_chapter"></div>
+      <h2>The Assignment Operator</h2>
+      <p>In JavaScript, the equal sign (<span class="bool">=</span>) is an "assignment" operator, not an "equal to" operator.</p>
+      <p>This is different from algebra. The following does not make sense in algebra:</p>
+      <div class="code_container">
+        <pre>x = x + <span class="js_num">5</span></pre>
+      </div>
+      <p>In JavaScript, however, it makes perfect sense: it assigns the value of x + 5 to x.</p>
+      <p>(It calculates the value of x + 5 and puts the result into x. The value of x is incremented by 5.)</p>
+      <br>
+      <div class="note">
+        <div class="test">
+          <h2>Note</h2>
+          <p>The "equal to" operator is written like <span class="bool">==</span> in JavaScript.</p>
+        </div>
+      </div>
+      <div class="Ex_each_chapter"></div>
+      <h2>JavaScript Data Types</h2>
+      <p>JavaScript variables can hold numbers like 100 and text values like "John Doe".</p>
+      <p>In programming, text values are called text strings.</p>
+      <p>JavaScript can handle many types of data, but for now, just think of numbers and strings.</p>
+      <p>Strings are written inside double or single quotes. Numbers are written without quotes.</p>
+      <p>If you put a number in quotes, it will be treated as a text string.</p>
+      <h3>Example</h3>
+      <div class="code_container">
+        <pre><span class="js_var">const</span> pi = <span class="js_num">3.14</span>;
+<span class="js_var">let</span> person = <span class="text_code">"John Doe"</span>;
+<span class="js_var">let</span> answer = <span class="text_code">'Yes I am!'</span>;
+
+<span class="js_console">console.log</span>(pi)
+<span class="js_console">console.log</span>(person)
+<span class="js_console">console.log</span>(answer)</pre>
+      </div>
+      <div class="compiler">
+        <a href="https://www.programiz.com/javascript/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+      </div>
+      <div class="Ex_each_chapter"></div>
+      <h2>Declaring a JavaScript Variable</h2>
+      <p>Creating a variable in JavaScript is called "declaring" a variable.</p>
+      <p>You declare a JavaScript variable with the <span class="bool">var</span> or the <span class="bool">let</span> keyword:</p>
+      <div class="code_container">
+        <pre><span class="js_var">var</span> carName;</pre>
+      </div>
+      <p>or</p>
+      <div class="code_container">
+        <pre><span class="js_var">let</span> carName;</pre>
+      </div>
+      <p>After the declaration, the variable has no value (technically it is <span class="bool">undefined</span>).</p>
+      <p>To <b>assign</b> a value to the variable, use the equal sign:</p>
+      <div class="code_container">
+        <pre>carName = <span class="text_code">"Volvo"</span>;</pre>
+      </div>
+      <p>You can also assign a value to the variable when you declare it:</p>
+      <div class="code_container">
+        <pre><span class="js_var">let</span> carName = <span class="text_code">"Volvo"</span>;</pre>
+      </div>
+      <p>In the example below, we create a variable called <span class="bool">carName</span> and assign the value "Volvo" to it.</p>
+      <p>Then we "output" the value inside an HTML paragraph with id="demo":</p>
+      <h3>Example</h3>
+      <div class="code_container">
+        <pre>
+&lt;<span class="py_code">p</span> <span class="js_var">id</span>=<span class="text_code">"demo"</span>&gt;&lt;/p&gt;
+
+&lt;<span class="py_code">script</span>&gt;
+<span class="js_var">let</span> carName = <span class="text_code">"Volvo"</span>;
+document.getElementById(<span class="text_code">"demo"</span>).innerHTML = carName;
+&lt;<span class="py_code">/script</span>&gt;</pre>
+      </div>
+      <div class="compiler">
+        <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_variables_create" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+      </div>
+      <br>
+      <div class="note">
+        <div class="test">
+          <h2>Note</h2>
+          <p>It's a good programming practice to declare all variables at the beginning of a script.</p>
+        </div>
+      </div>
+      <div class="Ex_each_chapter"></div>
+      <h2>One Statement, Many Variables</h2>
+      <p>You can declare many variables in one statement.</p>
+      <p>Start the statement with <span class="bool">let</span> and separate the variables by comma:</p>
+      <h3>Example</h3>
+      <div class="code_container">
+        <pre><span class="js_var">let</span> person = <span class="text_code">"John Doe"</span>, carName = <span class="text_code">"Volvo"</span>, price = <span class="js_num">200</span>;
+
+<span class="js_console">console.log</span>(person)
+<span class="js_console">console.log</span>(carName)
+<span class="js_console">console.log</span>(price)</pre>
+      </div>
+      <div class="compiler">
+        <a href="https://www.programiz.com/javascript/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+      </div>
+      <p>A declaration can span multiple lines:</p>
+      <h3>Example</h3>
+      <div class="code_container">
+        <pre><span class="js_var">let</span> person = <span class="text_code">"John Doe"</span>,
+carName = <span class="text_code">"Volvo"</span>,
+price = <span class="js_num">200</span>;</pre>
+      </div>
+      <div class="compiler">
+        <a href="https://www.programiz.com/javascript/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+      </div>
+      <div class="Ex_each_chapter"></div>
+      <h2>Value = undefined</h2>
+      <p>In computer programs, variables are often declared without a value. The value can be something that has to be calculated, or something that will be provided later, like user input.</p>
+      <p>A variable declared without a value will have the value <span class="bool">undefined</span>.</p>
+      <p>The variable carName will have the value <span class="bool">undefined</span> after the execution of this statement:</p>
+      <h3>Example</h3>
+      <div class="code_container">
+        <pre><span class="js_var">let</span> carName;</pre>
+      </div>
+      <div class="compiler">
+        <a href="https://www.programiz.com/javascript/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+      </div>
+      <div class="Ex_each_chapter"></div>
+      <h2>Re-Declaring JavaScript Variables</h2>
+      <p>If you re-declare a JavaScript variable declared with <span class="bool">var</span>, it will not lose its value.</p>
+      <p>The variable <span class="bool">carName</span> will still have the value "Volvo" after the execution of these statements:</p>
+      <h3>Example</h3>
+      <div class="code_container">
+        <pre><span class="js_var">var</span> carName = <span class="text_code">"Volvo"</span>;
+<span class="js_var">var</span> carName;
+
+<span class="js_console">console.log</span>(carName)</pre>
+      </div>
+      <div class="compiler">
+        <a href="https://www.programiz.com/javascript/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+      </div>
+      <br>
+      <div class="note">
+        <div class="test">
+          <h2>Note</h2>
+          <p>You cannot re-declare a variable declared with <span class="bool">let</span> or <span class="bool">const</span>.</p>
+          <p>This will not work:</p>
+          <div class="code_container">
+            <pre><span class="js_var">let</span> carName = <span class="text_code">"Volvo"</span>;
+<span class="js_var">let</span> carName;</pre>
+          </div>
+        </div>
+      </div>
+      <div class="Ex_each_chapter"></div>
+      <h2>JavaScript Arithmetic</h2>
+      <p>As with algebra, you can do arithmetic with JavaScript variables, using operators like <span class="bool">=</span> and <span class="bool">+</span>:</p>
+      <h3>Example</h3>
+      <div class="code_container">
+        <pre><span class="js_var"></span> x = <span class="js_num">5</span> + <span class="js_num">2</span> + <span class="js_num">3</span>;
+        
+<span class="js_console">console.log</span>(x)</pre>
+      </div>
+      <div class="compiler">
+        <a href="https://www.programiz.com/javascript/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+      </div>
+      <p>You can also add strings, but strings will be concatenated:</p>
+      <h3>Example</h3>
+      <div class="code_container">
+        <pre><span class="js_var">let</span> x = <span class="text_code">"John"</span> + <span class="text_code">" "</span> + <span class="text_code">"Doe"</span>;
+
+<span class="js_console">console.log</span>(x)</pre>
+      </div>
+      <div class="compiler">
+        <a href="https://www.programiz.com/javascript/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+      </div>
+      <p>Also try this:</p>
+      <h3>Example</h3>
+      <div class="code_container">
+        <pre><span class="js_var">let</span> x = <span class="text_code">"5"</span> + <span class="js_num">2</span> + <span class="js_num">3</span>;
+
+<span class="js_console">console.log</span>(x)</pre>
+      </div>
+      <div class="compiler">
+        <a href="https://www.programiz.com/javascript/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+      </div>
+      <div class="note">
+        <div class="test">
+          <h2>Note</h2>
+          <p>If you put a number in quotes, the rest of the numbers will be treated as strings, and concatenated.</p>
+        </div>
+      </div>
+      <p>Now try this:</p>
+      <h3>Example</h3>
+      <div class="code_container">
+        <pre><span class="js_var">let</span> x = <span class="js_num">2</span> + <span class="js_num">3</span> + <span class="text_code">"5"</span>;
+
+<span class="js_console">console.log</span>(x)</pre>
+      </div>
+      <div class="compiler">
+        <a href="https://www.programiz.com/javascript/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+      </div>
+      <div class="Ex_each_chapter"></div>
+      <h2>JavaScript Dollar Sign $</h2>
+      <p>Since JavaScript treats a dollar sign as a letter, identifiers containing $ are valid variable names:</p>
+      <h3>Example</h3>
+      <div class="code_container">
+        <pre><span class="js_var">let</span> $ = <span class="text_code">"My money is:"</span>;
+<span class="js_var">let</span> $$$ = <span class="js_num">2</span>;
+<span class="js_var">let</span> $myMoney = <span class="js_num">5</span>;
+<span class="js_var">let</span> total = $$$ + $myMoney;
+
+<span class="js_console">console.log</span>($, total)</pre>
+      </div>
+      <div class="compiler">
+        <a href="https://www.programiz.com/javascript/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+      </div>
+      <p>Using the dollar sign is not very common in JavaScript, but professional programmers often use it as an alias for the main function in a JavaScript library.</p>
+      <p>In the JavaScript library jQuery, for instance, the main function <span class="bool">$</span> is used to select HTML elements. In jQuery <span class="bool">$("p");</span> means "select all p elements".</p>
+      <div class="Ex_each_chapter"></div>
+      <h2>JavaScript Underscore (_)</h2>
+      <p>Since JavaScript treats underscore as a letter, identifiers containing _ are valid variable names:</p>
+      <h3>Example</h3>
+      <div class="code_container">
+        <pre><span class="js_var">let</span> _lastName = <span class="text_code">"Dave"</span>;
+<span class="js_var">let</span> _x = <span class="js_num">2</span>;
+<span class="js_var">let</span> _100 = <span class="js_num">5</span>;
+<span class="js_var">let</span> total = _x + _100;
+
+<span class="js_console">console.log</span>(_lastName, "is", total, "years old");</pre>
+      </div>
+      <div class="compiler">
+        <a href="https://www.programiz.com/javascript/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+      </div>
+      <p><mark>Using the underscore is not very common in JavaScript, but a convention among professional programmers is to use it as an alias for "private (hidden)" variables.</mark></p>
+      <br>
+    </div>
+
+    <aside class="activity_sidebar">
+      <h1>Activity API</h1>
+      <button onclick="dog()">Dog API Generator</button>
+      <button onclick="cat()">Cat API Generator</button>
+      <button onclick="quotes()">Quotes API Generator</button>
+    </aside>
+  </div>
+
+  <footer>
+    <div class="footer">
+      <p>Learning Hub 2025</p>
+      <p>GMAIL: <a href="mailto:jhinbangcoyo@gmail.com">jhinbangcoyo@gmail.com</a></p>
+      <div class="social-links">
+        <a href="https://www.facebook.com/jhinbangcoyo" target="_blank">
+          <img class="socials" src="../socials/fb.jpg" alt="Facebook" />
+        </a>
+        <a href="https://twitter.com/" target="_blank">
+          <img class="socials" src="../socials/twitter.jpg" alt="Twitter" />
+        </a>
+        <a href="https://www.instagram.com/kryll_dave/" target="_blank">
+          <img class="socials" src="../socials/insta.jpg" alt="Instagram" />
+        </a>
+        <a href="https://www.youtube.com/" target="_blank">
+          <img class="socials" src="../socials/yt.png" alt="YouTube" />
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="control.js"></script>
 
 </body>
 </html>

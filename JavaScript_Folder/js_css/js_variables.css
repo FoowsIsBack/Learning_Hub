@@ -1,6 +1,6 @@
 body {
     background-color: white;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -15,6 +15,10 @@ html{
     align-items: center;
     padding: 20px 30px;
     background-color: rgba(0, 0, 0, 0.938);
+}
+
+.main_container{
+    display: flex;
 }
 
 .logo {
@@ -37,8 +41,10 @@ html{
     width: 230px;
     background-color: #2db134;
     padding: 20px;
-    height: 627px;
+    height: 639px;
     overflow-y: auto;
+
+
 }
 
 .sidebar button {
@@ -73,6 +79,10 @@ h1 {
     color: white;
 }
 
+h3{
+    color: white;
+}
+
 .nav-buttons {
     list-style: none;
     display: flex;
@@ -80,16 +90,18 @@ h1 {
     padding-left: 50px;
 }
 
+.bool{
+    color: #2db134;
+    background-color: #0f1a26;
+    padding: 5px;
+    border-radius: 5px;
+}
+
 .activity_sidebar {
-    width: 230px;
+    width: 15%;
     background-color: #2db134;
     padding: 20px;
-    height: 627px;
-    overflow-y: auto;
-    position: absolute;
-    margin-top: 190px;
-    right: 0;
-    top: 0;
+    height: 700px;
 }
 
 .activity_sidebar button {
@@ -101,6 +113,37 @@ h1 {
     color: white;
     border-radius: 5px;
     padding: 10px;
+}
+
+.js_num{
+    color: rgb(24, 130, 172);
+}
+
+.js_var{
+    color: #c586c0;
+}
+
+.js_code{
+    color: rgb(255, 0, 0);
+}
+
+.test{
+    padding: 10px;
+}
+
+mark{
+    background-color: rgb(255, 217, 0);
+}
+
+.note{
+    border-radius: 8px;
+    background-color: darkkhaki;
+    width: 93%;
+    font-size: 15px;
+}
+
+.js_console{
+    color: gold;
 }
 
 .activity_sidebar button:hover {
@@ -131,8 +174,20 @@ button[onclick="maincontent('js')"]{
     background-color: red;
 }
 
-button[onclick="js_introduction('js_syntax')"]{
+button[onclick="js_introduction('js_variables')"]{
+    border-radius: 5px;
     background-color: red;
+}
+
+ul{
+    list-style-type: square;
+}
+
+li{
+    padding-top: 20px;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 10px;
 }
 
 button:hover{
@@ -140,15 +195,8 @@ button:hover{
     border-bottom: 2px solid red;
 }
 
-section {
-    padding: 50px;
-    margin: 50px 0;
-    text-align: center;
-    border-bottom: 1px solid white;
-}
-
 footer {
-    background-color: rgba(0, 0, 0, 0.938);
+    background-color: black;
     text-align: center;
     padding: 1px;
     position: fixed;
@@ -174,22 +222,80 @@ footer {
     padding-right: 10px;
 }
 
-.page-content{
+.js_intro {
+    width: 95%;
+    background-color: rgba(51, 67, 43, 0.751);
+    padding: 20px 0px 20px 20px;
+    height: 627px;
+    margin: 0px;
+    overflow-y: auto;
+}
+
+.activity_content{
+    margin: 0px;
+}
+
+.js_intro h1{
     text-align: center;
+    padding-bottom: 20px;
 }
 
-#content {
-    padding: 20px;
-    text-align: center;
-}
-
-#content h1 {
-    color: green;
-    font-size: 28px;
-}
-
-#content h2 {
+.js_intro h2{
     color: white;
+    font-size: 35px;
+}
+
+.js_title{
+    padding-bottom: 10px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.Ex_each_chapter{
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+    padding: 10px;
+}
+
+.code_container{
+    background-color: #0f1a26;
+    color: #cbd5e1;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 15px;
+    width: 90%;
+}
+
+.text_code{
+    color: #2db134;
+}
+
+pre{
+    font-size: larger;
+}
+
+.try{
+    background-color: red;
+    border-radius: 5px;
+}
+
+.compiler{
+    padding-top: 10px;
+}
+
+.comment{
+    color: grey;
+}
+
+button[class="try"]:hover{
+    background-color: #2db134;
+    border-bottom: #2db134;
+}
+
+.js_intro p{
     font-size: 20px;
-    margin-top: 10px;
+}
+
+.py_code{
+    color: rgb(204, 91, 91);
 }

@@ -1,81 +1,325 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript Syntax</title>
-    <link rel="stylesheet" href="js_syntax.css">
-    <link rel="icon" href="../TechStack_icon/Js_icon.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JavaScript Syntax</title>
+  <link rel="stylesheet" href="js_css/js_syntax.css" />
+  <link rel="icon" href="../TechStack_icon/Js_icon.png"/>
 </head>
 <body>
 
-    <header>
-        <div class="container">
-            <div class="logo">
-                <img src="../TechStack_icon/Js_icon.png" alt="JPCS Logo" onclick="window.location.href='../page_content.html'" >
-                <h1>Learning Hub</h1>
-            </div>
-            <nav>
-                <div class="nav-buttons">
-                    <button onclick="maincontent('home')">HOME</button>
-                    <button onclick="maincontent('c_lang')">C Language</button>
-                    <button onclick="maincontent('python')">Python</button>
-                    <button onclick="maincontent('html')">HTML</button>
-                    <button onclick="maincontent('js')">JavaScript</button>
-                    <button onclick="maincontent('php')">PHP</button>
-                    <button onclick="maincontent('about')">ABOUT</button>
-                </div>
-            </nav>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="../TechStack_icon/Js_icon.png" alt="C Logo" onclick="window.location.href='../page_content.html'" />
+        <h1>Learning Hub</h1>
+      </div>
+      <nav>
+        <div class="nav-buttons">
+          <button onclick="maincontent('home')">HOME</button>
+          <button onclick="maincontent('c_lang')">C Language</button>
+          <button onclick="maincontent('python')">Python</button>
+          <button onclick="maincontent('html')">HTML</button>
+          <button onclick="maincontent('js')">JavaScript</button>
+          <button onclick="maincontent('php')">PHP</button>
+          <button onclick="maincontent('about')">ABOUT</button>
         </div>
-    </header>
+      </nav>
+    </div>
+  </header>
 
-    <div class="page_content">
-        <aside class="sidebar">
-            <h1>JavaScript</h1>
-            <button onclick="js_introduction('js_introduction')">JavaScript Introduction</button>
-            <button onclick="js_introduction('js_syntax')">JavaScript Syntax</button>
-            <button onclick="js_introduction('js_statements')">JavaScript Statements</button>
-            <button onclick="js_introduction('js_variables')">JavaScript Variables</button>
-            <button onclick="js_introduction('js_let')">JavaScript Let</button>
-            <button onclick="js_introduction('js_const')">JavaScript Const</button>
-            <button onclick="js_introduction('js_operators')">JavaScript Operators</button>
-            <button onclick="js_introduction('js_arithmetic')">JavaScript Arithmetic</button>
-            <button onclick="js_introduction('js_data-types')">JavaScript Data Types</button>
-            <button onclick="js_introduction('js_functions')">JavaScript Functions</button>
-        </aside>
+  <div class="main_container">
+    <aside class="sidebar">
+        <h1>JavaScript</h1>
+        <button onclick="js_introduction('js_introduction')">JavaScript Introduction</button>
+        <button onclick="js_introduction('js_syntax')">JavaScript Syntax</button>
+        <button onclick="js_introduction('js_statements')">JavaScript Statements</button>
+        <button onclick="js_introduction('js_variables')">JavaScript Variables</button>
+        <button onclick="js_introduction('js_let')">JavaScript Let</button>
+        <button onclick="js_introduction('js_const')">JavaScript Const</button>
+        <button onclick="js_introduction('js_operators')">JavaScript Operators</button>
+        <button onclick="js_introduction('js_arithmetic')">JavaScript Arithmetic</button>
+        <button onclick="js_introduction('js_data-types')">JavaScript Data Types</button>
+        <button onclick="js_introduction('js_functions')">JavaScript Functions</button>
+        <br>
+        <br>
+      </aside>
+
+    <div class="js_intro">
+      <h1>JavaScript Syntax</h1>
+      <div class="js_title">
+        <ul>
+            <li><b>JavaScript syntax is the set of rules, how JavaScript programs are constructed:</b></li>
+        </ul>
+        <div class="code_container">
+            <pre><span class="comment">// How to create variables:</span>
+<span class="js_var">var</span> x;
+<span class="js_var">let</span> y;
+
+<span class="comment">// How to use variables:</span>
+x = <span class="js_num">5</span>;
+y = <span class="js_num">6</span>;
+<span class="js_var">let</span> z = x + y;</pre>
+        </div>
+      </div>
+      <h2>JavaScript Values</h2>
+      <p>The JavaScript syntax defines two types of values:</p>
+      <ul>
+        <li>Fixed values</li>
+        <li>Variable values</li>
+      </ul>
+      <p>Fixed values are called <b>Literals</b>.</p>
+      <p>Variable values are called <b>Variables</b>.</p>
+      <div class="Ex_each_chapter"></div>
+      <h2>JavaScript Literals</h2>
+      <p>The two most important syntax rules for fixed values are:</p>
+      <p>1. <b>Numbers</b> are written with or without decimals:</p>
+      <div class="code_container">
+        <pre><span class="js_num">10.50</span>
+
+<span class="js_num">1001</span></pre>
+      </div>
+      <div class="compiler">
+        <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_syntax_numbers" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+      </div>
+      <p>2. <b>Strings</b> are text, written within double or single quotes:</p>
+      <div class="code_container">
+        <pre><span class="text_code">"John Doe"</span>
+
+<span class="text_code">'John Doe'</span></pre>
+      </div>
+      <div class="compiler">
+        <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_syntax_strings" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+      </div>
+      <div class="Ex_each_chapter"></div>
+      <h2>JavaScript Variables</h2>
+      <p>In a programming language, <b>variables</b> are used to <b>store</b> data values.</p>
+      <p>JavaScript uses the keywords <span class="bool">var</span>, <span class="bool">let</span> and <span class="bool">const</span> to declare variables.</p>
+      <p>An <b>equal sign</b> is used to <b>assign values</b> to variables.</p>
+      <p>In this example, x is defined as a variable. Then, x is assigned (given) the value 6:</p>
+      <div class="code_container">
+        <pre><span class="js_var">let</span> x;
+x = <span class="js_num">6</span>;
+
+<span class="js_console">console.log</span>(x)</pre>
+      </div>
+      <div class="compiler">
+        <a href="https://www.programiz.com/javascript/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+      </div>
+      <div class="Ex_each_chapter"></div>
+      <h2>JavaScript Operators</h2>
+      <p>JavaScript uses <b>arithmetic operators</b> ( <span class="bool">+</span> <span class="bool">-</span> <span class="bool">*</span> <span class="bool">/</span> ) to compute values:</p>
+      <div class="code_container">
+        <pre><span class="js_var">let</span> x = (<span class="js_num">5</span> + <span class="js_num">6</span>) * <span class="js_num">10</span>
+
+<span class="js_console">console.log</span>(x)</pre>
+      </div>
+     <div class="compiler">
+        <a href="https://www.programiz.com/javascript/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+      </div>
+      <p>JavaScript uses an <b>assignment operator</b> ( <span class="bool">=</span> ) to <b>assign</b> values to variables:</p>
+      <div class="code_container">
+        <pre><span class="js_var">let</span> x, y;
+x = <span class="js_num">5</span>;
+y = <span class="js_num">6</span>;
+
+total = x + y;
+
+<span class="js_console">console.log</span>(total)</pre>
+      </div>
+     <div class="compiler">
+        <a href="https://www.programiz.com/javascript/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+      </div>
+      <div class="Ex_each_chapter"></div>
+      <h2>JavaScript Expressions</h2>
+      <p>An expression is a combination of values, variables, and operators, which computes to a value.</p>
+      <p>The computation is called an evaluation.</p>
+      <p>For example, 5 * 10 evaluates to 50:</p>
+      <div class="code_container">
+        <pre><span class="js_var">let</span> x = <span class="js_num">5</span> * <span class="js_num">10</span>;
+
+<span class="js_console">console.log</span>(x)</pre>
+      </div>
+     <div class="compiler">
+        <a href="https://www.programiz.com/javascript/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+      </div>
+      <p>Expressions can also contain variable values:</p>
+      <div class="code_container">
+        <pre><span class="js_var">var</span> x, y;
+
+x = <span class="js_num">5</span>;
+
+total = x * <span class="js_num">10</span>;
+
+<span class="js_console">console.log</span>(total)</pre>
+      </div>
+     <div class="compiler">
+        <a href="https://www.programiz.com/javascript/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+      </div>
+      <p>The values can be of various types, such as numbers and strings.</p>
+      <p>For example, "John" + " " + "Doe", evaluates to "John Doe":</p>
+      <div class="code_container">
+        <pre><span class="js_console">console.log</span>(<span class="text_code">"John"</span> + <span class="text_code">" "</span> + <span class="text_code">"Doe"</span>)</pre>
+      </div>
+     <div class="compiler">
+        <a href="https://www.programiz.com/javascript/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+      </div>
+      <div class="Ex_each_chapter"></div>
+      <h2>JavaScript Keywords</h2>
+      <p>JavaScript <b>keywords</b> are used to identify actions to be performed.</p>
+      <p>The <span class="bool">let</span> keyword tells the browser to create variables:</p>
+      <div class="code_container">
+        <pre><span class="js_var">let</span> x, y;
+x = <span class="js_num">5</span> + <span class="js_num">6</span>;
+y = x * <span class="js_num">10</span>;
+
+<span class="js_console">console</span>.log(y)</pre>
+      </div>
+     <div class="compiler">
+        <a href="https://www.programiz.com/javascript/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+      </div>
+      <br>
+      <div class="note">
+        <div class="test">
+          <p>In these examples, using <span class="js_code">var</span> or <span class="js_code">let</span> will produce the same result.</p>
+          <p>You will learn more about <span class="js_code">var</span> and <span class="js_code">let</span> later in this tutorial.</p>
+        </div>
+      </div>
+      <div class="Ex_each_chapter"></div>
+      <h2>JavaScript Comments</h2>
+      <p>Not all JavaScript statements are "executed".</p>
+      <p>Code after double slashes <span class="bool">//</span> or between <span class="bool">/*</span> and <span class="bool">*/</span> is treated as a comment.</p>
+      <p>Comments are ignored, and will not be executed:</p>
+      <div class="code_container">
+        <pre>let x = 5;   <span class="comment">// I will be executed</span>
+
+<span class="comment">// x = 6;   I will NOT be executed</span>
+
+<span class="js_console">console.log</span>(x)</pre>
+      </div>
+     <div class="compiler">
+        <a href="https://www.programiz.com/javascript/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+      </div>
+      <br>
+      <div class="note">
+        <div class="test">
+          <p>You will learn more about comments in a later chapter.</p>
+        </div>
+      </div>
+      <div class="Ex_each_chapter"></div>
+      <h2>JavaScript Identifiers / Names</h2>
+      <p>Identifiers are JavaScript names.</p>
+      <p>Identifiers are used to name variables and keywords, and functions.</p>
+      <p>The rules for legal names are the same in most programming languages.</p>
+      <p>A JavaScript name must begin with:</p>
+      <ul>
+        <li>A letter (A-Z or a-z)</li>
+        <li>A dollar sign ($)</li>
+        <li>Or an underscore (_)</li>
+      </ul>
+      <p>Subsequent characters may be letters, digits, underscores, or dollar signs.</p>
+      <div class="note">
+        <div class="test">
+          <h2>Note</h2>
+          <p>Numbers are not allowed as the first character in names.</p>
+          <p>This way JavaScript can easily distinguish identifiers from numbers.</p>
+        </div>
+      </div>
+      <div class="Ex_each_chapter"></div>
+      <h2>JavaScript is Case Sensitive</h2>
+      <p>All JavaScript identifiers are <b>case sensitive</b>. </p>
+      <p>The variables <span class="bool">lastName</span> and <span class="bool">lastname</span>, are two different variables:</p>
+      <div class="code_container">
+        <pre><span class="js_var">let</span> lastname, lastName;
+lastName = <span class="text_code">"Dave"</span>;
+lastname = <span class="text_code">"Bangcoyo"</span>;
+
+fullname = lastName + <span class="text_code">" "</span> + lastname
+
+<span class="js_console">console.log</span>(fullname)</pre>
+      </div>
+     <div class="compiler">
+        <a href="https://www.programiz.com/javascript/online-compiler/" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+      </div>
+      <p>JavaScript does not interpret <b>LET</b> or <b>Let</b> as the keyword <b>let</b>.</p>
+      <div class="Ex_each_chapter"></div>
+      <h2>JavaScript and Camel Case</h2>
+      <p>Historically, programmers have used different ways of joining multiple words into one variable name:</p>
+      <p><b>Hyphens:</b></p>
+      <p>first-name, last-name, master-card, inter-city.</p>
+      <div class="note">
+        <div class="test">
+          <p>Hyphens are not allowed in JavaScript. They are reserved for subtractions.</p>
+        </div>
+      </div>
+      <p><b>Underscore:</b></p>
+      <p>first_name, last_name, master_card, inter_city.</p>
+      <p><b>Upper Camel Case (Pascal Case):</b></p>
+      <p>FirstName, LastName, MasterCard, InterCity.</p>
+      <p><b>Lower Camel Case:</b></p>
+      <p>JavaScript programmers tend to use camel case that starts with a lowercase letter:</p>
+      <p>firstName, lastName, masterCard, interCity.</p>
+      <div class="Ex_each_chapter"></div>
+      <h2>JavaScript Character Set</h2>
+      <p>JavaScript uses the <b>Unicode</b> character set.</p>
+      <p>Unicode covers (almost) all the characters, punctuations, and symbols in the world.</p>
+      <p>For a closer look, please study our <a href="https://www.w3schools.com/charsets/ref_html_utf8.asp" target="_blank">Complete Unicode Reference</a>.</p>
+      <br>
     </div>
 
-    <div class="activity_content">
-        <aside class="activity_sidebar">
-            <h1>Activity API</h1>
-            <button onclick="dog()">Dog API Generator</button>
-            <button onclick="cat()">Cat API Generator</button>
-            <button onclick="quotes()">Quotes API Generator</button>
-        </aside>
+    <aside class="activity_sidebar">
+      <h1>Activity API</h1>
+      <button onclick="dog()">Dog API Generator</button>
+      <button onclick="cat()">Cat API Generator</button>
+      <button onclick="quotes()">Quotes API Generator</button>
+    </aside>
+  </div>
+
+  <footer>
+    <div class="footer">
+      <p>Learning Hub 2025</p>
+      <p>GMAIL: <a href="mailto:jhinbangcoyo@gmail.com">jhinbangcoyo@gmail.com</a></p>
+      <div class="social-links">
+        <a href="https://www.facebook.com/jhinbangcoyo" target="_blank">
+          <img class="socials" src="../socials/fb.jpg" alt="Facebook" />
+        </a>
+        <a href="https://twitter.com/" target="_blank">
+          <img class="socials" src="../socials/twitter.jpg" alt="Twitter" />
+        </a>
+        <a href="https://www.instagram.com/kryll_dave/" target="_blank">
+          <img class="socials" src="../socials/insta.jpg" alt="Instagram" />
+        </a>
+        <a href="https://www.youtube.com/" target="_blank">
+          <img class="socials" src="../socials/yt.png" alt="YouTube" />
+        </a>
+      </div>
     </div>
+  </footer>
 
-    <footer>
-        <div class="footer">
-            <p>Learning Hub 2025</p>
-            <p>GMAIL: <a href="mailto:jhinbangcoyo@gmail.com">jhinbangcoyo@gmail.com</a></p>
-            <div class="social-links">
-                <a href="https://www.facebook.com/jhinbangcoyo" target="_blank">
-                    <img class="socials" src="../socials/fb.jpg" alt="Facebook">
-                </a>
-                <a href="https://twitter.com/" target="_blank">
-                    <img class="socials" src="../socials/twitter.jpg" alt="Twitter">
-                </a>
-                <a href="https://www.instagram.com/user.d4veee" target="_blank">
-                    <img class="socials" src="../socials/insta.jpg" alt="Instagram">
-                </a>
-                <a href="https://www.youtube.com/" target="_blank">
-                    <img class="socials" src="../socials/yt.png" alt="YouTube">
-                </a>
-            </div>
-        </div>
-    </footer>
-
-    <script src="control.js"></script>
+  <script src="control.js"></script>
 
 </body>
 </html>
