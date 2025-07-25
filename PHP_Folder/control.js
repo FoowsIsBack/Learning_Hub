@@ -15,6 +15,8 @@ function maincontent(page) {
         window.location.href = '../JavaScript_Folder/JavaScript.html';
     } else if (page === "php") {
         window.location.href = '../PHP_Folder/PHP.html';
+    } else if (page === "on_compiler") {
+        window.location.href = '../Compiler/c_compiler.html';
     }
 }
 

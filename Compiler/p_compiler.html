@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Python Online Compiler</title>
+  <link rel="stylesheet" href="Com_css/p_styles.css" />
+  <link rel="icon" href="../icon/compiler.png"/>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="../icon/compiler.png" alt="Compiler" onclick="window.location.href='../page_content.html'" />
+        <h1>Learning Hub</h1>
+      </div>
+      <nav>
+        <div class="nav-buttons">
+          <button onclick="maincontent('home')">HOME</button>
+          <button onclick="maincontent('c_lang')">C Language</button>
+          <button onclick="maincontent('python')">Python</button>
+          <button onclick="maincontent('html')">HTML</button>
+          <button onclick="maincontent('js')">JavaScript</button>
+          <button onclick="maincontent('php')">PHP</button>
+          <button onclick="maincontent('on_compiler')">COMPILER</button>
+          <button onclick="maincontent('about')">ABOUT</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div class="main_container">
+    <aside class="sidebar">
+      <h1>C Language</h1>
+      <button onclick="online_compiler('c_compiler')">C Compiler</button>
+      <button onclick="online_compiler('python_compiler')">Python Compiler</button>
+      <button onclick="online_compiler('HTML_editor')">HTML Editor</button>
+      <button onclick="online_compiler('js_compiler')">JavaScript Compiler</button>
+      <button onclick="online_compiler('php_compiler')">PHP Compiler</button>
+    </aside>
+
+    <div class="c_intro">
+        <iframe src="https://www.programiz.com/python-programming/online-compiler/" frameborder="0"></iframe>
+    </div>
+
+  <script src="control.js"></script>
+
+</body>
+</html>

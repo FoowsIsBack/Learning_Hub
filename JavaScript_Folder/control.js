@@ -17,6 +17,8 @@ function maincontent(page) {
         window.location.href = '../PHP_Folder/PHP.html';
     } else if (page === "js_syntax") {
         window.location.href = 'js_syntax.html';
+    } else if (page === "on_compiler") {
+        window.location.href = '../Compiler/c_compiler.html';
     }
 }
 
