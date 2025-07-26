@@ -1,82 +1,353 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript Let</title>
-    <link rel="stylesheet" href="js_let.css">
-    <link rel="icon" href="../TechStack_icon/Js_icon.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JavaScript Let</title>
+  <link rel="stylesheet" href="js_css/js_let.css" />
+  <link rel="icon" href="../TechStack_icon/Js_icon.png"/>
 </head>
 <body>
 
-    <header>
-        <div class="container">
-            <div class="logo">
-                <img src="../TechStack_icon/Js_icon.png" alt="JPCS Logo" onclick="window.location.href='../page_content.html'" >
-                <h1>Learning Hub</h1>
-            </div>
-            <nav>
-                <div class="nav-buttons">
-                    <button onclick="maincontent('home')">HOME</button>
-                    <button onclick="maincontent('c_lang')">C Language</button>
-                    <button onclick="maincontent('python')">Python</button>
-                    <button onclick="maincontent('html')">HTML</button>
-                    <button onclick="maincontent('js')">JavaScript</button>
-                    <button onclick="maincontent('php')">PHP</button>
-                    <button onclick="maincontent('on_compiler')">COMPILER</button>
-                    <button onclick="maincontent('about')">ABOUT</button>
-                </div>
-            </nav>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="../TechStack_icon/Js_icon.png" alt="C Logo" onclick="window.location.href='../page_content.html'" />
+        <h1>Learning Hub</h1>
+      </div>
+      <nav>
+        <div class="nav-buttons">
+          <button onclick="maincontent('home')">HOME</button>
+          <button onclick="maincontent('c_lang')">C Language</button>
+          <button onclick="maincontent('python')">Python</button>
+          <button onclick="maincontent('html')">HTML</button>
+          <button onclick="maincontent('js')">JavaScript</button>
+          <button onclick="maincontent('php')">PHP</button>
+          <button onclick="maincontent('on_compiler')">COMPILER</button>
+          <button onclick="maincontent('about')">ABOUT</button>
         </div>
-    </header>
-
-    <div class="page_content">
-        <aside class="sidebar">
-            <h1>JavaScript</h1>
-            <button onclick="js_introduction('js_introduction')">JavaScript Introduction</button>
-            <button onclick="js_introduction('js_syntax')">JavaScript Syntax</button>
-            <button onclick="js_introduction('js_statements')">JavaScript Statements</button>
-            <button onclick="js_introduction('js_variables')">JavaScript Variables</button>
-            <button onclick="js_introduction('js_let')">JavaScript Let</button>
-            <button onclick="js_introduction('js_const')">JavaScript Const</button>
-            <button onclick="js_introduction('js_operators')">JavaScript Operators</button>
-            <button onclick="js_introduction('js_arithmetic')">JavaScript Arithmetic</button>
-            <button onclick="js_introduction('js_data-types')">JavaScript Data Types</button>
-            <button onclick="js_introduction('js_functions')">JavaScript Functions</button>
-        </aside>
+      </nav>
     </div>
+  </header>
 
-    <div class="activity_content">
-        <aside class="activity_sidebar">
-            <h1>Activity API</h1>
-            <button onclick="dog()">Dog API Generator</button>
-            <button onclick="cat()">Cat API Generator</button>
-            <button onclick="quotes()">Quotes API Generator</button>
-        </aside>
-    </div>
+  <div class="main_container">
+    <aside class="sidebar">
+        <h1>JavaScript</h1>
+        <button onclick="js_introduction('js_introduction')">JavaScript Introduction</button>
+        <button onclick="js_introduction('js_syntax')">JavaScript Syntax</button>
+        <button onclick="js_introduction('js_statements')">JavaScript Statements</button>
+        <button onclick="js_introduction('js_variables')">JavaScript Variables</button>
+        <button onclick="js_introduction('js_let')">JavaScript Let</button>
+        <button onclick="js_introduction('js_const')">JavaScript Const</button>
+        <button onclick="js_introduction('js_operators')">JavaScript Operators</button>
+        <button onclick="js_introduction('js_arithmetic')">JavaScript Arithmetic</button>
+        <button onclick="js_introduction('js_data-types')">JavaScript Data Types</button>
+        <button onclick="js_introduction('js_functions')">JavaScript Functions</button>
+        <br>
+        <br>
+      </aside>
 
-    <footer>
-        <div class="footer">
-            <p>Learning Hub 2025</p>
-            <p>GMAIL: <a href="mailto:jhinbangcoyo@gmail.com">jhinbangcoyo@gmail.com</a></p>
-            <div class="social-links">
-                <a href="https://www.facebook.com/jhinbangcoyo" target="_blank">
-                    <img class="socials" src="../socials/fb.jpg" alt="Facebook">
-                </a>
-                <a href="https://twitter.com/" target="_blank">
-                    <img class="socials" src="../socials/twitter.jpg" alt="Twitter">
-                </a>
-                <a href="https://www.instagram.com/user.d4veee" target="_blank">
-                    <img class="socials" src="../socials/insta.jpg" alt="Instagram">
-                </a>
-                <a href="https://www.youtube.com/" target="_blank">
-                    <img class="socials" src="../socials/yt.png" alt="YouTube">
-                </a>
+    <div class="js_intro">
+      <h1>JavaScript Let</h1>
+      <div class="js_title">
+        <br>
+        <div class="note">
+            <div class="test">
+                <p>The <span class="bool">let</span> keyword was introduced in ES6 (2015)</p>
+                <p>Variables declared with <span class="bool">let</span> have <b>Block Scope</b></p>
+                <p>Variables declared with <span class="bool">let</span> must be <b>Declared</b> before use</p>
+                <p>Variables declared with <span class="bool">let</span> cannot be <b>Redeclared</b> in the same scope</p>
             </div>
         </div>
-    </footer>
+        <h2>Block Scope</h2>
+        <p>Before ES6 (2015), JavaScript did not have <b>Block Scope</b>.</p>
+        <p>JavaScript had <b>Global Scope</b> and <b>Function Scope</b>.</p>
+        <p>ES6 introduced the two new JavaScript keywords: <span class="bool">let</span> and <span class="bool">const</span>.</p>
+        <p>These two keywords provided <b>Block Scope</b> in JavaScript:</p>
+        <h3>Example</h3>
+        <ul>
+            <li>Variables declared inside a { } block cannot be accessed from outside the block:</li>
+        </ul>
+        <div class="code_container">
+            <pre>{
+  <span class="js_var">let</span> x = <span class="js_num">2</span>;
+}
+<span class="comment">// x can NOT be used here</span></pre>
+        </div>
+      </div>
+      <h2>Global Scope</h2>
+      <p>Variables declared with the <span class="bool">var</span> always have <b>Global Scope</b>.</p>
+      <p>Variables declared with the <span class="bool">var</span> keyword can NOT have block scope:</p>
+      <h3>Example</h3>
+      <ul>
+        <li>Variables declared with <span class="bool">var</span> inside a { } block can be accessed from outside the block:</li>
+      </ul>
+      <div class="code_container">
+        <pre>{
+  <span class="js_var">var</span> x = <span class="js_num">2</span>;
+}
+<span class="comment">// x CAN be used here</span>
+</pre>
+      </div>
+      <h2>Cannot be Redeclared</h2>
+      <p>Variables defined with <span class="bool">let</span> <b>can not</b> be redeclared.</p>
+      <p>You can not accidentally redeclare a variable declared with <span class="bool">let</span>.</p>
+      <ul>
+        <li>With <span class="bool">let</span> you <b>can not</b> do this:</li>
+      </ul>
+      <div class="code_container">
+        <pre><span class="js_var">let</span> x = <span class="text_code">"John Doe"</span>;
 
-    <script src="control.js"></script>
+<span class="js_var">let</span> x = <span class="js_num">0</span>;</pre>
+      </div>
+      <p>Variables defined with <span class="bool">var</span> <b>can</b> be redeclared.</p>
+      <ul>
+        <li>With <span class="bool">var</span> you <b>can do</b> this:</li>
+      </ul>
+      <div class="code_container">
+        <pre><span class="js_var">var</span> x = <span class="text_code">"John Doe"</span>;
+
+<span class="js_var">var</span> x = <span class="js_num">0</span>;</pre>
+      </div>
+      <h2>Redeclaring Variables</h2>
+      <p>Redeclaring a variable using the <span class="bool">var</span> keyword can impose problems.</p>
+      <p>Redeclaring a variable inside a block will also redeclare the variable outside the block:</p>
+      <h3>Example</h3>
+      <div class="code_container">
+        <pre><span class="js_var">var</span> x = <span class="js_num">10</span>;
+<span class="comment">// Here x is 10</span>
+
+{
+<span class="js_var">var</span> x = <span class="js_num">2</span>;
+<span class="comment">// Here x is 2</span>
+}
+
+<span class="comment">// Here x is 2</span></pre>
+      </div>
+      <div class="compiler">
+        <a href="../Compiler/js_compiler.html" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+      </div>
+      <p>Redeclaring a variable using the <span class="bool">let</span> keyword can solve this problem.</p>
+      <p>Redeclaring a variable inside a block will not redeclare the variable outside the block:</p>
+      <h3>Example</h3>
+      <div class="code_container">
+        <pre><span class="js_var">let</span> x = <span class="js_num">10</span>;
+<span class="comment">// Here x is 10</span>
+
+{
+<span class="js_var">let</span> x = <span class="js_num">2</span>;
+<span class="comment">// Here x is 2</span>
+}
+
+<span class="comment">// Here x is 10</span></pre>
+      </div>
+      <div class="compiler">
+        <a href="../Compiler/js_compiler.html" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+      </div>
+      <div class="Ex_each_chapter"></div>
+      <h2>Difference Between var, let and const</h2>
+      <div class="cover">
+        <div class="list_reserved_words">
+            <table>
+                <tr>
+                    <th></th>
+                    <th>Scope</th>
+                    <th>Redeclare</th>
+                    <th>Reassign</th>
+                    <th>Hoisted</th>
+                    <th>Binds this</th>
+                </tr>
+
+                <tr>
+                    <td class="tab">var</td>
+                    <td class="tab">No</td>
+                    <td class="tab">Yes</td>
+                    <td class="tab">Yes</td>
+                    <td class="tab">Yes</td>
+                    <td class="tab">Yes</td>
+                </tr>
+
+                <tr>
+                    <td>let</td>
+                    <td>Yes</td>
+                    <td>No</td>
+                    <td>Yes</td>
+                    <td>No</td>
+                    <td>No</td>
+                </tr>
+
+                <tr>
+                    <td class="tab">const</td>
+                    <td class="tab">Yes</td>
+                    <td class="tab">No</td>
+                    <td class="tab">No</td>
+                    <td class="tab">No</td>
+                    <td class="tab">No</td>
+                </tr>
+            </table>
+        </div>
+      </div>
+      <h2>What is Good?</h2>
+      <p><span class="bool">let</span> and <span class="bool">const</span> have <b>block scope</b>.</p>
+      <p><span class="bool">let</span> and <span class="bool">const</span> can not be <b>redeclared</b>.</p>
+      <p><span class="bool">let</span> and <span class="bool">const</span> must be <b>declared</b> before use.</p>
+      <p><span class="bool">let</span> and <span class="bool">const</span> does <b>not bind</b> to <span class="bool">this</span>.</p>
+      <p><span class="bool">let</span> and <span class="bool">const</span> are <b>not hoisted</b>.</p>
+      <h2>What is Not Good?</h2>
+      <p><span class="bool">var</span> does not have to be declared.</p>
+      <p><span class="bool">var</span> is hoisted.</p>
+      <p><span class="bool">var</span> binds to this.</p>
+      <div class="Ex_each_chapter"></div>
+      <h2>Browser Support</h2>
+      <p>The <span class="bool">let</span> and <span class="bool">const</span> keywords are not supported in Internet Explorer 11 or earlier.</p>
+      <p>The following table defines the first browser versions with full support:</p>
+      <div class="cover">
+        <div class="list_reserved_words">
+            <table>
+                <tr>
+                    <th><img src="icons/chrome.png" id="chrome"></th>
+                    <th><img src="icons/Edge.png" id="edge"></th>
+                    <th><img src="icons/Firefox.png" id="firefox"></th>
+                    <th><img src="icons/safari.png" id="safari"></th>
+                    <th><img src="icons/Opera.png" id="opera"></th>
+                </tr>
+
+                <tr>
+                    <td>Chrome 49</td>
+                    <td>Edge 12</td>
+                    <td>Firefox 36</td>
+                    <td>Safari 11</td>
+                    <td>Opera 36</td>
+                </tr>
+
+                <tr>
+                    <td class="tab">Mar, 2016</td>
+                    <td class="tab">Jul, 2015</td>
+                    <td class="tab">Jan, 2015</td>
+                    <td class="tab">Sep, 2017</td>
+                    <td class="tab">Mar, 2016</td>
+                </tr>
+            </table>
+        </div>
+      </div>
+      <div class="Ex_each_chapter"></div>
+      <h2>Redeclaring</h2>
+      <p>Redeclaring a JavaScript variable with <span class="bool">var</span> is allowed anywhere in a program:</p>
+      <h3>Example</h3>
+      <div class="code_container">
+        <pre><span class="js_var">var</span> x = <span class="js_num">2</span>;
+<span class="comment">// Now x is 2</span>
+
+<span class="js_var">var</span> x = <span class="js_num">3</span>;
+<span class="comment">// Now x is 3</span></pre>
+      </div>
+      <div class="compiler">
+        <a href="../Compiler/js_compiler.html" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+      </div>
+      <p>With <span class="bool">let</span>, redeclaring a variable in the same block is NOT allowed:</p>
+      <h3>Example</h3>
+      <div class="code_container">
+        <pre><span class="js_var">var</span> x = <span class="js_num">2</span>;   <span class="comment">// Allowed</span>
+<span class="js_var">let</span> x = <span class="js_num">3</span>;   <span class="comment">// Not allowed</span>
+
+{
+<span class="js_var">let</span> x = <span class="js_num">2</span>;   <span class="comment">// Allowed</span>
+<span class="js_var">let</span> x = <span class="js_num">3</span>;   <span class="comment">// Not allowed</span>
+}
+
+{
+<span class="js_var">let</span> x = <span class="js_num">2</span>;   <span class="comment">// Allowed</span>
+<span class="js_var">var</span> x = <span class="js_num">3</span>;   <span class="comment">// Not allowed</span>
+}</pre>
+      </div>
+      <p>Redeclaring a variable with <span class="bool">let</span>, in another block, IS allowed:</p>
+      <h3>Example</h3>
+      <div class="code_container">
+        <pre><span class="js_var">let</span> x = <span class="js_num">2</span>;   <span class="comment">// Allowed</span>
+
+{
+<span class="js_var">let</span> x = <span class="js_num">3</span>;   <span class="comment">// Allowed</span>
+}
+
+{
+<span class="js_var">let</span> x = <span class="js_num">4</span>;    <span class="comment">// Allowed</span>
+}</pre>
+      </div>
+      <div class="compiler">
+        <a href="../Compiler/js_compiler.html" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+      </div>
+      <div class="Ex_each_chapter"></div>
+      <h2>Let Hoisting</h2>
+      <p>Variables defined with <span class="bool">var</span> are hoisted to the top and can be initialized at any time.</p>
+      <p>Meaning: You can use the variable before it is declared:</p>
+      <h3>Example</h3>
+      <ul>
+        <li>This is OK:</li>
+      </ul>
+      <div class="code_container">
+        <pre>carName = <span class="text_code">"Volvo"</span>;
+<span class="js_var">var</span> carName;</pre>
+      </div>
+      <div class="compiler">
+        <a href="../Compiler/js_compiler.html" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+      </div>
+      <p>Variables defined with <span class="bool">let</span> are also hoisted to the top of the block, but not initialized.</p>
+      <p>Meaning: Using a <span class="bool">let</span> variable before it is declared will result in a <span class="bool">ReferenceError</span>:</p>
+      <div class="code_container1">
+        <h3 class="js_error">Example</h3>
+        <div class="code_container">
+            <pre>carName = <span class="text_code">"Saab"</span>;
+<span class="js_var">let</span> carName = <span class="text_code">"Volvo"</span>;</pre>
+        </div>
+      <div class="compiler">
+        <a href="../Compiler/js_compiler.html" target="_blank">
+            <button class="try">Try it yourself bro..</button>
+        </a>
+      </div>
+      </div>
+      <br>
+    </div>
+
+    <aside class="activity_sidebar">
+      <h1>Activity API</h1>
+      <button onclick="dog()">Dog API Generator</button>
+      <button onclick="cat()">Cat API Generator</button>
+      <button onclick="quotes()">Quotes API Generator</button>
+    </aside>
+  </div>
+
+  <footer>
+    <div class="footer">
+      <p>Learning Hub 2025</p>
+      <p>GMAIL: <a href="mailto:jhinbangcoyo@gmail.com">jhinbangcoyo@gmail.com</a></p>
+      <div class="social-links">
+        <a href="https://www.facebook.com/jhinbangcoyo" target="_blank">
+          <img class="socials" src="../socials/fb.jpg" alt="Facebook" />
+        </a>
+        <a href="https://twitter.com/" target="_blank">
+          <img class="socials" src="../socials/twitter.jpg" alt="Twitter" />
+        </a>
+        <a href="https://www.instagram.com/kryll_dave/" target="_blank">
+          <img class="socials" src="../socials/insta.jpg" alt="Instagram" />
+        </a>
+        <a href="https://www.youtube.com/" target="_blank">
+          <img class="socials" src="../socials/yt.png" alt="YouTube" />
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="control.js"></script>
 
 </body>
 </html>
