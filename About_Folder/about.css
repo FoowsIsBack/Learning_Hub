@@ -175,3 +175,12 @@ footer {
     font-size: 20px;
     margin-top: 10px;
 }
+
+#memers{
+    width: 400px;
+    height: 400px;
+}
+
+.gif{
+    text-align: center;
+}
